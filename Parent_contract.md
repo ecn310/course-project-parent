@@ -1,6 +1,5 @@
 # Team contract 
-
-Names:
+| Names | Emails | Contact | Roles 
 - Aisling Gilmartin
 - Oliver Levesque
   

@@ -1,10 +1,11 @@
 # Team contract 
 | Names | Emails | Contact | Roles |
 | ----- | ------ | ------- | ----- |
-|Aisling Gilmartin| Akgilmar@syr.edu |484-802-6290 | N/A
+|Aisling Gilmartin | Akgilmar@syr.edu |484-802-6290 | N/A
 |Oliver Levesque | Oalevesq@syr.edu | 860-709-2622 | N/A
-|Yvonne Achancho | yeachanc@syr.edu |480 934 9098 | N/A
+|Yvonne Achancho | yeachanc@syr.edu | 480 934 9098 | N/A
 |Devon Mitchell  | djmitche@syr.edu | 917 208 5940 | N/A
+
 Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 
 **Ground Rules:**
@@ -13,7 +14,7 @@ Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 
 • Group meetings - how long should the meetings be: 1 Hour once a week
 
-• When is it OK to skip a meeting: Illness or Emergencies. The indicidual must group chat.
+• When is it OK to skip a meeting: Illness or Emergencies. The individual **must** communicate on the group chat.
 
 • How do we communicate with each other (in case someone is running late, etc….): Our text group chat
 
@@ -34,8 +35,8 @@ Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 • Other: Subsituties/backups: In case of sickness/isses each person will have a backup for their role/topic. The person who is sick should keep an "in case of emergencies" general summary of their work for their backup.
 
 
-Group Goals:
-• What is our group trying to accomplish:
+**Group Goals:**
+What is our group trying to accomplish:
 Adapted from; Federman Stein, R., & Hurd, S. (2000). Using student teams in the classroom: a faculty guide. Anker: Boston, MA.
 Charter Contract (Part B)
 
@@ -53,6 +54,7 @@ ahead of time).
 
 • Come prepared to share with my group (If I am unable to prepare for the meeting or a portion of the
 assignment, I will make up additional work according to the group needs).
+
 • Listen actively to what others have to contribute (If I appear to not listen, my group peers can ask me to
 focus and pay attention).
 
@@ -72,7 +74,7 @@ ask me to stop).
 
 • *Oliver Levesque*
 
-• ___________________________________________________________
+• *Yvonne Achancho*
 
 
 

@@ -31,7 +31,7 @@ Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 
 • What will we do if group members work do not hold up to our group standards: Help teach them how to get to the standard
 
-• Other:
+• Other: Subsituties/backups: In case of sickness/isses each person will have a backup for their role/topic. The person who is sick should keep an "in case of emergencies" general summary of their work for their backup.
 
 
 Group Goals:

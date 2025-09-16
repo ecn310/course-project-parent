@@ -8,9 +8,11 @@
 
 Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 
-**Ground Rules:**
+<details>
 
-• Other then class, when will the group attempt to meet (what time, how often, where): Tuesday 5-6pm, Bird Library
+## <summary>Ground Rules:</summary>
+
+• Other then class, when will the group attempt to meet (what time, how often, where): Tuesday **5-6pm**, Bird Library
 
 • Group meetings - how long should the meetings be: 1 Hour once a week
 
@@ -32,15 +34,16 @@ Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 
 • What will we do if group members work do not hold up to our group standards: Help teach them how to get to the standard
 
-• Other: Subsituties/backups: In case of sickness/isses each person will have a backup for their role/topic. The person who is sick should keep an "in case of emergencies" general summary of their work for their backup.
+</details>
 
+**Other:** Subsituties/backups: In case of sickness/isses each person will have a backup for their role/topic. _The person who is sick should keep an  <ins>"in case of emergencies"</ins> general summary of their work for their backup._
 
-**Group Goals:**
+### **Group Goals:**
 What is our group trying to accomplish:
 Adapted from; Federman Stein, R., & Hurd, S. (2000). Using student teams in the classroom: a faculty guide. Anker: Boston, MA.
 Charter Contract (Part B)
 
-• We, the team named **Parents** agree with the information
+• We, the team named <ins>**Parents**</ins> agree with the information
 documented in our team charter, and will try out best to uphold this charter. By signing below, we
 indicate our commitment to our team. The group is expected to demonstrate positive cohesive
 teamwork while developing and presenting this assignment. All members of the group are to make
@@ -65,8 +68,9 @@ out and ask me to soften my approach).
 ask me to stop).
 
 
-**Signatures:**
+<details>
 
+**<summary>Signatures:</summary>**
 
 • *Devon Mitchell*
 
@@ -76,6 +80,7 @@ ask me to stop).
 
 • *Yvonne Achancho*
 
+</details>
 
 
 Divorce Claus:

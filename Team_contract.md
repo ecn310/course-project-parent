@@ -12,27 +12,13 @@ Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 
 ## <summary>Ground Rules:</summary>
 
-• Other then class, when will the group attempt to meet (what time, how often, where): Tuesday **5-6pm**, Bird Library
-
-• Group meetings - how long should the meetings be: 1 Hour once a week
-
-• When is it OK to skip a meeting: Illness or Emergencies. The individual **must** communicate on the group chat.
-
-• How do we communicate with each other (in case someone is running late, etc….): Our text group chat
-
-• How will we deal with chronic lateness to meetings: Discuss the effects on their grade
-
-• What does on-time really mean: Being in our meeting place by the start of the meeting. 
-
-• What is our expected behaviour regarding mobile phone use during meetings: Phone use is permitted. 
-
-• Can we bring food to meetings: Yes
-
-• How do we deal with members who do not participate enough or distract others from our work: Talk to them about improvements to behavior and if this persists, score them accordingly for the team grade portion of the project grade. 
-
-• How are we going to make decisions: Collectively as a group. 
-
-• What will we do if group members work do not hold up to our group standards: Help teach them how to get to the standard
+- *Attendance & Punctuality:* All members are expected to attend weekly meetings on Tuesdays from **5–6pm** at Bird Library. “On-time” means being physically present and ready to engage from 5:00pm sharp. Chronic lateness (defined as being more than 10 minutes late for two or more meetings in a row) will prompt a discussion with the group. Continued lateness may result in a ***deduction from the team grade portion of the project.***
+  
+- *Absenses:* Missing a meeting is only acceptable in cases of **illness** or **emergencies**. The absent member must notify the group via the text chat before the meeting begins. Failure to communicate will be treated as an unexcused absence and may affect the team grade.
+  
+- *Participation & Standards:* Members are expected to contribute meaningfully and respectfully during meetings. If a member consistently fails to participate or distracts others, the group will first address the issue directly. Furthermore, If a member’s work does not meet group standards, _the team will provide guidance and support to help them improve_. If the issue persists despite assistance, the group may reassign tasks or adjust contribution scores to reflect effort and quality. If it does not improve, the member’s contribution score may be reduced accordingly.
+  
+- *Decision-Making & Disputes:* All decisions will be made **collectively**. If disputes arise that cannot be resolved internally, the group will escalate the issue to the instructor for mediation.
 
 </details>
 

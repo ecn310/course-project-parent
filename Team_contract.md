@@ -8,6 +8,7 @@
 
 Meeting Time: **Tuesdays 5-6 pm**, Bird Library
 
+## Research question: **Do parents invest more time in their kids in U.S. counties where there is more inequality and/or less intergenerational mobility? (Professor Zhu)**
 <details>
 
 **<summary>Ground Rules:</summary>**

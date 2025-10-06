@@ -41,28 +41,40 @@ Do parents invest more time in their kids in U.S. counties where there is more i
 
 \section{Data Overview} \label{sec:literature}
 
-Contains data from \textbf{762} communities across the U.S. Focuses on household income at age \textbf{35} for individuals who grew up in low-income families.
+Contains data from \textbf{3224} communities across the U.S. Focuses on household income at age \textbf{35} from all family income background. 
 
 \subsection{Data Set 1 (Household income of the lower 25 percentile at the age of 35)}
 \begin{itemize}
   \item What is the source of the data? Opportunity Atlas a credible source and a collaboration between Harvard, Brown, and the U.S. Census Bureau
-  \item How was it generated? Some possibilities: Did someone do a survey? Do people submit their own information? Did an organization compile it from public reports? 
+  \item How was it generated? Some possibilities: The information was taken from a survey done by the US census bureau, then put together by the Opportunity atlas team. 
+  
   \item What is the coverage of the data? 762 counties throughout the United States
     \begin{itemize}
         \item What years? from 2014-2015
         \item What kind of observations (countries? individual survey respondents? etc) Each row is a county within the United States
-        \item Scope (e.g., if countries, only developed countries?) United States
+        \item Scope (e.g., if countries, only developed countries?) County's within the U.S. with low income households who competed the survey. 
     \end{itemize}
-  \item Number of variables
+  \item Number of variables: 44 overall 
     \begin{itemize}
-        \item Types of variables,  (is this dataset giving mainly economic indicators for a country? Is it reporting details about 911 calls?
+        \item Types of variables: Focus on households/individuals and their earnings/job prospects. 
     \end{itemize}
   \item How many observations total? (e.g., 20 countries with 10 variables each, for a total of 100 observations)
+  3224 counties with one variable each 
 \end{itemize}
+    
+\subsection{Data Set 2 (High School Graduation rate, comparing the lower 25th percentile to the 50th percentile )}
+    \begin{itemize}
+        \item What is the source of the data?
+        Opportunity Atlas is a credible source and a collaboration between Harvard, Brown, and the U.S. Census Bureau
+    \end{itemize}\
+\item How was this dataset generated?Some possibilities: Did someone do a survey? Do people submit their own information? Did an organization compile it from public reports? 
+    \item What is the coverage of the data?
+        \begin{itemize}
+            \item What years? using census survey data from 1978 to 1992
+            \item What kind of observations and coverage (countries? individual survey respondents? etc) Measures High school graduation rate around 2000 communities and metropolitan areas around the United States, measuring both the lower 25th percentile and the 50th percentile 
+            \item scope? The United States     
+        \end{itemize}
 
-\subsection{Data Set 2 (insert a descriptive title)}
-
-If you have more than one dataset, answer all the same questions as in the previous subsection in a new subsection for each dataset. \\
 
 \noindent If you only have one dataset, delete this subsection. \\
 
@@ -73,12 +85,12 @@ If you have more than one dataset, answer all the same questions as in the previ
 
 Explain how someone can acquire each dataset (you may need to use subsections again).
 \begin{itemize}
-    \item This should be in EXCRUCIATING detail: every click someone has to execute to get the dataset as you have it
+    \item First, click the link or search the Opportunity Atlas's in a search engine. From there select the neighborhood section with mobility outcomes. Select explore the data. On the left side of the screen there will be a drop-down section at the bottom that says download the data. From here select the variable Household Income at Age 35, counties for geography and all for parent income. The finally hit the download button.
 \end{itemize}
 
 \noindent Where have YOU stored the data? Include link(s).
 \begin{itemize}
-    \item If in a different location, where is your code and documentation?
+    \item The data is stored on GitHub, under the name " cty kfr rP gP pall.csv."  ( Cannot add link due to it having code that messes with overleafs code) 
 \end{itemize}
 
 
@@ -87,8 +99,7 @@ Explain how someone can acquire each dataset (you may need to use subsections ag
 
 What steps have you taken / do you plan to take to get the data ready for analysis? 
 \begin{itemize}
-    \item Examples: checking for outliers; dropping some observations you don't need; investigating something you've already noticed that doesn't make sense.
-    \item If you've already done some work, where are the files and documentation for that work?
+    \item Get rid of the counties/variables that have no data tied to them, but still count to the total. Combine the different variables into one major data set rather than each variable having its own individual data set ( due to the format of the website). 
 \end{itemize}
 
 \section{Linking Datasets}
@@ -97,6 +108,8 @@ What steps have you taken / do you plan to take to get the data ready for analys
 How you will link different data sets together (if you'll need to)
 \begin{itemize}
     \item What variable(s) in each dataset will you use to merge the datasets together?
+        S GRAD RATE/Region-Children's outcome, percent staying in the same tract as adults for children, Average credit score. These three will be added to the original household income data set, and any other variables deemed valuable once compared to the American Time Use Survey. 
+        
     \item Example: We will merge Dataset A with GDP for each country with Dataset B that has manufacturing employment for each country across years. In Dataset A, these variables are called \textit{year} and \emph{country}; Dataset B calls the year variable \emph{yr} and the country variable \emph{name}.
 \end{itemize}
 
@@ -105,6 +118,11 @@ How you will link different data sets together (if you'll need to)
 \label{sec:result}
 
 List of key variables you may use for testing your hypothesis, separately for each dataset
+
+\begin{itemize}
+    \item  S GRAD RATE/Region-Children's outcome
+    \item Percent staying in the same tract as adults for children,
+    \item Average credit score
 
 
 

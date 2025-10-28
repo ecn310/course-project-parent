@@ -1,12 +1,12 @@
 | Task | Target Date | Completed Date | Assignee (Backup) | Notes |
 |---|---|---|---|---|
-| Working hypothesis w/data needs |  Oct 21 |  | Workload for all assignment will be assigned closer to deadline (Will be updated here once decided on)| |
-| Presentation on hypothesis and data needs |  Oct 21 | | | |
-| Data Documention |  Oct 21  | | [Add all necessary tasks above to get data ready for analysis] |
-| Preliminary reproducibility package plan | Oct 23 | |  | Where to store this on repo?|
-| First draft of data section of paper |Oct 23 | |  | Pre-work in data.tex |
-| First draft of data portion of reproducibility package | Oct 22 | |  | Pre-work in data.tex |
-| Present preliminary (analysis) results in class for feedback | Nov 1| | | |
+| Working hypothesis w/data needs |  Oct 25 | Oct 25 | Devon| |
+| Presentation on hypothesis and data needs |  Oct 23 | Oct 23 | Yvonne | |
+| Data Documention |  Oct 30  | Oct 30 | Aisling  |
+| Preliminary reproducibility package plan | Oct 31 | | Yvonne + Aisling  | |
+| First draft of data section of paper |Nov 12 | |  | Pre-work in data.tex |
+| First draft of data portion of reproducibility package | Nov 12 | |  | Pre-work in data.tex |
+| Present preliminary (analysis) results in class for feedback | Nov 12| | | |
 | First draft of results / discussion section(s) | Nov 12 | | | all figures/tables need to be done |
 | Finalize reproducibility package plan | Nov 19 | | | |
 | Revise results section | Nov 19  | | | |

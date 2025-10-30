@@ -1,10 +1,22 @@
 ## Reproducibility Package Plan
-### Data 
-Need 
+### Data Needed
+- The Opportunity Atlas data
+
+  -
+
+- American Time Survey
+
+  - 
+
+### Data Location
+- Github
+
+### Other Important Documntion & Locations 
 - Master.do
 - Paper Analysis
 - Readme.md
-- 
+
+  
 ### Timeline 
 | Task | Target Date | Completed Date | Assignee (Backup) |
 |---|---|---|---|

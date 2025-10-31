@@ -1,18 +1,18 @@
 ## Reproducibility Package Plan
+
 ### Data Needed
+
 - The Opportunity Atlas data
-
-  -
-
-- American Time Survey
-
-  - 
-
+  - cty_kir_27_rP_(Gender)_(Parent Income Percentile)
+  - county_cohort_trends.dta
+- American Time Use Survey
+  - ATUS Married Couples 2015-2017(Table A-6).csv
 ### Data Location
 - Github
+  - One final data folder split into sub sections based on locatio (ATUS/TOA) 
 
-### Other Important Documntion & Locations 
-- Master.do
+### Other Important Documntion 
+- Master.do, with all data manipulation
 - Paper Analysis
 - Readme.md
 

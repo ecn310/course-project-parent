@@ -41,7 +41,7 @@ Do parents invest more time in their kids in U.S. counties where there is more i
 
 \section{Data Overview} \label{sec:literature}
 
-The Opportunity Atlas is a compilation of 3 different data sets ( Decennial Census, Federal income tax returns, and the American Community Surveys). The data uses \textbf{3224} counties across the U.S. and children's outcomes in adulthood within them. The American Time Use survey comes from randomly selected households who have taken part in the Current Population Survey and breaks down how they spend their day. 
+The Opportunity Atlas is a compilation of 3 different data sets ( Decennial Census, Federal income tax returns, and the American Community Surveys). The data uses \textbf{3224} counties across the U.S. and children's outcomes in adulthood within them. The American Time Use survey comes from randomly selected households ( We will be focusing on Specifically Married Parents) who have taken part in the Current Population Survey and breaks down how they spend their day. 
 
 \subsection{The Opportunity Atlas}
 \begin{itemize}
@@ -51,7 +51,7 @@ The Opportunity Atlas is a compilation of 3 different data sets ( Decennial Cens
   \item What is the coverage of the data?  3224 counties throughout the United States
     \begin{itemize}
         \item What years? Cross sections from 1978-2019
-        \item What kind of observations (countries? individual survey respondents? etc) Average income of child born in 1978 with parents in the 1, 25, 50, etc income percentile per county
+        \item What kind of observations (countries? individual survey respondents? etc) Our observations are individual survey respondents of all income levels in each of the observed counties
         \item Scope All counties within the U.S.  
     \end{itemize}
   \item Number of variables: 6
@@ -81,13 +81,13 @@ The Opportunity Atlas is a compilation of 3 different data sets ( Decennial Cens
 
 Explain how someone can acquire each dataset (you may need to use subsections again).
 \begin{itemize}
-    \item \textbf{The Opportunity Atlas} First, click the link \href{https://www.opportunityatlas.org/}{The Opportunity Atlas }. From there select the neighborhood section with mobility outcomes. Select explore the data. On the left side of the screen there will be a drop-down section at the bottom that says download the data. From here select the variable Household Income at Age 35, counties for geography, and all for parent income. The finally hit the download button.
-    \item \textbf{The American Time Use Survey} First, search the American Time Use Survey in a search engine to get this link \href{https://www.bls.gov/tus/}{American Time Use Survey}. From there click on the tab ATUS Data and select the drop down, tables. Select the section married parents Table A-6 and Table A-7 and download years 2021-2024 in either HTML or PDF
+    \item \textbf{The Opportunity Atlas} First click the link to travel to the opportuinity atalas site with data \href{http://www.equality-of-opportunity.org/data/}{The Equality of Opportunity}, Then scroll down to the section that says "Is the United States Still a Land of Opportunity? Recent Trends in Intergenerational Mobility", then click on it and download the "Intergenerational Mobility Estimates by County and Birth Cohort" as a Stata download.
+    \item \textbf{The American Time Use Survey} First, search the American Time Use Survey in a search engine to get this link \href{https://www.bls.gov/tus/}{American Time Use Survey}. From there click on the tab ATUS Data and select the drop down, ATUS data files. From there Select 2014 as your micro file year and scroll down until you see ATUS 2014 Activity file (zip) where you can download the data as a .do file for Stata analysis. 
 \end{itemize}
 
 \noindent Where have YOU stored the data? Include link(s).
 \begin{itemize}
-    \item The data is stored on GitHub, under the name "Household Income at 35"\href{https://github.com/ecn310/course-project-parent/blob/main/cty_kfr_rP_gP_pall.csv#L3210}{GitHub link} as well as \href{https://github.com/ecn310/course-project-parent/issues/5#issuecomment-3378851020}{ATUS Data}
+    \item The data is stored on GitHub, under the name "countycohorttrends.dta"\href{https://github.com/ecn310/course-project-parent/blob/main/Working%20Data/county_cohort_trends.dta}{GitHub link} as well as \href{https://github.com/ecn310/course-project-parent/issues/5#issuecomment-3463603705}{ATUS Data}
 \end{itemize}
 
 
@@ -96,8 +96,9 @@ Explain how someone can acquire each dataset (you may need to use subsections ag
 
 What steps have you taken / do you plan to take to get the data ready for analysis? 
 \begin{itemize}
-    \item Compiled all the Opportunity Atlas income data from 2019 into excel and onto stata. Organised ATUS data and will begin data analysis soon. 
-    \item Need to clean and break down excel data on stata and perform regression analysis. 
+    \item Compiled all the Opportunity Atlas income data from 2014 into excel and onto stata. Organised ATUS data and will begin data analysis soon. 
+    \item Need to clean and break down excel data on Stata and perform statistical analysis.
+    \item need to merge the two data sets into one on Stata and perform analysis for next week
 \end{itemize}
 
 \section{Linking Datasets}
@@ -106,7 +107,7 @@ What steps have you taken / do you plan to take to get the data ready for analys
 How you will link different data sets together (if you'll need to)
 \begin{itemize}
     \item What variable(s) in each dataset will you use to merge the datasets together?
-       For the OA the variables, High school Graduation Rate, Percent staying in the same tract as adults for children, and Average credit score. As for the ATUS we will use the variables of married parents and their time spent with children on education related activities ( based on parental employment status) 
+       We need to compile the two data sets together into Stata and use the merge command but we are currently having trouble getting all of our data into a like file type to be able to perform the merger.
 \end{itemize}
 
 
@@ -116,9 +117,11 @@ How you will link different data sets together (if you'll need to)
 List of key variables you may use for testing your hypothesis, separately for each dataset
 
 \begin{itemize} 
-    \item High school Graduation Rate
+    \item Income per household
     \item Child income by parental financial disposition; born in 1978 (27yrs)
     \item Time spend on child raring related activities with child 
+    \item Population of each county
+    \item Average income by county
 \end{itemize}
 
 

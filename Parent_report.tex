@@ -89,26 +89,15 @@ Make subsections if your data comes from more than one source and this section b
 
 The analysis we did was between our established variables for parental time investments,trthh, which recorded the amount of time a parent spent in their daily diary entry for childcare and our variable for intergenerational mobility, permresp25kr24, which measures the amount of income (in thousands) that a resident born in the 25th percentile of income has at age 24 aggregated to the state level. We also used a statefips variable to measure which state each observation belonged to. Our research hypothesis is Parents in U.S. states with higher rates of intergenerational mobility invest more time in their children compared to parents in states with lower rates of intergenerational mobility and the null hypothesis we have is there is no relationship between intergenerational mobility of states and parental time investments. In order to merge the two data sets we had, we needed to take the mean of our permresp25kr24 variable by state and we also took the mean of our trthh variable by state to compare the two vairables. We then had to create a new variable of high mobility, hmob, which divided our data into the 26 highest states for time investments to prepare our data for a ttest. We then performed a two sample ttest on our data and found that the difference in means of the higher parental investment states vs the lower parental investment states was 18.48 minutes per day. However, our p value was .0078 and our confidence interval of (-39.08, 2.13) contains zero so we cannot be certian this differnece is not purely due to chance. A graph of the parental investment vs intergenerational mobility that shows each statefips code is also generated through the .do file found on our GitHub repository. This same .do file also contains the code to recreate the ttest performed on the data. Through this ttest, we find that the data we have does not show a statistically significant relationship between parental investment and intergenerational mobility by state, and we fail to reject the null hypothesis. 
 
-\begin{table}[htbp]
-\caption{\textbf{Intergenerational Mobility Vs. Average Time spent on childcare}}
-\label{tab:mlogit}
-\scriptsize
-\begin{center}
+
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{}
+    \includegraphics[width=\textwidth]{t_test1.pdf}
     \caption{Intergenerational mobility vs parental investment}
+    \textbf{Notes}: This table shows the average minutes spent in childcare of the 26 states above or equal to the median number of minutes compared with the 25 states below the median number of minutes and also has the difference and p value. It is essentially a summarized output of the ttest.
 \end{figure}
-\end{center}
-\flushleft
-\begin{footnotesize}
-\begin{singlespace}
-\textbf{Notes}: This table shows the average minutes spent in childcare of the 26 states above or equal to the median number of minutes compared with the 25 states below the median number of minutes and also has the difference and p value. It is essentially a summarized output of the ttest.
-\end{singlespace}
-\end{footnotesize}
-\end{table}
 
-\noindent AI disclosure: Generative AI was not used in the completion of any of the work of the results section. 
+AI disclosure: Generative AI was not used in the completion of any of the work of the results section. 
 
 
 \section{discussion}

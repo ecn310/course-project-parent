@@ -22,12 +22,18 @@ between each percentiles within a scatterplot.
 
 - Organized ATUS data and appended all of the stata microfiles together along with the CPS data
 which has participants identify their state Fips code, we then used the Fips code to merge the
-ATUS data along with the Eauality of opportunity data because it also contains the Fips code
+ATUS data along with the Equality of opportunity data because it also contains the Fips code
 for the state that each county is in. We had to take the mean of each county in each state to be
 able to merge the Equality of Opportunity data along with the ATUS data. What we ended up
 with was a fully combined data set with the variable of child income at age 24 for children born
 in the 25th percentile as our indicator of intergenerational mobility in each state.
 
 ### Raw Data Links 
+
+- [ATUS cps 2014](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/ATUS%20RAW/atuscps_2014_RAW.zip)
+- [ATUS sum 2014](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/ATUS%20RAW/atussum_2014_RAW.zip)
+- [ATUS rost 2014](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/ATUS%20RAW/atusrost_2014_RAW.zip)
+- [OPA county cohorts trends](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/county_cohort_trends.dta)
+- [OPA data?](https://github.com/ecn310/course-project-parent/tree/0d51bb982c575758de43cf34db5d9b5236805036/Opportunity%20Atlas%20Data)
 ### Analysis data/.do Files 
 

@@ -10,3 +10,24 @@ and scroll down until you see ATUS 2014 Activity file (zip) where you can downlo
 .do file for Stata analysis. We have stored the data in GitHub under multiple links, The Equality of
 opportunity data is stored on GitHub, under the name ”countycohorttrends.dta”GitHub link as well as
 ATUS DataOur merged data set is stored on GitHub under Merged data
+
+### Data Manipulation
+
+- Compiled all the Equity of Opportunity income data from 2014 into Stata. First began by
+organising the OA data into excel making sure all the data had similar variables across each
+excel sheet page. Then imported onto stata using import code. The data already demonstrated
+just the mean income of each state by percentile between 2 genders, so we had to encode the
+data from string to double byte data storage type, to get results which showed the correlations
+between each percentiles within a scatterplot.
+
+- Organized ATUS data and appended all of the stata microfiles together along with the CPS data
+which has participants identify their state Fips code, we then used the Fips code to merge the
+ATUS data along with the Eauality of opportunity data because it also contains the Fips code
+for the state that each county is in. We had to take the mean of each county in each state to be
+able to merge the Equality of Opportunity data along with the ATUS data. What we ended up
+with was a fully combined data set with the variable of child income at age 24 for children born
+in the 25th percentile as our indicator of intergenerational mobility in each state.
+
+### Raw Data Links 
+### Analysis data/.do Files 
+

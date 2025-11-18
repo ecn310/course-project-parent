@@ -9,6 +9,7 @@ cd "C:\Users\yeachanc\OneDrive - Syracuse University\Documents\Econ files\DO"   
 
 * Male - 1st percentile
 import excel "OA Clean Data.xlsx", sheet("cty_kir_27_rP_gM_p1") firstrow clear
+ds, has(type numeric)
 gen gender = "Male"
 gen percentile = 1
 save male_1.dta, replace
@@ -64,8 +65,9 @@ save female_100.dta, replace
 *******************************************************
 use male_1.dta, clear
 append using male_25.dta male_50.dta male_75.dta male_100.dta ///
-    female_1.dta female_25.dta female_50.dta female_75.dta female_100.dta
+    female_1.dta female_25.dta female_50.dta female_75.dta female_100.dta, force
 
+encode Individual_income_For_Children_B , generate(income)
 *******************************************************
 * STEP 4: Save combined dataset
 *******************************************************

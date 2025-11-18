@@ -35,5 +35,9 @@ in the 25th percentile as our indicator of intergenerational mobility in each st
 - [ATUS rost 2014](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/ATUS%20RAW/atusrost_2014_RAW.zip)
 - [OPA county cohorts trends](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/county_cohort_trends.dta)
 - [OPA data?](https://github.com/ecn310/course-project-parent/tree/0d51bb982c575758de43cf34db5d9b5236805036/Opportunity%20Atlas%20Data)
-### Analysis data/.do Files 
 
+### Analysis data/.do Files 
+- [Merge Scatterploy and ttest of vairables .do](https://github.com/ecn310/course-project-parent/blob/19fd53165ae5ca635d1ee09edeff39273e1d4487/Working%20Data/~merge%2C%20scatterplot%20and%20ttest%20of%20vairables.do.stswp)
+- [Parental Investment vs Intergenational Mobility.png](https://github.com/ecn310/course-project-parent/blob/e219da01a47e43b2cb7162e4abc5adea72f47d88/Parental%20Investment%20vs%20Intergenerational%20Mobility.png)
+- [ATUS Merge .do](https://github.com/ecn310/course-project-parent/blob/19fd53165ae5ca635d1ee09edeff39273e1d4487/Working%20Data/ATUS%20Fully%20Merged/ATUSCPSmerged.do)
+- [OPA excel](https://github.com/ecn310/course-project-parent/blob/19fd53165ae5ca635d1ee09edeff39273e1d4487/Opportunity%20Atlas%20Data/OA%20Clean%20Data.xlsx)

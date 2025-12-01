@@ -1,6 +1,8 @@
-**Guide to running ttest on 75th percentile of children.
-use "C:\Users\oalevesq\Downloads\New merged data with 25th and 75th (1).dta"
-summarize perm_res_p75_kr24 , detail
-generate highmob = perm_res_p75_kr24 > r(p50)
-tab highmob
-ttest trthh, by(highmob)
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\File for running 75th percentile ttest.do
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 1 Dec 2025, 15:05:34
+
+{com}. 

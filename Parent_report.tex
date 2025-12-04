@@ -115,13 +115,20 @@ Median income of each state & 51 & 54131.2 & 9005.30 & 39464 & 74149 \\
 
 
 \section{Results}
-The analysis we did was between our established variables for parental time investments, \texttt{trthh}, which recorded the amount of time a parent spent in their daily diary entry for childcare and our variables for intergenerational mobility, \texttt{permresp25kr24} \texttt{permresp75kr24}, which measures the amount of income (in thousands) that a resident born into the 25th and 75th percentile of income has at age 24 aggregated to the state level. Our research hypothesis is parents in U.S. states with higher rates of intergenerational mobility invest more time in their children compared to parents in states with lower rates of intergenerational mobility. Our null hypothesis we have is there is no relationship between intergenerational mobility of states and parental time investments. In order to merge the two data sets we had, we aggregated the time invesment \texttt{permresp25kr24} variable by state and we also took the mean of our \texttt{trthh} variable by state to compare the two variables.
+The analysis we did was between our established variables for parental time investments, \texttt{trthh}, which recorded the amount of time a parent spent in their daily diary entry for childcare and our variables for intergenerational mobility, \texttt{permresp25kr24} and \texttt{permresp75kr24}, which measures the amount of income (in thousands) that a resident born into the 25th and 75th percentile of income has at age 24 aggregated to the state level. Our research hypothesis is parents in U.S. states with higher rates of intergenerational mobility invest more time in their children compared to parents in states with lower rates of intergenerational mobility. Our null hypothesis we have is there is no relationship between intergenerational mobility of states and parental time investments. In order to merge the two data sets we aggregated the intergenerational mobility variables,  \texttt{permresp25kr24} and \texttt{permresp25kr24}, from county averages to state average and weighed them by their county popultaions. For the time investment variable,  \texttt{trthh}, we aggregated it from individual time diaries to state level.
 We then had to create a new variable of high mobility, \texttt{hmob}, which divided our data into the 26 highest states for intergenerational mobility to prepare our data for a t-test.
 We then performed a two sample t-test on our data and found that the difference in means of the higher parental investment states vs the lower parental investment states was 18.48 minutes per day, with the higher mobility group having the higher average childcare per day.
-Our p value was 0.078 and with it being between .05 and .1, there is some evidence of a relationship and to fail to reject our null hypothesis. However, our confidence interval of ($-39.08$, $2.13$) contains zero so we cannot be certain this difference is not purely due to chance.
-A graph of the parental investment vs intergenerational mobility that shows each \texttt{statefips} code is also generated through the .do file found on our GitHub repository.
-This same .do file also contains the code to recreate the t-test performed on the data.
-Through this t-test, we find that the data we have does not show a statistically significant relationship between parental investment and intergenerational mobility by state, and we fail to reject the null hypothesis.
+
+For the 25 precentile our p value was 0.1413 and with it being outside  .05 and .1, there is little evidence of a relationship. Additional our confidence interval of ($-3.25$, $38.10$) contains zero so we cannot be certain this difference is not purely due to chance. So through this t-test, we find that the data we have does not show a statistically significant relationship between parental investment and intergenerational mobility by state, and we fail to reject the null hypothesis.
+
+
+\begin{center}
+  \includegraphics[height=6cm]{}
+\end{center}
+
+
+The graph for these P vales it the parental investment vs intergenerational mobility that shows each \texttt{statefips} code. 
+
 Additionally, we performed another t-test that examined the relationship between parental time investments in people born in the 75th percentile at age 24 which shows how impactful time investments are in wealthier individuals.
 We performed the same procedure as with the 25th percentile variable where we split the 51 observations by the median and created a new variable, highmob, this way and performed a two sided ttest based on this new variable
 Our results were that we had a p value of 0.6270 which is outside our accepted significance level of .05 meaning our results are not statistically significant and we fail to reject our null hypothesis that parental time investments has no impact on intergenerational mobility for children born in the 75th percentile.
@@ -164,9 +171,6 @@ You can choose which citation style to follow. Whichever you choose, you must fo
   \includegraphics[height=5cm]{Reproducibility Package/Outputs/Parental Investment vs Intergenerational Mobility 75.png}
 \end{center}
 
-\begin{center}
-  \includegraphics[height=5cm]{Reproducibility Package/Outputs/Parental Investment vs Intergenerational Mobility 25.png}
-\end{center}
 
 \begin{center}
   \includegraphics[height=5cm]{Reproducibility Package/Outputs/Parental Investment vs median income of state.jpg}

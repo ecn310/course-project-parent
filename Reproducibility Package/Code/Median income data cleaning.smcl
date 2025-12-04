@@ -1,0 +1,420 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340 (1)\Median income data cleaning.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 3 Dec 2025, 21:15:10
+
+{com}. clear
+
+. import delimited "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340 (1)\ACSDT5Y2014.B19013-Data.csv", varnames(1) 
+{res}{txt}(encoding automatically selected: UTF-8)
+{text}(5 vars, 52 obs)
+
+{com}. gen statefips = .
+{txt}(52 missing values generated)
+
+{com}. replace statefips = 1  if name == "Alabama"
+{txt}(1 real change made)
+
+{com}. replace statefips = 2  if name == "Alaska"
+{txt}(1 real change made)
+
+{com}. replace statefips = 4  if name == "Arizona"
+{txt}(1 real change made)
+
+{com}. replace statefips = 5  if name == "Arkansas"
+{txt}(1 real change made)
+
+{com}. replace statefips = 6  if name == "California"
+{txt}(1 real change made)
+
+{com}. replace statefips = 8  if name == "Colorado"
+{txt}(1 real change made)
+
+{com}. replace statefips = 9  if name == "Connecticut"
+{txt}(1 real change made)
+
+{com}. replace statefips = 10 if name == "Delaware"
+{txt}(1 real change made)
+
+{com}. replace statefips = 11 if name == "District of Columbia"
+{txt}(1 real change made)
+
+{com}. replace statefips = 12 if name == "Florida"
+{txt}(1 real change made)
+
+{com}. replace statefips = 13 if name == "Georgia"
+{txt}(1 real change made)
+
+{com}. replace statefips = 15 if name == "Hawaii"
+{txt}(1 real change made)
+
+{com}. replace statefips = 16 if name == "Idaho"
+{txt}(1 real change made)
+
+{com}. replace statefips = 17 if name == "Illinois"
+{txt}(1 real change made)
+
+{com}. replace statefips = 18 if name == "Indiana"
+{txt}(1 real change made)
+
+{com}. replace statefips = 19 if name == "Iowa"
+{txt}(1 real change made)
+
+{com}. replace statefips = 20 if name == "Kansas"
+{txt}(1 real change made)
+
+{com}. replace statefips = 21 if name == "Kentucky"
+{txt}(1 real change made)
+
+{com}. replace statefips = 22 if name == "Louisiana"
+{txt}(1 real change made)
+
+{com}. replace statefips = 23 if name == "Maine"
+{txt}(1 real change made)
+
+{com}. replace statefips = 24 if name == "Maryland"
+{txt}(1 real change made)
+
+{com}. replace statefips = 25 if name == "Massachusetts"
+{txt}(1 real change made)
+
+{com}. replace statefips = 26 if name == "Michigan"
+{txt}(1 real change made)
+
+{com}. replace statefips = 27 if name == "Minnesota"
+{txt}(1 real change made)
+
+{com}. replace statefips = 28 if name == "Mississippi"
+{txt}(1 real change made)
+
+{com}. replace statefips = 29 if name == "Missouri"
+{txt}(1 real change made)
+
+{com}. replace statefips = 30 if name == "Montana"
+{txt}(1 real change made)
+
+{com}. replace statefips = 31 if name == "Nebraska"
+{txt}(1 real change made)
+
+{com}. replace statefips = 32 if name == "Nevada"
+{txt}(1 real change made)
+
+{com}. replace statefips = 33 if name == "New Hampshire"
+{txt}(1 real change made)
+
+{com}. replace statefips = 34 if name == "New Jersey"
+{txt}(1 real change made)
+
+{com}. replace statefips = 35 if name == "New Mexico"
+{txt}(1 real change made)
+
+{com}. replace statefips = 36 if name == "New York"
+{txt}(1 real change made)
+
+{com}. replace statefips = 37 if name == "North Carolina"
+{txt}(1 real change made)
+
+{com}. replace statefips = 38 if name == "North Dakota"
+{txt}(1 real change made)
+
+{com}. replace statefips = 39 if name == "Ohio"
+{txt}(1 real change made)
+
+{com}. replace statefips = 40 if name == "Oklahoma"
+{txt}(1 real change made)
+
+{com}. replace statefips = 41 if name == "Oregon"
+{txt}(1 real change made)
+
+{com}. replace statefips = 42 if name == "Pennsylvania"
+{txt}(1 real change made)
+
+{com}. replace statefips = 44 if name == "Rhode Island"
+{txt}(1 real change made)
+
+{com}. replace statefips = 45 if name == "South Carolina"
+{txt}(1 real change made)
+
+{com}. replace statefips = 46 if name == "South Dakota"
+{txt}(1 real change made)
+
+{com}. replace statefips = 47 if name == "Tennessee"
+{txt}(1 real change made)
+
+{com}. replace statefips = 48 if name == "Texas"
+{txt}(1 real change made)
+
+{com}. replace statefips = 49 if name == "Utah"
+{txt}(1 real change made)
+
+{com}. replace statefips = 50 if name == "Vermont"
+{txt}(1 real change made)
+
+{com}. replace statefips = 51 if name == "Virginia"
+{txt}(1 real change made)
+
+{com}. replace statefips = 53 if name == "Washington"
+{txt}(1 real change made)
+
+{com}. replace statefips = 54 if name == "West Virginia"
+{txt}(1 real change made)
+
+{com}. replace statefips = 55 if name == "Wisconsin"
+{txt}(1 real change made)
+
+{com}. replace statefips = 56 if name == "Wyoming"
+{txt}(1 real change made)
+
+{com}. codebook statefips
+
+{txt}{hline}
+{res}statefips{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}float{txt})
+
+{col 18}Range: [{res}1{txt},{res}56{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}51{col 51}{txt}Missing .: {res}1{txt}/{res}52
+
+{txt}{col 19}Mean: {res}{ralign 7:28.9608}
+{txt}{col 14}Std. dev.: {res}{ralign 7:15.8328}
+
+{txt}{col 12}Percentiles: {col 25}{ralign 7:10%}{ralign 10:25%}{ralign 10:50%}{ralign 10:75%}{ralign 10:90%}
+{res}{col 25}{ralign 7:8}{ralign 10:      16}{ralign 10:      29}{ralign 10:      42}{ralign 10:      50}
+
+{com}. list name if missing(statefips)
+{txt}
+     {c TLC}{hline 22}{c TRC}
+     {c |} {res}                name {txt}{c |}
+     {c LT}{hline 22}{c RT}
+  1. {c |} {res}Geographic Area Name {txt}{c |}
+     {c BLC}{hline 22}{c BRC}
+
+{com}. describe
+
+{txt}Contains data
+ Observations:{res}            52                  
+{txt}    Variables:{res}             6                  
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:geo_id         }{txt}{bind: str11   }{bind:%11s      }{space 1}{bind:         }{bind:  }{res}{res}GEO_ID{p_end}
+{p 0 48}{bind:name           }{txt}{bind: str20   }{bind:%20s      }{space 1}{bind:         }{bind:  }{res}{res}NAME{p_end}
+{p 0 48}{bind:b19013_001e    }{txt}{bind: strL    }{bind:%9s       }{space 1}{bind:         }{bind:  }{res}{res}B19013_001E{p_end}
+{p 0 48}{bind:b19013_001m    }{txt}{bind: strL    }{bind:%9s       }{space 1}{bind:         }{bind:  }{res}{res}B19013_001M{p_end}
+{p 0 48}{bind:v5             }{txt}{bind: byte    }{bind:%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:statefips      }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{txt}{hline}
+Sorted by: 
+     Note: {res}Dataset has changed since last saved.
+
+{com}. drop if name == "Geographic Area Name"
+{txt}(1 observation deleted)
+
+{com}. tab statefips
+
+  {txt}statefips {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}          1        1.96        1.96
+{txt}          2 {c |}{res}          1        1.96        3.92
+{txt}          4 {c |}{res}          1        1.96        5.88
+{txt}          5 {c |}{res}          1        1.96        7.84
+{txt}          6 {c |}{res}          1        1.96        9.80
+{txt}          8 {c |}{res}          1        1.96       11.76
+{txt}          9 {c |}{res}          1        1.96       13.73
+{txt}         10 {c |}{res}          1        1.96       15.69
+{txt}         11 {c |}{res}          1        1.96       17.65
+{txt}         12 {c |}{res}          1        1.96       19.61
+{txt}         13 {c |}{res}          1        1.96       21.57
+{txt}         15 {c |}{res}          1        1.96       23.53
+{txt}         16 {c |}{res}          1        1.96       25.49
+{txt}         17 {c |}{res}          1        1.96       27.45
+{txt}         18 {c |}{res}          1        1.96       29.41
+{txt}         19 {c |}{res}          1        1.96       31.37
+{txt}         20 {c |}{res}          1        1.96       33.33
+{txt}         21 {c |}{res}          1        1.96       35.29
+{txt}         22 {c |}{res}          1        1.96       37.25
+{txt}         23 {c |}{res}          1        1.96       39.22
+{txt}         24 {c |}{res}          1        1.96       41.18
+{txt}         25 {c |}{res}          1        1.96       43.14
+{txt}         26 {c |}{res}          1        1.96       45.10
+{txt}         27 {c |}{res}          1        1.96       47.06
+{txt}         28 {c |}{res}          1        1.96       49.02
+{txt}         29 {c |}{res}          1        1.96       50.98
+{txt}         30 {c |}{res}          1        1.96       52.94
+{txt}         31 {c |}{res}          1        1.96       54.90
+{txt}         32 {c |}{res}          1        1.96       56.86
+{txt}         33 {c |}{res}          1        1.96       58.82
+{txt}         34 {c |}{res}          1        1.96       60.78
+{txt}         35 {c |}{res}          1        1.96       62.75
+{txt}         36 {c |}{res}          1        1.96       64.71
+{txt}         37 {c |}{res}          1        1.96       66.67
+{txt}         38 {c |}{res}          1        1.96       68.63
+{txt}         39 {c |}{res}          1        1.96       70.59
+{txt}         40 {c |}{res}          1        1.96       72.55
+{txt}         41 {c |}{res}          1        1.96       74.51
+{txt}         42 {c |}{res}          1        1.96       76.47
+{txt}         44 {c |}{res}          1        1.96       78.43
+{txt}         45 {c |}{res}          1        1.96       80.39
+{txt}         46 {c |}{res}          1        1.96       82.35
+{txt}         47 {c |}{res}          1        1.96       84.31
+{txt}         48 {c |}{res}          1        1.96       86.27
+{txt}         49 {c |}{res}          1        1.96       88.24
+{txt}         50 {c |}{res}          1        1.96       90.20
+{txt}         51 {c |}{res}          1        1.96       92.16
+{txt}         53 {c |}{res}          1        1.96       94.12
+{txt}         54 {c |}{res}          1        1.96       96.08
+{txt}         55 {c |}{res}          1        1.96       98.04
+{txt}         56 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. codebook statefips
+
+{txt}{hline}
+{res}statefips{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}float{txt})
+
+{col 18}Range: [{res}1{txt},{res}56{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}51{col 51}{txt}Missing .: {res}0{txt}/{res}51
+
+{txt}{col 19}Mean: {res}{ralign 7:28.9608}
+{txt}{col 14}Std. dev.: {res}{ralign 7:15.8328}
+
+{txt}{col 12}Percentiles: {col 25}{ralign 7:10%}{ralign 10:25%}{ralign 10:50%}{ralign 10:75%}{ralign 10:90%}
+{res}{col 25}{ralign 7:8}{ralign 10:      16}{ralign 10:      29}{ralign 10:      42}{ralign 10:      50}
+
+{com}. rename name statename
+{res}
+{com}. tab b19013_001e
+
+{txt}B19013_001E {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+      39464 {c |}{res}          1        1.96        1.96
+{txt}      41264 {c |}{res}          1        1.96        3.92
+{txt}      41576 {c |}{res}          1        1.96        5.88
+{txt}      43342 {c |}{res}          1        1.96        7.84
+{txt}      43511 {c |}{res}          1        1.96        9.80
+{txt}      44621 {c |}{res}          1        1.96       11.76
+{txt}      44968 {c |}{res}          1        1.96       13.73
+{txt}      44991 {c |}{res}          1        1.96       15.69
+{txt}      45033 {c |}{res}          1        1.96       17.65
+{txt}      46235 {c |}{res}          1        1.96       19.61
+{txt}      46693 {c |}{res}          1        1.96       21.57
+{txt}      46766 {c |}{res}          1        1.96       23.53
+{txt}      47212 {c |}{res}          1        1.96       25.49
+{txt}      47334 {c |}{res}          1        1.96       27.45
+{txt}      47764 {c |}{res}          1        1.96       29.41
+{txt}      48737 {c |}{res}          1        1.96       31.37
+{txt}      48804 {c |}{res}          1        1.96       33.33
+{txt}      48849 {c |}{res}          1        1.96       35.29
+{txt}      49087 {c |}{res}          1        1.96       37.25
+{txt}      49342 {c |}{res}          1        1.96       39.22
+{txt}      49928 {c |}{res}          1        1.96       41.18
+{txt}      50338 {c |}{res}          1        1.96       43.14
+{txt}      50521 {c |}{res}          1        1.96       45.10
+{txt}      51872 {c |}{res}          1        1.96       47.06
+{txt}      52205 {c |}{res}          1        1.96       49.02
+{txt}      52400 {c |}{res}          1        1.96       50.98
+{txt}      52576 {c |}{res}          1        1.96       52.94
+{txt}      52716 {c |}{res}          1        1.96       54.90
+{txt}      52738 {c |}{res}          1        1.96       56.86
+{txt}      53115 {c |}{res}          1        1.96       58.82
+{txt}      54447 {c |}{res}          1        1.96       60.78
+{txt}      55579 {c |}{res}          1        1.96       62.75
+{txt}      56423 {c |}{res}          1        1.96       64.71
+{txt}      57166 {c |}{res}          1        1.96       66.67
+{txt}      58252 {c |}{res}          1        1.96       68.63
+{txt}      58687 {c |}{res}          1        1.96       70.59
+{txt}      59448 {c |}{res}          1        1.96       72.55
+{txt}      59846 {c |}{res}          1        1.96       74.51
+{txt}      60231 {c |}{res}          1        1.96       76.47
+{txt}      60294 {c |}{res}          1        1.96       78.43
+{txt}      60828 {c |}{res}          1        1.96       80.39
+{txt}      61489 {c |}{res}          1        1.96       82.35
+{txt}      64792 {c |}{res}          1        1.96       84.31
+{txt}      65986 {c |}{res}          1        1.96       86.27
+{txt}      67846 {c |}{res}          1        1.96       88.24
+{txt}      68201 {c |}{res}          1        1.96       90.20
+{txt}      69235 {c |}{res}          1        1.96       92.16
+{txt}      69899 {c |}{res}          1        1.96       94.12
+{txt}      71829 {c |}{res}          1        1.96       96.08
+{txt}      72062 {c |}{res}          1        1.96       98.04
+{txt}      74149 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. tab b19013_001m
+
+{txt}B19013_001M {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+       1127 {c |}{res}          1        1.96        1.96
+{txt}        147 {c |}{res}          1        1.96        3.92
+{txt}        154 {c |}{res}          1        1.96        5.88
+{txt}        159 {c |}{res}          1        1.96        7.84
+{txt}        162 {c |}{res}          1        1.96        9.80
+{txt}        163 {c |}{res}          1        1.96       11.76
+{txt}        191 {c |}{res}          1        1.96       13.73
+{txt}        192 {c |}{res}          1        1.96       15.69
+{txt}        201 {c |}{res}          2        3.92       19.61
+{txt}        203 {c |}{res}          1        1.96       21.57
+{txt}        206 {c |}{res}          1        1.96       23.53
+{txt}        207 {c |}{res}          1        1.96       25.49
+{txt}        215 {c |}{res}          1        1.96       27.45
+{txt}        226 {c |}{res}          1        1.96       29.41
+{txt}        234 {c |}{res}          1        1.96       31.37
+{txt}        237 {c |}{res}          1        1.96       33.33
+{txt}        239 {c |}{res}          1        1.96       35.29
+{txt}        240 {c |}{res}          1        1.96       37.25
+{txt}        244 {c |}{res}          1        1.96       39.22
+{txt}        245 {c |}{res}          1        1.96       41.18
+{txt}        249 {c |}{res}          1        1.96       43.14
+{txt}        254 {c |}{res}          1        1.96       45.10
+{txt}        265 {c |}{res}          1        1.96       47.06
+{txt}        266 {c |}{res}          1        1.96       49.02
+{txt}        271 {c |}{res}          1        1.96       50.98
+{txt}        274 {c |}{res}          1        1.96       52.94
+{txt}        302 {c |}{res}          1        1.96       54.90
+{txt}        306 {c |}{res}          1        1.96       56.86
+{txt}        312 {c |}{res}          1        1.96       58.82
+{txt}        329 {c |}{res}          1        1.96       60.78
+{txt}        330 {c |}{res}          1        1.96       62.75
+{txt}        334 {c |}{res}          1        1.96       64.71
+{txt}        355 {c |}{res}          1        1.96       66.67
+{txt}        387 {c |}{res}          1        1.96       68.63
+{txt}        392 {c |}{res}          1        1.96       70.59
+{txt}        395 {c |}{res}          1        1.96       72.55
+{txt}        419 {c |}{res}          1        1.96       74.51
+{txt}        436 {c |}{res}          1        1.96       76.47
+{txt}        444 {c |}{res}          1        1.96       78.43
+{txt}        481 {c |}{res}          1        1.96       80.39
+{txt}        502 {c |}{res}          1        1.96       82.35
+{txt}        520 {c |}{res}          1        1.96       84.31
+{txt}        546 {c |}{res}          1        1.96       86.27
+{txt}        555 {c |}{res}          1        1.96       88.24
+{txt}        601 {c |}{res}          1        1.96       90.20
+{txt}        679 {c |}{res}          1        1.96       92.16
+{txt}        682 {c |}{res}          1        1.96       94.12
+{txt}        735 {c |}{res}          1        1.96       96.08
+{txt}        753 {c |}{res}          1        1.96       98.04
+{txt}        788 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. rename b19013_001e medianinc
+{res}
+{com}. rename b19013_001m moe
+{res}
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340 (1)\Median income data cleaning.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 3 Dec 2025, 21:18:15
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

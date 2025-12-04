@@ -1,0 +1,28 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Scatterplot and pwcorr for trthh and medianinc.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 3 Dec 2025, 22:07:31
+
+{com}. scatter trthh medianinc , mlabel(statename) title("Parental Investment vs Average Income By State") xtitle("Average median income per state (medianinc)") ytitle("Parental Investment (trthh)")
+{res}
+{com}. pwcorr trthh medianinc , sig
+
+             {txt}{c |}    trthh median~c
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+   medianinc {c |} {res}  0.1122   1.0000 
+             {txt}{c |}{res}   0.4330
+             {txt}{c |}
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Scatterplot and pwcorr for trthh and medianinc.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 3 Dec 2025, 22:07:49
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

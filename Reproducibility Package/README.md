@@ -10,7 +10,8 @@ and scroll down until you see  ATUS 2014 Roster file (zip), ATUS 2014 Activity s
 
 - We have stored the data in GitHub under multiple links, The Equality of
 opportunity data is stored on GitHub, under the name ”countycohorttrends.dta”GitHub link as well as ATUS DataOur merged data set is stored on GitHub under Merged data
-- [Data for the state average](https://github.com/ecn310/course-project-parent/blob/b82431925b57fc874984ab54861da141ad84abbd/Reproducibility%20Package/Data/ACSDT5Y2014.B19013_2025-12-03T153340.zip)
+
+- [Where to get the state data](https://data.census.gov/table?q=table+B19013&g=010XX00US$0400000_040XX00US01,02,04,05,06,08,09,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,53,54,55,56&y=2014)
 
 ### Data Manipulation
 
@@ -34,6 +35,7 @@ data from string to double byte data storage type, to get results which showed t
 - [ATUS rost 2014](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/ATUS%20RAW/atusrost_2014_RAW.zip)
 - [OPA county cohorts trends](https://github.com/ecn310/course-project-parent/blob/0d51bb982c575758de43cf34db5d9b5236805036/Working%20Data/county_cohort_trends.dta)
 - [OPA data?](https://github.com/ecn310/course-project-parent/tree/0d51bb982c575758de43cf34db5d9b5236805036/Opportunity%20Atlas%20Data)
+- [State income data](https://github.com/ecn310/course-project-parent/blob/95bc75d6e2d24e675516d497e71ab15b8ddee240/Reproducibility%20Package/Data/ACSDT5Y2014.B19013_2025-12-03T153340.zip)
 
 ### Analysis data/.do Files 
 

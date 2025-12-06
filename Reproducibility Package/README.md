@@ -21,8 +21,9 @@ opportunity data is stored on GitHub, under the name ‚Äùcountycohorttrends.dta‚Ä
 - Organized ATUS data and appended all of the stata microfiles together along with the CPS data which has participants identify their state Fips code.[ATUS Merge .do](https://github.com/ecn310/course-project-parent/blob/19fd53165ae5ca635d1ee09edeff39273e1d4487/Working%20Data/ATUS%20Fully%20Merged/ATUSCPSmerged.do)
 - We then used the Fips code to merge the ATUS data along with the Equality of opportunity data because it also contains the Fips code for the state that each county is in.[ATUS+TOA county data merge.do](https://github.com/ecn310/course-project-parent/blob/b47d768014896da679cf570fb0da139a7cbb1d51/Working%20Data/merge%20how%20to)
 - What we ended up with was a fully combined data set with the variable of child income at age 24 for children born in the 25th+75th percentile as our indicator of intergenerational mobility in each state.
-- We then added the state income average data for the year 2014 by mergeing data from the Census Bureau. [Log for merging](https://github.com/ecn310/course-project-parent/blob/main/Reproducibility%20Package/Code/Log%20for%20merging%20adding%20median%20income.smcl)
+- We then added the state income average data for the year 2014 by merging data from the Census Bureau. [Log for merging](https://github.com/ecn310/course-project-parent/blob/main/Reproducibility%20Package/Code/Log%20for%20merging%20adding%20median%20income.smcl)
 - [Master do. file](https://github.com/ecn310/course-project-parent/blob/1b50d5ef893f0fc3d393899add9c4ba14b1f2cc9/Reproducibility%20Package/Code/Master%20Do-file%20for%20Merging%20Datasets%202.do) that complies all the prior .dos
+- [Codebook](https://github.com/ecn310/course-project-parent/blob/main/Reproducibility%20Package/Code/Codebook.xlsx) for variable of fully combinded data set  
 
 
 ### Raw Data Links on GitHub

@@ -10,6 +10,7 @@ and scroll down until you see  ATUS 2014 Roster file (zip), ATUS 2014 Activity s
 
 - We have stored the data in GitHub under multiple links, The Equality of
 opportunity data is stored on GitHub, under the name ”countycohorttrends.dta”GitHub link as well as ATUS DataOur merged data set is stored on GitHub under Merged data
+- [Data for the state average](https://github.com/ecn310/course-project-parent/blob/b82431925b57fc874984ab54861da141ad84abbd/Reproducibility%20Package/Data/ACSDT5Y2014.B19013_2025-12-03T153340.zip)
 
 ### Data Manipulation
 
@@ -24,6 +25,7 @@ data from string to double byte data storage type, to get results which showed t
 - We then used the Fips code to merge the ATUS data along with the Equality of opportunity data because it also contains the Fips code for the state that each county is in.[ATUS+TOA county data merge.do](https://github.com/ecn310/course-project-parent/blob/b47d768014896da679cf570fb0da139a7cbb1d51/Working%20Data/merge%20how%20to)
 - We had to take the mean of each county in each state to be able to merge the Equality of Opportunity data along with the ATUS data.
 - What we ended up with was a fully combined data set with the variable of child income at age 24 for children born in the 25th+75th percentile as our indicator of intergenerational mobility in each state.
+
 
 ### Raw Data Links on GitHub
 

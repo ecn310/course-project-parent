@@ -11,7 +11,7 @@ and scroll down until you see  ATUS 2014 Roster file (zip), ATUS 2014 Activity s
 - We have stored the data in GitHub under multiple links, The Equality of
 opportunity data is stored on GitHub, under the name ”countycohorttrends.dta”GitHub link as well as ATUS DataOur merged data set is stored on GitHub under Merged data
 
-- [Where to get the state data](https://data.census.gov/table?q=table+B19013&g=010XX00US$0400000_040XX00US01,02,04,05,06,08,09,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,53,54,55,56&y=2014)
+- [Where to get the average state data](https://data.census.gov/table?q=table+B19013&g=010XX00US$0400000_040XX00US01,02,04,05,06,08,09,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,53,54,55,56&y=2014)
 
 ### Data Manipulation
 
@@ -26,6 +26,7 @@ data from string to double byte data storage type, to get results which showed t
 - We then used the Fips code to merge the ATUS data along with the Equality of opportunity data because it also contains the Fips code for the state that each county is in.[ATUS+TOA county data merge.do](https://github.com/ecn310/course-project-parent/blob/b47d768014896da679cf570fb0da139a7cbb1d51/Working%20Data/merge%20how%20to)
 - We had to take the mean of each county in each state to be able to merge the Equality of Opportunity data along with the ATUS data.
 - What we ended up with was a fully combined data set with the variable of child income at age 24 for children born in the 25th+75th percentile as our indicator of intergenerational mobility in each state.
+- Then we added the state income average data and made a [Master do. file](https://github.com/ecn310/course-project-parent/blob/1b50d5ef893f0fc3d393899add9c4ba14b1f2cc9/Reproducibility%20Package/Code/Master%20Do-file%20for%20Merging%20Datasets%202.do) that complies all the prior .dos
 
 
 ### Raw Data Links on GitHub

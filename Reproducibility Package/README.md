@@ -23,7 +23,16 @@ opportunity data is stored on GitHub, under the name ‚Äùcountycohorttrends.dta‚Ä
 - What we ended up with was a fully combined data set with the variable of child income at age 24 for children born in the 25th+75th percentile as our indicator of intergenerational mobility in each state.
 - We then added the state income average data for the year 2014 by merging data from the Census Bureau. [Log for merging](https://github.com/ecn310/course-project-parent/blob/main/Reproducibility%20Package/Code/Log%20for%20merging%20adding%20median%20income.smcl)
 - [Master do. file](https://github.com/ecn310/course-project-parent/blob/1b50d5ef893f0fc3d393899add9c4ba14b1f2cc9/Reproducibility%20Package/Code/Master%20Do-file%20for%20Merging%20Datasets%202.do) that complies all the prior .dos
-- [Codebook](https://github.com/ecn310/course-project-parent/blob/main/Reproducibility%20Package/Code/Codebook.xlsx) for variable of fully combinded data set  
+
+### Codebook
+- Codebook for variables of fully combinded data set
+
+| Variable names | Variable description                                                                                          |
+|----------------|---------------------------------------------------------------------------------------------------------------|
+| statefips      | State Federal Information Processing Standard (FIPS) code                                                     |
+| perm75_popw    | Born into 75% income rank at age 24 weighted by population                                                                        |
+| perm25_popw    | Born into 25% income rank at age 24  weighted by population                                                                         |
+ 
 
 
 ### Raw Data Links on GitHub

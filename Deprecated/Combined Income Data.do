@@ -4,7 +4,7 @@
 cd "C:\Users\yeachanc\OneDrive - Syracuse University\Documents\Econ files\DO"   // <-- Replace with your actual folder path
 
 *******************************************************
-* STEP 2: Import each sheet, add gender & percentile
+* STEP 2: Import each sheet, add gender & percentile 
 *******************************************************
 
 * Male - 1st percentile

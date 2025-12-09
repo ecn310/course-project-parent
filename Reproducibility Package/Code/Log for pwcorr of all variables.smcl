@@ -1,0 +1,75 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Log for pwcorr of all variables.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 8 Dec 2025, 23:28:10
+
+{com}. pwcorr trthh perm25_popw, sig
+
+             {txt}{c |}    trthh perm25~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm25_popw {c |} {res} -0.2292   1.0000 
+             {txt}{c |}{res}   0.1056
+             {txt}{c |}
+
+{com}. pwcorr trthh perm75_popw, sig
+
+             {txt}{c |}    trthh perm75~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm75_popw {c |} {res} -0.2772   1.0000 
+             {txt}{c |}{res}   0.0489
+             {txt}{c |}
+
+{com}. ttest trthh, by(highmob75)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     26{col 22} 190.9186{col 34} 7.414292{col 46} 37.80562{col 58} 175.6486{col 70} 206.1886
+       {txt}1 {c |}{res}{col 12}     25{col 22} 173.4965{col 34} 7.117724{col 46} 35.58862{col 58} 158.8062{col 70} 188.1868
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     51{col 22} 182.3783{col 34} 5.239268{col 46} 37.41586{col 58}  171.855{col 70} 192.9017
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 17.42208{col 34} 10.29025{col 58}-3.256945{col 70}  38.1011
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  1.6931
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      49
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.9516         {txt}Pr(|T| > |t|) = {res}0.0968          {txt}Pr(T > t) = {res}0.0484
+
+{com}. ttest trthh, by(highmob25)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     26{col 22} 189.9666{col 34} 7.563371{col 46} 38.56578{col 58} 174.3896{col 70} 205.5437
+       {txt}1 {c |}{res}{col 12}     25{col 22} 174.4866{col 34} 7.042751{col 46} 35.21376{col 58}  159.951{col 70} 189.0221
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     51{col 22} 182.3783{col 34} 5.239268{col 46} 37.41586{col 58}  171.855{col 70} 192.9017
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 15.48006{col 34} 10.35341{col 58}-5.325903{col 70} 36.28602
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  1.4952
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      49
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.9294         {txt}Pr(|T| > |t|) = {res}0.1413          {txt}Pr(T > t) = {res}0.0706
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Log for pwcorr of all variables.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 8 Dec 2025, 23:28:38
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

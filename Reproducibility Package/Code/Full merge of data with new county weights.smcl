@@ -1,0 +1,45 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\Full merge of data with new county weights.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}10 Dec 2025, 14:00:41
+
+{com}. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Merged_data for merge.dta"
+
+. drop _merge
+
+. merge m:1 statefips using "C:\Users\oalevesq\OneDrive - Syracuse University\Desktop\County trends with county population weights.dta"
+{res}
+{txt}{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}          69,145{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+
+. merge m:1 statefips using "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\Median income data.dta"
+{res}{txt}{p 0 7 2}
+(variable
+{bf:statefips} was {bf:byte}, now {bf:float} to accommodate using data's values)
+{p_end}
+
+{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}          69,145{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. label variable perm75_popw "Born into 75% rank at 24 age"
+
+. label variable perm25_popw "Born into 25% rank at 24 age"
+
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\Full merge of data with new county weights.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}10 Dec 2025, 14:01:41
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

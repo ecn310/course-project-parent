@@ -15,3 +15,4 @@ label variable txsex "TESEX: allocation flag"
 
 ** Save to own computer to prepare for merging the  ATUS datasets 
 save "AtusROST_2014_.dta"
+clear

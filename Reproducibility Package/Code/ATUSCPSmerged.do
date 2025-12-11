@@ -8,4 +8,3 @@ rename gestfips statefips
 
 ** Save fully merged data set
 save "merged_data.dta", replace
-clear 

@@ -6,7 +6,7 @@
 - To access the US Census Bureau data for state median income, go to the [USCB data webpage](https://data.census.gov/). In the search bar on the site, look up table B19013. Then select the first option, "B19013 Median Household Income in the Past 12 Months (in 2024 Inflation-Adjusted Dollars)." On the left side, click on the "Filters" dropdown. In the Geographies section, select "State," then select "All States within United States, Puerto Rico, and the Island Areas." In the same sidebar, go to "Years" and select 2014. Then select the "Download" tab in the top right corner, choose the zip option, deselect "ACS 1-Year," and select "All" for "ACS 5-Year Estimates Detailed Tables." Download the dataset, unzip the downloaded file, and save the file ACSDT5Y2014.B19013-Data to the Parent folder under the same name.
 
 
-If any of these links are broken or the data structure has changed, please refer to our [Reproducibility Package/data](https://github.com/ecn310/course-project-parent/tree/d116ca93dff31a955c9a473530b0efcb99a3db3d/Reproducibility%20Package/Data) where archived copies are available.
+If any of these links are broken or the data structure has changed, please refer to our [Reproducibility Package/data](https://github.com/ecn310/course-project-parent/tree/287284051150ed3024de99105c467d853ef8aa41/Reproducibility%20Package/Data) where archived copies are available.
 
 
 ### Data Manipulation

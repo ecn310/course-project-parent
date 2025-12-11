@@ -1,9 +1,6 @@
 **Open Atus merged variable
 use "merged_data.dta"
 
-** Drop _merge data 
-drop _merge
-
 ** Merge the two sets on the statefips variable
 merge m:1 statefips using "County_cohort_trends with population weights.dta"
 
@@ -19,7 +16,9 @@ collapse (mean) trthh perm25_popw perm75_popw medianinc , by(statefips)
 ** Label the new variables
 label variable perm75_popw "Born into 75% rank at 24 age"
 label variable perm25_popw "Born into 25% rank at 24 age"
-
+label variable trthh "Total time spent providing childcare"
+label variable medianinc "State Median Income"
 
 ** Save finished data set to use for analysis
+
 save "Merged,Weighed,Labled.dta"

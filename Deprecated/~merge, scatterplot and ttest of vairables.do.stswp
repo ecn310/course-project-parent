@@ -1,0 +1,23 @@
+. use "C:\Users\oalevesq\Downloads\county_cohort_trends.dta"
+. collapse (mean) perm_res_p25_kr24, by(state_id)
+. codebook state_id
+codebook perm_res_p25_kr24
+rename state_id statefips
+ save "C:\Users\oalevesq\Downloads\New county_cohort_trends.dta"
+file C:\Users\oalevesq\Downloads\New county_cohort_trends.dta saved
+. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\merged_data.dta"
+. rename gestfips statefips
+. save "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\merged_data.dta", replace
+file C:\Users\oalevesq\OneDrive - Syracuse University\Documents\merged_data.dta saved
+drop _merge
+merge m:1 statefips using "C:\Users\oalevesq\Downloads\New county_cohort_trends.dta"
+. describe trthh perm_res_p25_kr24 statefips
+. collapse (mean) trthh perm_res_p25_kr24, by(statefips)
+scatter trthh perm_res_p25_kr24, title("Parental Investment vs Intergenerational Mobility") xtitle("Intergenerational Mobility (perm_res_p25_kr24)") ytitle("Parental Investment (trthh)") mlabel(statefips)
+. graph save "Graph" "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Intergenerational mobility vs parental investment.gph"
+file C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Intergenerational mobility vs parental investment.gph saved
+gen hmob = (perm_res_p25_kr24 > r(p50))
+. tabulate hmob
+bysort hmob: summarize trthh perm_res_p25_kr24
+ttest trthh, by(hmob)
+

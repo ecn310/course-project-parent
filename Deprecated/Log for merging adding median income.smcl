@@ -1,0 +1,87 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Log for merging adding median income.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 3 Dec 2025, 21:24:24
+
+{com}. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\New Merged Dataset weighted by population.dta"
+
+. merge 1:1 statefips using "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340 (1)\median income data 2014.dta"
+{res}{txt}{p 0 7 2}
+(variable
+{bf:statefips} was {bf:byte}, now {bf:float} to accommodate using data's values)
+{p_end}
+
+{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}              51{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. tab medianinc
+
+{txt}B19013_001E {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+      39464 {c |}{res}          1        1.96        1.96
+{txt}      41264 {c |}{res}          1        1.96        3.92
+{txt}      41576 {c |}{res}          1        1.96        5.88
+{txt}      43342 {c |}{res}          1        1.96        7.84
+{txt}      43511 {c |}{res}          1        1.96        9.80
+{txt}      44621 {c |}{res}          1        1.96       11.76
+{txt}      44968 {c |}{res}          1        1.96       13.73
+{txt}      44991 {c |}{res}          1        1.96       15.69
+{txt}      45033 {c |}{res}          1        1.96       17.65
+{txt}      46235 {c |}{res}          1        1.96       19.61
+{txt}      46693 {c |}{res}          1        1.96       21.57
+{txt}      46766 {c |}{res}          1        1.96       23.53
+{txt}      47212 {c |}{res}          1        1.96       25.49
+{txt}      47334 {c |}{res}          1        1.96       27.45
+{txt}      47764 {c |}{res}          1        1.96       29.41
+{txt}      48737 {c |}{res}          1        1.96       31.37
+{txt}      48804 {c |}{res}          1        1.96       33.33
+{txt}      48849 {c |}{res}          1        1.96       35.29
+{txt}      49087 {c |}{res}          1        1.96       37.25
+{txt}      49342 {c |}{res}          1        1.96       39.22
+{txt}      49928 {c |}{res}          1        1.96       41.18
+{txt}      50338 {c |}{res}          1        1.96       43.14
+{txt}      50521 {c |}{res}          1        1.96       45.10
+{txt}      51872 {c |}{res}          1        1.96       47.06
+{txt}      52205 {c |}{res}          1        1.96       49.02
+{txt}      52400 {c |}{res}          1        1.96       50.98
+{txt}      52576 {c |}{res}          1        1.96       52.94
+{txt}      52716 {c |}{res}          1        1.96       54.90
+{txt}      52738 {c |}{res}          1        1.96       56.86
+{txt}      53115 {c |}{res}          1        1.96       58.82
+{txt}      54447 {c |}{res}          1        1.96       60.78
+{txt}      55579 {c |}{res}          1        1.96       62.75
+{txt}      56423 {c |}{res}          1        1.96       64.71
+{txt}      57166 {c |}{res}          1        1.96       66.67
+{txt}      58252 {c |}{res}          1        1.96       68.63
+{txt}      58687 {c |}{res}          1        1.96       70.59
+{txt}      59448 {c |}{res}          1        1.96       72.55
+{txt}      59846 {c |}{res}          1        1.96       74.51
+{txt}      60231 {c |}{res}          1        1.96       76.47
+{txt}      60294 {c |}{res}          1        1.96       78.43
+{txt}      60828 {c |}{res}          1        1.96       80.39
+{txt}      61489 {c |}{res}          1        1.96       82.35
+{txt}      64792 {c |}{res}          1        1.96       84.31
+{txt}      65986 {c |}{res}          1        1.96       86.27
+{txt}      67846 {c |}{res}          1        1.96       88.24
+{txt}      68201 {c |}{res}          1        1.96       90.20
+{txt}      69235 {c |}{res}          1        1.96       92.16
+{txt}      69899 {c |}{res}          1        1.96       94.12
+{txt}      71829 {c |}{res}          1        1.96       96.08
+{txt}      72062 {c |}{res}          1        1.96       98.04
+{txt}      74149 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Log for merging adding median income.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 3 Dec 2025, 21:24:45
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

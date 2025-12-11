@@ -1,0 +1,146 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\New merge with population weight.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Dec 2025, 17:30:29
+
+{com}. use "C:\Users\oalevesq\Downloads\county_cohort_trends.dta"
+
+. egen rank_popw = mean(rank) [fw=pop], by(state_id)
+{err}weights not allowed
+{txt}{search r(101), local:r(101);}
+
+{com}. gen w_perm25 = perm_res_p25_kr24 * cz_pop2000
+{txt}(16,177 missing values generated)
+
+{com}. 
+. gen w_perm75 = perm_res_p75_kr24 * cz_pop2000
+{txt}(16,177 missing values generated)
+
+{com}. collapse (sum) w_perm25 w_perm75 cz_pop2000, by(state_id)
+{res}
+{com}. gen perm25_popw = w_perm25 / cz_pop2000
+
+. 
+. gen perm75_popw = w_perm75 / cz_pop2000
+
+. rename state_id statefips
+{res}
+{com}. codebook perm25_popw
+
+{txt}{hline}
+{res}perm25_popw{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}float{txt})
+
+{col 18}Range: [{res}6.9820566{txt},{res}49.827114{txt}]{col 55}Units: {res}1.000e-07
+{col 10}{txt}Unique values: {res}51{col 51}{txt}Missing .: {res}0{txt}/{res}51
+
+{txt}{col 19}Mean: {res}{ralign 7:32.3858}
+{txt}{col 14}Std. dev.: {res}{ralign 7:12.1496}
+
+{txt}{col 12}Percentiles: {col 25}{ralign 7:10%}{ralign 10:25%}{ralign 10:50%}{ralign 10:75%}{ralign 10:90%}
+{res}{col 25}{ralign 7:16.9321}{ralign 10: 19.9896}{ralign 10: 30.6215}{ralign 10: 43.8181}{ralign 10: 47.5962}
+
+{com}. codebook cz_pop2000
+
+{txt}{hline}
+{res}cz_pop2000{right:(sum) cz_pop2000}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}double{txt})
+
+{col 18}Range: [{res}9559188{txt},{res}1.493e+09{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}51{col 51}{txt}Missing .: {res}0{txt}/{res}51
+
+{txt}{col 19}Mean: {res}{ralign 7:3.6e+08}
+{txt}{col 14}Std. dev.: {res}{ralign 7:3.8e+08}
+
+{txt}{col 12}Percentiles: {col 25}{ralign 7:10%}{ralign 10:25%}{ralign 10:50%}{ralign 10:75%}{ralign 10:90%}
+{res}{col 25}{ralign 7:2.8e+07}{ralign 10: 7.4e+07}{ralign 10: 2.4e+08}{ralign 10: 4.4e+08}{ralign 10: 9.0e+08}
+
+{com}. save "C:\Users\oalevesq\Downloads\County_cohort_trends with population weights.dta"
+{txt}{p 0 4 2}
+file {bf}
+C:\Users\oalevesq\Downloads\County_cohort_trends with population weights.dta{rm}
+saved
+{p_end}
+
+{com}. use "C:\Users\oalevesq\Downloads\merged_data.dta"
+
+. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\merged_data.dta"
+
+. clear
+
+. use "C:\Users\oalevesq\Downloads\atuscps_2014_\atuscps_2014_.dta", clear
+{err}{p 0 4 2}
+file {bf:{err}C:\Users\oalevesq\Downloads\atuscps_2014_\atuscps_2014_.dta}
+not found
+{p_end}
+{txt}{search r(601), local:r(601);}
+
+{com}. 
+. merge m:1 tucaseid using "C:\Users\oalevesq\Downloads\atussum_2014_.dta"
+{res}{err}no variables defined
+{txt}{search r(111), local:r(111);}
+
+{com}. 
+. rename _merge _merge_old
+{res}{err}no variables defined
+{txt}{search r(111), local:r(111);}
+
+{com}. 
+. merge m:m tucaseid using "C:\Users\oalevesq\Downloads\atusrost_2014_.dta"
+{res}{err}no variables defined
+{txt}{search r(111), local:r(111);}
+
+{com}. 
+. save "merged_data.dta", replace
+{err}no variables defined
+{txt}{search r(111), local:r(111);}
+
+{com}. use "C:\Users\oalevesq\AppData\Local\Temp\44b9c27f-9e67-47b7-b770-57a875b2382b_merged_data (1).zip.merged_data (1).zip\merged_data.dta" 
+{err}{p 0 4 2}
+file {bf:{err}C:\Users\oalevesq\AppData\Local\Temp\44b9c27f-9e67-47b7-b770-57a875b2382b_merged_data (1).zip.merged_data (1).zip\merged_data.dta}
+not found
+{p_end}
+{txt}{search r(601), local:r(601);}
+
+{com}. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Merged_data for merge.dta"
+
+. drop _merge
+
+. merge m:1 statefips using "C:\Users\oalevesq\Downloads\County_cohort_trends with population weights.dta"
+{res}
+{txt}{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}          69,145{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. describe trthh perm_res_p25_kr24 statefips
+
+{txt}Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:trthh          }{txt}{bind: int     }{bind:%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}Total time spent during diary day providing secondary childcare for household ch{p_end}
+{p 0 48}{bind:perm_res_p25~24}{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}(mean) perm_res_p25_kr24{p_end}
+{p 0 48}{bind:statefips      }{txt}{bind: byte    }{bind:%8.0g     }{space 1}{bind:         }{bind:  }{res}{res}Federal Processing Information Standards (FIPS) state code{p_end}
+
+{com}. collapse (sum) w_perm25 w_perm75 cz_pop2000, by(statefips)
+{res}
+{com}. gen perm25_popw = w_perm25 / cz_pop2000
+
+. 
+. gen perm75_popw = w_perm75 / cz_pop2000
+
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\New merge with population weight.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Dec 2025, 17:51:21
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

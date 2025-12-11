@@ -2,6 +2,8 @@
 
 
 ***Fill in any file path with your own personal one from the downloaded data on github 
+*** Open log
+log using Master Log
 
 *1. Open in stata 18 
 version 18
@@ -38,3 +40,7 @@ do "MergeATUS-TOA-STATE.do"
 do "State labled, Hist, and Scatter (Weighted data).do"
 *** Creates  high mobility indicator (above median) variables for ttest 
 do "Ttest.do"
+
+***Close log 
+log close
+

@@ -391,4 +391,6 @@ label variable pxpdemp2 "PEPDEMP2: allocation flag"
 label variable pxnmemp2 "PTNMEMP2: allocation flag"
 
 ** Save to own computer to prepare for mergeing the 2 ATUS datasets 
+
 save "AtusCPS_2014_.dta"
+clear 

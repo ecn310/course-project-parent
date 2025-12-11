@@ -10,6 +10,9 @@ drop _merge
 ** Merge State data 
 merge m:1 statefips using "Updated data set with median income.dta"
 
+** Remove extra state added
+keep if _merge == 3
+
 ** Collapse non-needed variables
 collapse (mean) trthh perm25_popw perm75_popw medianinc , by(statefips)
 
@@ -22,3 +25,4 @@ label variable medianinc "State Median Income"
 ** Save finished data set to use for analysis
 
 save "Merged,Weighed,Labled.dta"
+

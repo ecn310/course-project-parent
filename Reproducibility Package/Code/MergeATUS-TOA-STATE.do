@@ -1,6 +1,9 @@
 **Open Atus merged variable
 use "merged_data.dta"
 
+**Drop _merge variable
+drop _merge
+
 ** Merge the two sets on the statefips variable
 merge m:1 statefips using "County_cohort_trends with population weights.dta"
 
@@ -25,4 +28,5 @@ label variable medianinc "State Median Income"
 ** Save finished data set to use for analysis
 
 save "Merged,Weighed,Labled.dta"
+
 

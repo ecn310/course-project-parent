@@ -1,9 +1,10 @@
 * Master Do-file for Reproducibility Package 
 
-** This .do is made for Stata version 18.0
+
 
 ***Fill in any file path with your own personal one from the downloaded data on github 
-
+* 1. Set to stata version 18 
+version 18
 * 2. Install all packages that this project requires:
 ssc install outreg2, replace
 ssc install estout, replace
@@ -22,4 +23,5 @@ do "C:\Users\akgilmar\OneDrive - Syracuse University\ECN\.do Files\MergeATUS-TOA
 
 * 5. Generate Tables and Figures
 do "C:\Users\akgilmar\OneDrive - Syracuse University\ECN\.do Files\State labled, Hist, and Scatter (Weighted data).do"
+
 

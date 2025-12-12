@@ -3,7 +3,7 @@
 
 ***Fill in any file path with your own personal one from the downloaded data on github 
 *** Open log
-log using Master Log
+log using "Master Log"
 
 *1. Open in stata 18 
 version 18
@@ -43,4 +43,5 @@ do "Ttest.do"
 
 ***Close log 
 log close
+
 

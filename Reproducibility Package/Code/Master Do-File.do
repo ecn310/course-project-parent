@@ -3,18 +3,24 @@
 
 ***Fill in any file path with your own personal one from the downloaded data on github 
 *** Open log
-log using "Master Log"
 
 *1. Open in stata 18 
 version 18
-* 2. Install all packages that this project requires:
-ssc install outreg2, replace
-ssc install estout, replace
 
 * 3. Set working directory to personal path of Parent file
 cd "C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent"
 
-* 4. Execute Data Cleaning and Preparation
+* 4. Open log
+log using "Master Log", replace
+
+* 5. Install all packages that this project requires:
+ssc install outreg2, replace
+ssc install estout, replace
+
+* 6. Set working directory to personal path of Parent file
+cd "C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent"
+
+* 7. Execute Data Cleaning and Preparation
 *** Cleans and labels all ATUS data 
 do "ATUS-CPS.do"
 clear
@@ -35,7 +41,7 @@ do "STATE-AV.do"
 clear
 do "MergeATUS-TOA-STATE.do"
 
-* 5. Generate Tables and Figures
+* 8. Generate Tables and Figures
 ***Creates state aberivation variable and makes histograms and scatterplots
 do "State labled, Hist, and Scatter (Weighted data).do"
 *** Creates  high mobility indicator (above median) variables for ttest 
@@ -43,5 +49,6 @@ do "Ttest.do"
 
 ***Close log 
 log close
+
 
 

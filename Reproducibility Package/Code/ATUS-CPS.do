@@ -4,7 +4,7 @@
 *ATUS DATA START 
 
 ** Import atuscps_2014.dat by using the file-import-Text Data(delimited)
-import delimited "atuscps_2014.dat"
+import delimited "Data\atuscps_2014.dat"
 
 ** This lables all the varibles from the data set
 label variable gepseucl "Scrambled pseudo primary sampling unit (PSU) cluster"
@@ -390,7 +390,8 @@ label variable pxnmemp1 "PTNMEMP1: allocation flag"
 label variable pxpdemp2 "PEPDEMP2: allocation flag"
 label variable pxnmemp2 "PTNMEMP2: allocation flag"
 
-** Save to own computer to prepare for mergeing the 2 ATUS datasets 
+** Save to own computer to prepare for mergeing the 3 ATUS datasets 
 
-save "AtusCPS_2014_.dta"
+save "Data\AtusCPS_2014_.dta"
+
 

@@ -1,5 +1,5 @@
 **Import atussum_2014.dat by using the file-import-Text Data(delimited), and use personal path to file
-import delimited "atussum_2014.dat"
+import delimited "Data\atussum_2014.dat"
 
 ** Lable the varibles
 label variable tucaseid   "ATUS Case ID (14-digit identifier)"
@@ -168,4 +168,5 @@ label variable t069999 "Education, n.e.c.*"
 
 ** Save to own computer to prepare for mergeing the ATUS datasets 
 
-save "AtusSUM_2014_.dta"
+save "Data\AtusSUM_2014_.dta"
+

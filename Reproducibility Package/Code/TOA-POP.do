@@ -19,7 +19,8 @@ gen perm75_popw = w_perm75 / cty_pop2000
 rename state_id statefips
 
 ** Save TOA weighted data
-save "Data\County_cohort_trends with population weights.dta"
+save "Data\County_cohort_trends with population weights.dta", replace
+
 
 
 

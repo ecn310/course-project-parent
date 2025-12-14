@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent 1\Data\Master Log.log
+       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent\Data\Master Log.log
   log type:  text
  opened on:  13 Dec 2025, 20:39:32
 
@@ -2025,7 +2025,8 @@ end of do-file
 . ***Close log 
 . log close
       name:  <unnamed>
-       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent 1\Data\Master Log.log
+       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent\Data\Master Log.log
   log type:  text
  closed on:  13 Dec 2025, 20:39:40
 ----------------------------------------------------------------------------------------------------------------------
+

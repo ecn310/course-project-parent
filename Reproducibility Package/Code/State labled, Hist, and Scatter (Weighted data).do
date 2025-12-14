@@ -72,9 +72,10 @@ graph export "Outputs\25novar.png", as(png) name("Graph")
 ** Make scatter plot with parental time investments, childs income rank, and State lables for children born into the 75% income rank ** 
 scatter trthh perm75_popw , mlabel( state_abbrev) title("Parental Investment vs Intergenerational Mobility") xtitle("Income Rank at Age 24 born in 75%") ytitle("Parental Investment ") xscale(range(20 60))
 ** Save the graph as png (or any preferred type)
- graph export "Outputs\75novar.png", as(png) name("Graph")
+ graph export "Outputs\75novar.png", as(png) name("Graph"), replace 
 
 
 	
+
 
 

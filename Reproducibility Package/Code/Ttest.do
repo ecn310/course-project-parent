@@ -7,6 +7,8 @@ gen highmob25 = (perm25_popw > r(p50))
 ** Check distribution
 tab highmob25
 
+** Create ttest 25th 
+ttest trthh, by(highmob25)
 
 ** Get detailed statistics for median income
 summarize medianinc, detail
@@ -33,6 +35,9 @@ local med75 = r(p50)
 ** Create high mobility indicator (above median)
 gen highmob75 = perm75_popw > `med75'
 
+** Create ttest 75th 
+ttest trthh, by(highmob75)
+
 ** Label mobility variables
 label define mob 0 "Low mobility" 1 "High mobility"
 label values highmob25 mob
@@ -48,4 +53,5 @@ pwcorr trthh perm25_popw if high_inc==0, sig
 pwcorr trthh perm75_popw if high_inc==1, sig
 
 pwcorr trthh perm75_popw if high_inc==0, sig
+
 

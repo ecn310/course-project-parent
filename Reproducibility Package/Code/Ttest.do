@@ -1,3 +1,6 @@
+** Create summary stats table
+summarize trthh perm25_popw perm75_popw medianinc
+
 ** Check for accurate sum stats
 summarize perm25_popw, detail
 
@@ -53,5 +56,6 @@ pwcorr trthh perm25_popw if high_inc==0, sig
 pwcorr trthh perm75_popw if high_inc==1, sig
 
 pwcorr trthh perm75_popw if high_inc==0, sig
+
 
 

@@ -11,7 +11,7 @@ If any of these links are broken or the data structure has changed, please refer
 
 
 ### Data Manipulation
-- The [Master do-file](https://github.com/ecn310/course-project-parent/blob/ceb1bc071ba56f67a7fcff9d2d4c2227f584db6f/Reproducibility%20Package/Code/Master%20Do-File.do) is a compilation of seven do-files for cleaning and merging the datasets. It can be found on GitHub under Reproducibility Package\Code with the name Master Do-File.do. The do-files are split up mainly due to the size of the ATUS datasets' code.
+- The [Master do-file](https://github.com/ecn310/course-project-parent/blob/5f2235befac5cc97e1d85145fb6d633f6d88b17e/Reproducibility%20Package/Code/Master%20Do-File.do) is a compilation of seven do-files for cleaning and merging the datasets. It can be found on GitHub under Reproducibility Package\Code with the name Master Do-File.do. The do-files are split up mainly due to the size of the ATUS datasets' code.
 - The 1st command changes the Stata version to 18.
 - The 2rd command directs to the folder that has access to all downloaded do-files and data from GitHub (the Parent folder).
 - The 3rd command open the master log 

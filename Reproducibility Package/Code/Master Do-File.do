@@ -4,7 +4,7 @@
 ***Fill in any file path with your own personal one from the downloaded data on github 
 *** Open log
 
-*1. Open in stata 18 
+* 1. Open in stata 18 
 version 18
 
 * 2. Set working directory to personal path of Parent folder or Reproducibility Package folder
@@ -44,8 +44,9 @@ do "Code\State labled, Hist, and Scatter (Weighted data).do"
 *** Creates  high mobility indicator (above median) variables for ttest 
 do "Code\Ttest.do"
 
-*7. Close log 
+* 7. Close log 
 log close
+
 
 
 

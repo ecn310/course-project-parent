@@ -7,8 +7,8 @@
 *1. Open in stata 18 
 version 18
 
-* 3. Set working directory to personal path of Parent file
-cd "C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent"
+* 3. Set working directory to personal path of Parent folder or Reproducibility Package folder
+cd "C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package"
 
 * 4. Open log
 log using "Master Log", replace
@@ -17,38 +17,36 @@ log using "Master Log", replace
 ssc install outreg2, replace
 ssc install estout, replace
 
-* 6. Set working directory to personal path of Parent file
-cd "C:\Users\akgilmar\OneDrive - Syracuse University\Desktop\Parent"
-
-* 7. Execute Data Cleaning and Preparation
+* 6. Execute Data Cleaning and Preparation
 *** Cleans and labels all ATUS data 
-do "ATUS-CPS.do"
+do "Code\ATUS-CPS.do"
 clear
-do "ATUS-SUM.do"
+do "Code\ATUS-SUM.do"
 clear
-do "ATUS-ROST.do"
+do "Code\ATUS-ROST.do"
 clear
 *** Merges the 3 ATUS data sets toghther on the variable statefips
-do "ATUSCPSmerged.do"
+do "Code\ATUSCPSmerged.do"
 clear
 *** Mean of each county, weighted by it population, up to the state level. This is to match the ATUS statefips variable 
-do "TOA-POP.do"
+do "Code\TOA-POP.do"
 clear
 *** Cleans the state data and adds the statefips variable
-do "STATE-AV.do" 
+do "Code\STATE-AV.do" 
 
 *** Merges the 3 data setsf
 clear
-do "MergeATUS-TOA-STATE.do"
+do "Code\MergeATUS-TOA-STATE.do"
 
-* 8. Generate Tables and Figures
+* 7. Generate Tables and Figures
 ***Creates state aberivation variable and makes histograms and scatterplots
-do "State labled, Hist, and Scatter (Weighted data).do"
+do "Code\State labled, Hist, and Scatter (Weighted data).do"
 *** Creates  high mobility indicator (above median) variables for ttest 
-do "Ttest.do"
+do "Code\Ttest.do"
 
 ***Close log 
 log close
+
 
 
 

@@ -3,11 +3,11 @@ use "Data\Merged,Weighed,Labled.dta"
 
 ** To make hist for the varible perm25_popw **
 hist perm25_popw, frequency xtitle("Income Rank at Age 24 (25th Percentile)")
-graph export "Outputs\Income Rank at Age 24 (25th Percentile) (weighed) graph.png", as(png) name("Graph")
+graph export "Outputs\Income Rank at Age 24 (25th Percentile) (weighed) graph.png", as(png) name("Graph") replace 
 
 ** To make hist for the varible perm75_popw **
 hist perm75_popw , frequency xtitle("Income Rank at Age 24 (75th Percentile)")
-graph export "Outputs\Income Rank at Age 24 (75th Percentile)(weighed) graph.png", as(png) name("Graph")
+graph export "Outputs\Income Rank at Age 24 (75th Percentile)(weighed) graph.png", as(png) name("Graph") replace 
 
 ** This adds a varible that lables the state fips codes into there State letter abbreviation **
 gen state_abbrev = ""
@@ -66,16 +66,17 @@ replace state_abbrev = "WY" if statefips == 56
 scatter trthh perm25_popw , mlabel( state_abbrev) title("Parental Investment vs Intergenerational Mobility") xtitle("Income Rank at Age 24 born in 25%") ytitle("Parental Investment (trthh)") xscale(range(20 60))
 
 ** Save the graph as png (or any preferred type)
-graph export "Outputs\25novar.png", as(png) name("Graph")
+graph export "Outputs\25novar.png", as(png) name("Graph") replace
 
 
 ** Make scatter plot with parental time investments, childs income rank, and State lables for children born into the 75% income rank ** 
 scatter trthh perm75_popw , mlabel( state_abbrev) title("Parental Investment vs Intergenerational Mobility") xtitle("Income Rank at Age 24 born in 75%") ytitle("Parental Investment ") xscale(range(20 60))
 ** Save the graph as png (or any preferred type)
- graph export "Outputs\75novar.png", as(png) name("Graph"), replace 
+ graph export "Outputs\75novar.png", as(png) name("Graph") replace 
 
 
 	
+
 
 
 

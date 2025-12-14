@@ -392,6 +392,7 @@ label variable pxnmemp2 "PTNMEMP2: allocation flag"
 
 ** Save to own computer to prepare for mergeing the 3 ATUS datasets 
 
-save "Data\AtusCPS_2014_.dta"
+save "Data\AtusCPS_2014_.dta", replace 
+
 
 

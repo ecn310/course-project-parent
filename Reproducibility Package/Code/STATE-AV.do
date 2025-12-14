@@ -3,7 +3,7 @@
 
 **Import ACSDT5Y2014.B19013-Data by File, Import, Text Data. Copy file path into file to import. Then click always in First Row as Variable names: 
 
-import delimited "ACSDT5Y2014.B19013-Data", varnames(1) 
+import delimited "Data\ACSDT5Y2014.B19013-Data", varnames(1) 
 
 *** Create statefips variable to match ATUS and TOA
 gen statefips = .
@@ -77,4 +77,5 @@ rename b19013_001m moe
 destring medianinc, replace
  
 *** Save as Updated data set with median income
- save "Updated data set with median income.dta"
+
+ save "Data\Updated data set with median income.dta", replace 

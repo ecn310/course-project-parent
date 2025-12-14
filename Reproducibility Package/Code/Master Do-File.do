@@ -7,17 +7,17 @@
 *1. Open in stata 18 
 version 18
 
-* 3. Set working directory to personal path of Parent folder or Reproducibility Package folder
+* 2. Set working directory to personal path of Parent folder or Reproducibility Package folder
 cd "C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package"
 
-* 4. Open log
+* 3. Open log
 log using "Data\Master Log.log", replace
 
-* 5. Install all packages that this project requires:
+* 4. Install all packages that this project requires:
 ssc install outreg2, replace
 ssc install estout, replace
 
-* 6. Execute Data Cleaning and Preparation
+* 5. Execute Data Cleaning and Preparation
 *** Cleans and labels all ATUS data 
 do "Code\ATUS-CPS.do"
 clear
@@ -38,14 +38,15 @@ do "Code\STATE-AV.do"
 clear
 do "Code\MergeATUS-TOA-STATE.do"
 
-* 7. Generate Tables and Figures
+* 6. Generate Tables and Figures
 ***Creates state aberivation variable and makes histograms and scatterplots
 do "Code\State labled, Hist, and Scatter (Weighted data).do"
 *** Creates  high mobility indicator (above median) variables for ttest 
 do "Code\Ttest.do"
 
-***Close log 
+*7. Close log 
 log close
+
 
 
 

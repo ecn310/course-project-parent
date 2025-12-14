@@ -11,7 +11,7 @@ version 18
 cd "C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package"
 
 * 4. Open log
-log using "Master Log", replace
+log using "Data\Master Log", replace
 
 * 5. Install all packages that this project requires:
 ssc install outreg2, replace
@@ -46,6 +46,7 @@ do "Code\Ttest.do"
 
 ***Close log 
 log close
+
 
 
 

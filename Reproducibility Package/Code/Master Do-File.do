@@ -4,47 +4,47 @@
 ***Fill in any file path with your own personal one from the downloaded data on github 
 *** Open log
 
-* 1. Open in stata 18 
+*  Open in stata 18 
 version 18
 
-* 2. Set working directory to personal path of Parent folder or Reproducibility Package folder
+* Set working directory to personal path of Parent folder or Reproducibility Package folder
 cd "C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package"
 
-* 3. Open log
+* Open log
 log using "Code\Master Log.log", replace
 
-* 4. Install all packages that this project requires:
+* Install all packages that this project requires:
 ssc install outreg2, replace
 ssc install estout, replace
 
-* 5. Execute Data Cleaning and Preparation
-*** Cleans and labels all ATUS data 
+* Execute Data Cleaning and Preparation
+*** Clean and label all ATUS data 
 do "Code\ATUS-CPS.do"
 clear
 do "Code\ATUS-SUM.do"
 clear
 do "Code\ATUS-ROST.do"
 clear
-*** Merges the 3 ATUS data sets toghther on the variable statefips
+*** Merge the 3 ATUS data sets toghther on the variable statefips
 do "Code\ATUSCPSmerged.do"
 clear
 *** Mean of each county, weighted by it population, up to the state level. This is to match the ATUS statefips variable 
 do "Code\TOA-POP.do"
 clear
-*** Cleans the state data and adds the statefips variable
+***Clean the state average income from the U.S. Census Bureau dataset of extra variables and add the statefips variable
 do "Code\STATE-AV.do" 
 
-*** Merges the 3 data sets
+*** Merge the 3 data sets
 clear
 do "Code\MergeATUS-TOA-STATE.do"
 
-* 6. Generate Tables and Figures
-***Creates state aberivation variable and makes histograms and scatterplots
+* Generate Tables and Figures
+***Create state aberivation variable and makes histograms and scatterplots
 do "Code\State labeled, Hist, and Scatter (Weighted data).do"
-*** Creates  high mobility indicator (above median) variables for ttest 
+*** Create high mobility indicator (above median) variables for ttest 
 do "Code\Ttest.do"
 
-* 7. Close log 
+* Close log 
 log close
 
 

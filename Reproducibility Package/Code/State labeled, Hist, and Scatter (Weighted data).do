@@ -1,5 +1,5 @@
-** Use "Merged,Weighed,Labled.dta" 
-use "Data\Merged,Weighed,Labled.dta" 
+** Use "Data\Merged,Weighted,Labeled.dta" 
+use "Data\Merged,Weighted,Labeled.dta" 
 
 ** This adds a variable that labels the state FIPS codes into their state letter abbreviation **
 gen state_abbrev = ""

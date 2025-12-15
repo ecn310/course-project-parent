@@ -2,10 +2,10 @@
       name:  <unnamed>
        log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package\Code\Master Log.log
   log type:  text
- opened on:  15 Dec 2025, 17:00:53
+ opened on:  15 Dec 2025, 17:18:52
 
 . 
-. * 4. Install all packages that this project requires:
+. * Install all packages that this project requires:
 . ssc install outreg2, replace
 checking outreg2 consistency and verifying not already installed...
 all files already exist and are up to date.
@@ -15,8 +15,8 @@ checking estout consistency and verifying not already installed...
 all files already exist and are up to date.
 
 . 
-. * 5. Execute Data Cleaning and Preparation
-. *** Cleans and labels all ATUS data 
+. * Execute Data Cleaning and Preparation
+. *** Clean and label all ATUS data 
 . do "Code\ATUS-CPS.do"
 
 . ** This .do is made for Stata version 18.0
@@ -1247,7 +1247,7 @@ end of do-file
 
 . clear
 
-. *** Merges the 3 ATUS data sets toghther on the variable statefips
+. *** Merge the 3 ATUS data sets toghther on the variable statefips
 . do "Code\ATUSCPSmerged.do"
 
 . * This is how to merge the ATUS data
@@ -1336,7 +1336,7 @@ end of do-file
 
 . clear
 
-. *** Cleans the state data and adds the statefips variable
+. ***Clean the state average income from the U.S. Census Bureau dataset of extra variables and add the statefips variable
 . do "Code\STATE-AV.do" 
 
 . ** This .do is made for Stata version 18.0
@@ -1540,7 +1540,7 @@ file Data\Updated data set with median income.dta saved
 end of do-file
 
 . 
-. *** Merges the 3 data sets
+. *** Merge the 3 data sets
 . clear
 
 . do "Code\MergeATUS-TOA-STATE.do"
@@ -1600,7 +1600,6 @@ end of do-file
 . ** Save finished data set to use for analysis
 . 
 . save "Data\Merged,Weighted,Labeled.dta", replace 
-(file Data\Merged,Weighted,Labeled.dta not found)
 file Data\Merged,Weighted,Labeled.dta saved
 
 . 
@@ -1611,12 +1610,12 @@ file Data\Merged,Weighted,Labeled.dta saved
 end of do-file
 
 . 
-. * 6. Generate Tables and Figures
-. ***Creates state aberivation variable and makes histograms and scatterplots
+. * Generate Tables and Figures
+. ***Create state aberivation variable and makes histograms and scatterplots
 . do "Code\State labeled, Hist, and Scatter (Weighted data).do"
 
-. ** Use "Merged,Weighed,Labled.dta" 
-. use "Data\Merged,Weighed,Labled.dta" 
+. ** Use "Data\Merged,Weighted,Labeled.dta" 
+. use "Data\Merged,Weighted,Labeled.dta" 
 
 . 
 . ** This adds a variable that labels the state FIPS codes into their state letter abbreviation **
@@ -1819,7 +1818,7 @@ file Outputs\StateIncome.png saved as PNG format
 . 
 end of do-file
 
-. *** Creates  high mobility indicator (above median) variables for ttest 
+. *** Create high mobility indicator (above median) variables for ttest 
 . do "Code\Ttest.do"
 
 . ** Create summary stats table
@@ -2045,10 +2044,10 @@ H0: diff = 0                                     Degrees of freedom =       49
 end of do-file
 
 . 
-. * 7. Close log 
+. * Close log 
 . log close
       name:  <unnamed>
        log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package\Code\Master Log.log
   log type:  text
- closed on:  15 Dec 2025, 17:01:08
+ closed on:  15 Dec 2025, 17:19:05
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -6,7 +6,7 @@
 ** Import atuscps_2014.dat by using the file-import-Text Data(delimited)
 import delimited "Data\atuscps_2014.dat"
 
-** This lables all the varibles from the data set
+** This lables all the variable from the data set
 label variable gepseucl "Scrambled pseudo primary sampling unit (PSU) cluster"
 label variable gepseust "Scrambled pseudo primary sampling unit (PSU) collapsed stratum"
 label variable gereg "Region"

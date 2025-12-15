@@ -11,7 +11,7 @@ version 18
 cd "C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package"
 
 * 3. Open log
-log using "Data\Master Log.log", replace
+log using "Code\Master Log.log", replace
 
 * 4. Install all packages that this project requires:
 ssc install outreg2, replace
@@ -34,13 +34,13 @@ clear
 *** Cleans the state data and adds the statefips variable
 do "Code\STATE-AV.do" 
 
-*** Merges the 3 data setsf
+*** Merges the 3 data sets
 clear
 do "Code\MergeATUS-TOA-STATE.do"
 
 * 6. Generate Tables and Figures
 ***Creates state aberivation variable and makes histograms and scatterplots
-do "Code\State labled, Hist, and Scatter (Weighted data).do"
+do "Code\State labeled, Hist, and Scatter (Weighted data).do"
 *** Creates  high mobility indicator (above median) variables for ttest 
 do "Code\Ttest.do"
 

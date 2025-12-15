@@ -27,7 +27,7 @@ label variable medianinc "State Median Income"
 
 ** Save finished data set to use for analysis
 
-save "Data\Merged,Weighed,Labled.dta", replace 
+save "Data\Merged,Weighted,Labeled.dta", replace 
 
 
 

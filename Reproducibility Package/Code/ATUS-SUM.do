@@ -166,7 +166,7 @@ label variable t060403 "Waiting associated w/admin. activities (education)"
 label variable t060499 "Administrative for education, n.e.c.*"
 label variable t069999 "Education, n.e.c.*"
 
-** Save to own computer to prepare for mergeing the ATUS datasets 
+** Save to your own computer to prepare for merging the ATUS datasets 
 
 save "Data\AtusSUM_2014_.dta", replace
 

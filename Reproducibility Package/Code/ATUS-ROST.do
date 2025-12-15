@@ -3,7 +3,7 @@
 import delimited "Data\atusrost_2014.dat"
 
 
-** Lable the varibles
+** Label the variables
 label variable teage "Edited: age"
 label variable terrp "Edited: how is this person related to you?"
 label variable tesex "Edited: sex"

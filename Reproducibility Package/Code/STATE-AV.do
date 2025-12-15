@@ -8,7 +8,7 @@ import delimited "Data\ACSDT5Y2014.B19013-Data", varnames(1)
 *** Create statefips variable to match ATUS and TOA
 gen statefips = .
 
-*** Rename statefips to state 
+*** Rename statefips to state name 
 replace statefips = 1  if name == "Alabama"
 replace statefips = 2  if name == "Alaska"
 replace statefips = 4  if name == "Arizona"
@@ -64,7 +64,7 @@ replace statefips = 56 if name == "Wyoming"
 ***Get rid of unused variable
 drop if name == "Geographic Area Name"
 
-*** Change variable to what it means 
+*** Rename variable to reflect its meaning
 rename name statename
 
 ***Rename to median income 
@@ -73,7 +73,7 @@ rename b19013_001e medianinc
 *** Rename to margin of error 
 rename b19013_001m moe
 
-*** destring vaible medianinc 
+*** Destring variable medianinc
 destring medianinc, replace
  
 *** Save as Updated data set with median income

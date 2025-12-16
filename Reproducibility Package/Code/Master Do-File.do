@@ -8,7 +8,7 @@
 version 18
 
 * Set working directory to personal path of Parent folder or Reproducibility Package folder
-cd "C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package"
+cd "YOUR FILE PATH"
 
 * Open log
 log using "Code\Master Log.log", replace
@@ -46,8 +46,7 @@ do "Code\Ttest.do"
 
 **Delete unzipped data/data to big for GitHub made during merging process
 erase "Data\atuscps_2014.dat"
-erase "merge_data"
-
+erase "Data\Merge\merge_data.dta"
 * Close log 
 log close
 

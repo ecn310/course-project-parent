@@ -27,5 +27,5 @@ If any of these links are broken or the data structure has changed, please refer
 |medianinc| State Median Income |
 |state_abbrev|State Abbreviations |
 |highmob25||
-|high_inc||
 |highmob75||
+|high_inc||

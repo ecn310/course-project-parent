@@ -46,9 +46,11 @@ do "Code\Ttest.do"
 
 **Delete unzipped data/data to big for GitHub made during merging process
 erase "Data\atuscps_2014.dat"
-erase "Data\Merge\merge_data.dta"
+erase "Data\Merge\merged_data.dta"
+
 * Close log 
 log close
+
 
 
 

@@ -30,6 +30,6 @@ If any of these links are broken or the data structure has changed, please refer
 | trthh| Total Time spent providing childcare (minutes) |
 |medianinc| State Median Income |
 |state_abbrev|State Abbreviations |
-|highmob25|Dummy Variable for t-test|
-|highmob75|Dummy Variable for t-test|
-|high_inc|Dummy Variable for t-test|
+|highmob25|Dummy Variable for t-test that splits the rank in 25th percentile group in half by median and takes higher income group|
+|highmob75|Dummy Variable for t-test that splits the rank in 25th percentile group in half by median and takes higher income group|
+|high_inc|Dummy Variable for t-test that splits the median income group in half by median and takes higher income group|

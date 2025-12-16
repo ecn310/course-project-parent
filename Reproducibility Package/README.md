@@ -12,8 +12,8 @@ If any of these links are broken or the data structure has changed, please refer
 
 ### Data Manipulation and Analysis 
 - The Master do-file is a compilation of seven do-files for cleaning and merging the datasets. It can be found on GitHub under **Reproducibility Package\Code** with the name **Master Do-File.do**. The do-files are split up mainly due to the size of the ATUS datasets' code.
-- **In the Master do-file you must change the command cd "   " to your own file path**
-- The log for this Master do is saved in **Reproducibility Package/Code** under the name** Master Log.log**
+- **In the Master do-file you must change the command cd "YOUR FILE PATH" to your own file path of the Reproducibility Package folderr**
+- The log for this Master do is saved in **Reproducibility Package/Code** under the name **Master Log.log**
 
 ### Codebook
 - Codebook for variables of Merged,Weighed,Labled.dta

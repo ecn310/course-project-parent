@@ -3,7 +3,7 @@
        log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility P
 > ackage\Code\Master Log.log
   log type:  text
- opened on:  16 Dec 2025, 14:43:24
+ opened on:  16 Dec 2025, 15:27:03
 
 . 
 . * Install all packages that this project requires:
@@ -1320,6 +1320,7 @@ end of do-file
 
 . ** Save fully merged data set
 . save "Data\Merge\merged_data.dta", replace
+(file Data\Merge\merged_data.dta not found)
 file Data\Merge\merged_data.dta saved
 
 . 
@@ -2099,5 +2100,5 @@ end of do-file
        log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility P
 > ackage\Code\Master Log.log
   log type:  text
- closed on:  16 Dec 2025, 14:43:30
+ closed on:  16 Dec 2025, 15:27:16
 ----------------------------------------------------------------------------------------------------------------------

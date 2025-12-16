@@ -78,4 +78,4 @@ destring medianinc, replace
  
 *** Save as Updated data set with median income
 
- save "Data\Updated data set with median income.dta", replace 
+ save "Data\Merge\Updated data set with median income.dta", replace 

@@ -14,6 +14,6 @@ label variable txrrp "TERRP: allocation flag"
 label variable txsex "TESEX: allocation flag"
 
 ** Save to own computer to prepare for merging the  ATUS datasets 
-save "Data\AtusROST_2014_.dta" , replace 
+save "Data\Merge\AtusROST_2014_.dta" , replace 
 
 

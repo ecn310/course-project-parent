@@ -44,6 +44,10 @@ do "Code\State labeled, Hist, and Scatter (Weighted data).do"
 *** Create high mobility indicator (above median) variables for ttest 
 do "Code\Ttest.do"
 
+**Delete unzipped data/data to big for GitHub made during merging process
+erase "Data\atuscps_2014.dat"
+erase "merge_data"
+
 * Close log 
 log close
 

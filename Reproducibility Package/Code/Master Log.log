@@ -1,8 +1,9 @@
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package\Code\Master Log.log
+       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility P
+> ackage\Code\Master Log.log
   log type:  text
- opened on:  15 Dec 2025, 17:18:52
+ opened on:  16 Dec 2025, 14:43:24
 
 . 
 . * Install all packages that this project requires:
@@ -54,7 +55,8 @@ note: label truncated to 80 characters
 
 . label variable hetelhhd "Edited: is there a telephone in this house/apartment?"
 
-. label variable hetenure "Edited: are your living quarters owned, rented for cash, or occupied without payment of cash rent?"
+. label variable hetenure "Edited: are your living quarters owned, rented for cash, or occupied without payment of cas
+> h rent?"
 note: label truncated to 80 characters
 
 . label variable hrhhid "Household ID (15-digit identifier)"
@@ -141,17 +143,18 @@ note: label truncated to 80 characters
 
 . label variable pedisear "Edited: Is this person deaf or does this person have serious difficulty hearing?"
 
-. label variable pediseye "Edited: Is this person blind or does this person have serious difficulty seeing even when wearing glasses?"
+. label variable pediseye "Edited: Is this person blind or does this person have serious difficulty seeing even when w
+> earing glasses?"
 note: label truncated to 80 characters
 
-. label variable pedisout "Edited: Because of a physical, mental, or emotional condition does this person have difficulty doing errands alone such as visiting a d
-> octor's office or shopping?"
+. label variable pedisout "Edited: Because of a physical, mental, or emotional condition does this person have difficu
+> lty doing errands alone such as visiting a doctor's office or shopping?"
 note: label truncated to 80 characters
 
 . label variable pedisphy "Edited: Does this person have serious difficulty walking or climbing stairs?"
 
-. label variable pedisrem "Edited: Because of a physical, mental, or emotional condition, does this person have serious difficulty concentrating, remembering, or 
-> making decisions?"
+. label variable pedisrem "Edited: Because of a physical, mental, or emotional condition, does this person have seriou
+> s difficulty concentrating, remembering, or making decisions?"
 note: label truncated to 80 characters
 
 . label variable pedw4wk "Edited: did you do any of this work during the last 4 weeks?"
@@ -171,7 +174,8 @@ note: label truncated to 80 characters
 
 . label variable pedwwnto "Edited: do you currently want a job, either full or part time?"
 
-. label variable peeduca "Edited: what is the highest level of school you have completed or the highest degree you have received?"
+. label variable peeduca "Edited: what is the highest level of school you have completed or the highest degree you hav
+> e received?"
 note: label truncated to 80 characters
 
 . label variable peern "Edited: total weekly overtime earnings (2 implied decimals)"
@@ -179,23 +183,28 @@ note: label truncated to 80 characters
 . label variable peerncov "Edited: on this job, are you covered by a union or employee association contract?"
 note: label truncated to 80 characters
 
-. label variable peernh1o "Edited: excluding overtime pay, tips, and commissions, what is your hourly rate of pay on your main job? (2 implied decimals)"
+. label variable peernh1o "Edited: excluding overtime pay, tips, and commissions, what is your hourly rate of pay on y
+> our main job? (2 implied decimals)"
 note: label truncated to 80 characters
 
-. label variable peernh2 "Edited: excluding overtime pay, tips, and commissions, what is your hourly rate of pay on your main job? (2 implied decimals)"
+. label variable peernh2 "Edited: excluding overtime pay, tips, and commissions, what is your hourly rate of pay on yo
+> ur main job? (2 implied decimals)"
 note: label truncated to 80 characters
 
 . label variable peernhro "Edited: how many hours do you usually work per week at this rate?"
 
 . label variable peernhry "Edited: hourly/non-hourly status"
 
-. label variable peernlab "Edited: on this job, are you a member of a labor union or of an employee association similar to a union?"
+. label variable peernlab "Edited: on this job, are you a member of a labor union or of an employee association simila
+> r to a union?"
 note: label truncated to 80 characters
 
-. label variable peernper "Edited: for your main job, what is the easiest way for you to report your total earnings before taxes or other deductions: hourl"
+. label variable peernper "Edited: for your main job, what is the easiest way for you to report your total earnings be
+> fore taxes or other deductions: hourl"
 note: label truncated to 80 characters
 
-. label variable peernrt "Edited: even though you told me it is easier to report your earnings another way, are you paid at an hourly rate on your main jo"
+. label variable peernrt "Edited: even though you told me it is easier to report your earnings another way, are you pa
+> id at an hourly rate on your main jo"
 note: label truncated to 80 characters
 
 . label variable peernuot "Edited: do you usually receive overtime pay, tips, or commissions at your job?"
@@ -206,10 +215,12 @@ note: label truncated to 80 characters
 
 . label variable pegr6cor "Edited: did you complete six or more graduate or professional school courses?"
 
-. label variable pegrprof "Edited: since completing your bachelor's degree, have you taken any graduate or professional school courses for credit?"
+. label variable pegrprof "Edited: since completing your bachelor's degree, have you taken any graduate or professiona
+> l school courses for credit?"
 note: label truncated to 80 characters
 
-. label variable pehgcomp "Edited: what was the highest grade of regular school you completed before receiving your GED?"
+. label variable pehgcomp "Edited: what was the highest grade of regular school you completed before receiving your GE
+> D?"
 note: label truncated to 80 characters
 
 . label variable pehract1 "Edited: last week, how many hours did you actually work at your main job?"
@@ -258,15 +269,18 @@ note: label truncated to 80 characters
 
 . label variable pejhwko "Edited: have you worked at a job or business at any time in the last 12 months?"
 
-. label variable pelayavl "Edited: could you have returned to work during the last seven days if you had been recalled?"
+. label variable pelayavl "Edited: could you have returned to work during the last seven days if you had been recalled
+> ?"
 note: label truncated to 80 characters
 
 . label variable pelaydur "Edited: duration of layoff (number of weeks)"
 
-. label variable pelayfto "Edited: is the job from which you are on layoff a full time job of 35 hours or more per week?"
+. label variable pelayfto "Edited: is the job from which you are on layoff a full time job of 35 hours or more per wee
+> k?"
 note: label truncated to 80 characters
 
-. label variable pelaylk "Edited: even though you are to be called back to work, have you been looking for work during the last 4 weeks?"
+. label variable pelaylk "Edited: even though you are to be called back to work, have you been looking for work during
+>  the last 4 weeks?"
 note: label truncated to 80 characters
 
 . label variable pelkavl "Edited: could you have started a job in the last seven days if one had been offered?"
@@ -276,14 +290,16 @@ note: label truncated to 80 characters
 
 . label variable pelkfto "Edited: are you seeking a full time or part time job?"
 
-. label variable pelkll1o "Edited: before you started looking for work, what were you doing: working, going to school, or something else?"
+. label variable pelkll1o "Edited: before you started looking for work, what were you doing: working, going to school,
+>  or something else?"
 note: label truncated to 80 characters
 
 . label variable pelkll2o "Edited: did you lose or quit that job, or was it a temporary job that ended?"
 
 . label variable pelklwo "Edited: when did you last work?"
 
-. label variable pelkm1 "Edited: what are all of the things you have done to find work during the last 4 weeks? (first method)"
+. label variable pelkm1 "Edited: what are all of the things you have done to find work during the last 4 weeks? (first
+>  method)"
 note: label truncated to 80 characters
 
 . label variable pelndad "Edited: PULINENO of father"
@@ -307,7 +323,8 @@ note: label truncated to 80 characters
 
 . label variable penatvty "Edited: in what country were you born?"
 
-. label variable penlfact "Edited: what best describes your situation at this time? For example, are you disabled, ill, in school, taking care of house or"
+. label variable penlfact "Edited: what best describes your situation at this time? For example, are you disabled, ill
+> , in school, taking care of house or"
 note: label truncated to 80 characters
 
 . label variable penlfjh "Edited: when did you last work at a job or business?"
@@ -469,13 +486,15 @@ note: label truncated to 80 characters
 
 . label variable puchinhh "Change in household composition"
 
-. label variable pudis "Last time we spoke to someone in this household, you were reported to have a disability. Does your disability continue to preven"
+. label variable pudis "Last time we spoke to someone in this household, you were reported to have a disability. Does 
+> your disability continue to preven"
 note: label truncated to 80 characters
 
 . label variable pudis1 "Does your disability prevent you from accepting any kind of work during the next six months?"
 note: label truncated to 80 characters
 
-. label variable pudis2 "Do you have a disability that prevents you from accepting any kind of work during the next six months?"
+. label variable pudis2 "Do you have a disability that prevents you from accepting any kind of work during the next si
+> x months?"
 note: label truncated to 80 characters
 
 . label variable pudwck1 "Discouraged worker check item 1: filter for discouraged worker"
@@ -490,7 +509,8 @@ note: label truncated to 80 characters
 
 . label variable puern2 "Weekly overtime earnings (2 implied decimals)"
 
-. label variable puernh1c "What is your hourly rate of pay on this job, excluding overtime pay, tips, or commissions? (2 implied decimals)"
+. label variable puernh1c "What is your hourly rate of pay on this job, excluding overtime pay, tips, or commissions? 
+> (2 implied decimals)"
 note: label truncated to 80 characters
 
 . label variable puhrck1 "Hours respondent check item 1: labor force - remove groups from actual hours series"
@@ -498,15 +518,18 @@ note: label truncated to 80 characters
 
 . label variable puhrck12 "Hours respondent check item 12: filter for < 15 hours to go to looking series"
 
-. label variable puhrck2 "Hours respondent check item 2: labor force - skips persons responding yes to PUHRFTPT out of PT series"
+. label variable puhrck2 "Hours respondent check item 2: labor force - skips persons responding yes to PUHRFTPT out of
+>  PT series"
 note: label truncated to 80 characters
 
-. label variable puhrck3 "Hours respondent check item 3: labor force - filter for persons going through industry and occupation series"
+. label variable puhrck3 "Hours respondent check item 3: labor force - filter for persons going through industry and o
+> ccupation series"
 note: label truncated to 80 characters
 
 . label variable puhrck4 "Hours respondent check item 4: labor force - skips persons"
 
-. label variable puhrck5 "Hours respondent check item 5: labor force - filter for multiple jobholders for second job hours"
+. label variable puhrck5 "Hours respondent check item 5: labor force - filter for multiple jobholders for second job h
+> ours"
 note: label truncated to 80 characters
 
 . label variable puhrck6 "Hours respondent check item 6: labor force - filter for actual job hours, jobs 1 and 2"
@@ -514,7 +537,8 @@ note: label truncated to 80 characters
 
 . label variable puhrck7 "Hours respondent check item 7: labor force - filter for hours worked paths"
 
-. label variable puhroff1 "Last week, did you lose or take off any hours from your job for any reason such as illness, slack work, vacation, or holiday?"
+. label variable puhroff1 "Last week, did you lose or take off any hours from your job for any reason such as illness,
+>  slack work, vacation, or holiday?"
 note: label truncated to 80 characters
 
 . label variable puhroff2 "How many hours did you take off?"
@@ -523,27 +547,32 @@ note: label truncated to 80 characters
 
 . label variable puhrot2 "How many additional hours did you work?"
 
-. label variable puio1mfg "Is this business or organization mainly manufacturing, retail trade, wholesale trade, or something else? (main job)"
+. label variable puio1mfg "Is this business or organization mainly manufacturing, retail trade, wholesale trade, or so
+> mething else? (main job)"
 note: label truncated to 80 characters
 
-. label variable puio2mfg "Is this business or organization mainly manufacturing, retail trade, wholesale trade, or something else? (second job)"
+. label variable puio2mfg "Is this business or organization mainly manufacturing, retail trade, wholesale trade, or so
+> mething else? (second job)"
 note: label truncated to 80 characters
 
 . label variable puiock1 "Industry and occupation check item 1: filter for dependent industry and occupation"
 note: label truncated to 80 characters
 
-. label variable puiock2 "Industry and occupation check item 2: filter for previous month's industry and occupation cases"
+. label variable puiock2 "Industry and occupation check item 2: filter for previous month's industry and occupation ca
+> ses"
 note: label truncated to 80 characters
 
 . label variable puiock3 "Industry and occupation check item 3: filter for previous month's unknown occupation"
 note: label truncated to 80 characters
 
-. label variable puiodp1 "Last month you were reported to work for (employer's name). Do you still work for (employer's name)?"
+. label variable puiodp1 "Last month you were reported to work for (employer's name). Do you still work for (employer'
+> s name)?"
 note: label truncated to 80 characters
 
 . label variable puiodp2 "Have the usual activities and duties of your job changed since last month?"
 
-. label variable puiodp3 "Last time you were reported as (occupation) and your usual duties were (activities). Is this an accurate description of your cur"
+. label variable puiodp3 "Last time you were reported as (occupation) and your usual duties were (activities). Is this
+>  an accurate description of your cur"
 note: label truncated to 80 characters
 
 . label variable pujhck1 "Job history check item 1: filter for outgoing rotations"
@@ -561,7 +590,8 @@ note: label truncated to 80 characters
 
 . label variable pulay "During the last seven days, were you on layoff from a job?"
 
-. label variable pulay6m "Have you been given any indication that you will be recalled to work within the next 6 months?"
+. label variable pulay6m "Have you been given any indication that you will be recalled to work within the next 6 month
+> s?"
 note: label truncated to 80 characters
 
 . label variable pulayavr "Why could you not have started a job in the last week?"
@@ -593,7 +623,8 @@ note: label truncated to 80 characters
 
 . label variable pulkdk6 "PULKDK1 text: (sixth method)"
 
-. label variable pulkm2 "What are all of the things you have been doing to find work during the last 4 weeks? (second method)"
+. label variable pulkm2 "What are all of the things you have been doing to find work during the last 4 weeks? (second 
+> method)"
 note: label truncated to 80 characters
 
 . label variable pulkm3 "PULKM2 text: (third method)"
@@ -845,10 +876,14 @@ note: label truncated to 80 characters
 . label variable pxnmemp2 "PTNMEMP2: allocation flag"
 
 . 
+. ** Remove non used variables keep tucaseid tulineno gestfips trthh
+.  keep tucaseid tulineno gestfips
+
+. 
 . ** Save to own computer to prepare for mergeing the 3 ATUS datasets 
 . 
-. save "Data\AtusCPS_2014_.dta", replace 
-file Data\AtusCPS_2014_.dta saved
+. save "Data\Merge\AtusCPS_2014_.dta", replace 
+file Data\Merge\AtusCPS_2014_.dta saved
 
 . 
 . 
@@ -871,7 +906,8 @@ end of do-file
 
 . label variable gtmetsta   "Metropolitan status (2000 definitions)"
 
-. label variable peeduca    "Edited: what is the highest level of school you have completed or the highest degree you have received?"
+. label variable peeduca    "Edited: what is the highest level of school you have completed or the highest degree you 
+> have received?"
 note: label truncated to 80 characters
 
 . label variable pehspnon   "Edited: are you Spanish, Hispanic, or Latino?"
@@ -908,14 +944,16 @@ note: label truncated to 80 characters
 
 . label variable tufinlwgt  "ATUS final weight"
 
-. label variable tudiaryday "Day of the week of diary day (day of the week about which the respondent was interviewed)"
+. label variable tudiaryday "Day of the week of diary day (day of the week about which the respondent was interviewed)
+> "
 note: label truncated to 80 characters
 
 . label variable trholiday  "Flag to indicate if diary day was a holiday"
 
 . label variable trtec      "Total time spent providing eldercare (in minutes)"
 
-. label variable trthh      "Total time spent during diary day providing secondary childcare for household children < 13 (in minutes)"
+. label variable trthh      "Total time spent during diary day providing secondary childcare for household children < 
+> 13 (in minutes)"
 note: label truncated to 80 characters
 
 . 
@@ -1198,8 +1236,8 @@ note: label truncated to 80 characters
 . 
 . ** Save to your own computer to prepare for merging the ATUS datasets 
 . 
-. save "Data\AtusSUM_2014_.dta", replace
-file Data\AtusSUM_2014_.dta saved
+. save "Data\Merge\AtusSUM_2014_.dta", replace
+file Data\Merge\AtusSUM_2014_.dta saved
 
 . 
 . 
@@ -1237,8 +1275,8 @@ end of do-file
 
 . 
 . ** Save to own computer to prepare for merging the  ATUS datasets 
-. save "Data\AtusROST_2014_.dta" , replace 
-file Data\AtusROST_2014_.dta saved
+. save "Data\Merge\AtusROST_2014_.dta" , replace 
+file Data\Merge\AtusROST_2014_.dta saved
 
 . 
 . 
@@ -1251,9 +1289,9 @@ end of do-file
 . do "Code\ATUSCPSmerged.do"
 
 . * This is how to merge the ATUS data
-. use "Data\AtusCPS_2014_.dta", clear
+. use "Data\Merge\AtusCPS_2014_.dta", clear
 
-. merge m:1 tucaseid using "Data\AtusSUM_2014_.dta"
+. merge m:1 tucaseid using "Data\Merge\AtusSUM_2014_.dta"
 
     Result                      Number of obs
     -----------------------------------------
@@ -1266,7 +1304,7 @@ end of do-file
 
 . rename _merge _merge_old
 
-. merge m:m tucaseid using "Data\AtusROST_2014_.dta"
+. merge m:m tucaseid using "Data\Merge\AtusROST_2014_.dta"
 
     Result                      Number of obs
     -----------------------------------------
@@ -1281,8 +1319,8 @@ end of do-file
 . rename gestfips statefips
 
 . ** Save fully merged data set
-. save "Data\merged_data.dta", replace
-file Data\merged_data.dta saved
+. save "Data\Merge\merged_data.dta", replace
+file Data\Merge\merged_data.dta saved
 
 . 
 . 
@@ -1291,7 +1329,8 @@ end of do-file
 
 . clear
 
-. *** Mean of each county, weighted by it population, up to the state level. This is to match the ATUS statefips variable 
+. *** Mean of each county, weighted by it population, up to the state level. This is to match the ATUS statefips varia
+> ble 
 . do "Code\TOA-POP.do"
 
 . ** This .do is made for Stata version 18.0
@@ -1324,8 +1363,8 @@ end of do-file
 
 . 
 . ** Save TOA weighted data
-. save "Data\County_cohort_trends with population weights.dta", replace
-file Data\County_cohort_trends with population weights.dta saved
+. save "Data\Merge\County_cohort_trends with population weights.dta", replace
+file Data\Merge\County_cohort_trends with population weights.dta saved
 
 . 
 . 
@@ -1336,13 +1375,15 @@ end of do-file
 
 . clear
 
-. ***Clean the state average income from the U.S. Census Bureau dataset of extra variables and add the statefips variable
+. ***Clean the state average income from the U.S. Census Bureau dataset of extra variables and add the statefips varia
+> ble
 . do "Code\STATE-AV.do" 
 
 . ** This .do is made for Stata version 18.0
 . **Fill in any file path with your own personal one from the downloaded data on github 
 . 
-. **Import ACSDT5Y2014.B19013-Data by File, Import, Text Data. Copy file path into file to import. Then click always in First Row as Variable names: 
+. **Import ACSDT5Y2014.B19013-Data by File, Import, Text Data. Copy file path into file to import. Then click always i
+> n First Row as Variable names: 
 . 
 . import delimited "Data\ACSDT5Y2014.B19013-Data", varnames(1) 
 (encoding automatically selected: UTF-8)
@@ -1533,8 +1574,8 @@ medianinc: all characters numeric; replaced as long
 .  
 . *** Save as Updated data set with median income
 . 
-.  save "Data\Updated data set with median income.dta", replace 
-file Data\Updated data set with median income.dta saved
+.  save "Data\Merge\Updated data set with median income.dta", replace 
+file Data\Merge\Updated data set with median income.dta saved
 
 . 
 end of do-file
@@ -1546,7 +1587,7 @@ end of do-file
 . do "Code\MergeATUS-TOA-STATE.do"
 
 . **Open Atus merged variable
-. use "Data\merged_data.dta"
+. use "Data\Merge\merged_data.dta"
 
 . 
 . **Drop _merge variable
@@ -1554,7 +1595,7 @@ end of do-file
 
 . 
 . ** Merge the two sets on the statefips variable
-. merge m:1 statefips using "Data\County_cohort_trends with population weights.dta"
+. merge m:1 statefips using "Data\Merge\County_cohort_trends with population weights.dta"
 
     Result                      Number of obs
     -----------------------------------------
@@ -1568,7 +1609,7 @@ end of do-file
 
 . 
 . ** Merge State data 
-. merge m:1 statefips using "Data\Updated data set with median income.dta"
+. merge m:1 statefips using "Data\Merge\Updated data set with median income.dta"
 (variable statefips was byte, now float to accommodate using data's values)
 
     Result                      Number of obs
@@ -1599,8 +1640,8 @@ end of do-file
 . 
 . ** Save finished data set to use for analysis
 . 
-. save "Data\Merged,Weighted,Labeled.dta", replace 
-file Data\Merged,Weighted,Labeled.dta saved
+. save "Data\Merge\Merged,Weighted,Labeled.dta", replace 
+file Data\Merge\Merged,Weighted,Labeled.dta saved
 
 . 
 . 
@@ -1615,7 +1656,7 @@ end of do-file
 . do "Code\State labeled, Hist, and Scatter (Weighted data).do"
 
 . ** Use "Data\Merged,Weighted,Labeled.dta" 
-. use "Data\Merged,Weighted,Labeled.dta" 
+. use "Data\Merge\Merged,Weighted,Labeled.dta" 
 
 . 
 . ** This adds a variable that labels the state FIPS codes into their state letter abbreviation **
@@ -1777,9 +1818,10 @@ variable state_abbrev was str1 now str2
 (1 real change made)
 
 . 
-. ** Make scatter plot with parental time investments, childs income rank, and State lables for children born into the 25% income rank ** 
-. scatter trthh perm25_popw , mlabel( state_abbrev) title("Parental Investment vs Intergenerational Mobility") xtitle("Income Rank at Age 24 born in 25%") ytitle(
-> "Parental Investment (minutes)  ") xscale(range(20 60))
+. ** Make scatter plot with parental time investments, childs income rank, and State lables for children born into the
+>  25% income rank ** 
+. scatter trthh perm25_popw , mlabel( state_abbrev) title("Parental Investment vs Intergenerational Mobility") xtitle(
+> "Income Rank at Age 24 born in 25%") ytitle("Parental Investment (minutes)  ") xscale(range(20 60))
 
 . 
 . ** Save the graph as png (or any preferred type)
@@ -1788,9 +1830,10 @@ file Outputs\25novar.png saved as PNG format
 
 . 
 . 
-. ** Make scatter plot with parental time investments, childs income rank, and State lables for children born into the 75% income rank ** 
-. scatter trthh perm75_popw , mlabel( state_abbrev) title("Parental Investment vs Intergenerational Mobility") xtitle("Income Rank at Age 24 born in 75%") ytitle(
-> "Parental Investment (minutes) ") xscale(range(20 60))
+. ** Make scatter plot with parental time investments, childs income rank, and State lables for children born into the
+>  75% income rank ** 
+. scatter trthh perm75_popw , mlabel( state_abbrev) title("Parental Investment vs Intergenerational Mobility") xtitle(
+> "Income Rank at Age 24 born in 75%") ytitle("Parental Investment (minutes) ") xscale(range(20 60))
 
 . 
 . ** Save the graph as png (or any preferred type)
@@ -1799,8 +1842,8 @@ file Outputs\75novar.png saved as PNG format
 
 . 
 . ** Make scatter plot for parental time investments by States Average Median Income 
-. scatter trthh medianinc , mlabel( state_abbrev) title("Parental Investment vs Average Income By State") xtitle("Average Median Income Per State") ytitle("Parent
-> al Investment (minutes) ")
+. scatter trthh medianinc , mlabel( state_abbrev) title("Parental Investment vs Average Income By State") xtitle("Aver
+> age Median Income Per State") ytitle("Parental Investment (minutes) ")
 
 . 
 . ** Save the graph as png
@@ -2044,10 +2087,17 @@ H0: diff = 0                                     Degrees of freedom =       49
 end of do-file
 
 . 
+. **Delete unzipped data/data to big for GitHub made during merging process
+. erase "Data\atuscps_2014.dat"
+
+. erase "Data\Merge\merged_data.dta"
+
+. 
 . * Close log 
 . log close
       name:  <unnamed>
-       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility Package\Code\Master Log.log
+       log:  C:\Users\akgilmar\OneDrive - Syracuse University\Documents\GitHub\course-project-parent\Reproducibility P
+> ackage\Code\Master Log.log
   log type:  text
- closed on:  15 Dec 2025, 17:19:05
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ closed on:  16 Dec 2025, 14:43:30
+----------------------------------------------------------------------------------------------------------------------

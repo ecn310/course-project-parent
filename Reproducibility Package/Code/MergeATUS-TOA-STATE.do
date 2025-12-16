@@ -1,17 +1,17 @@
 **Open Atus merged variable
-use "Data\merged_data.dta"
+use "Data\Merge\merged_data.dta"
 
 **Drop _merge variable
 drop _merge
 
 ** Merge the two sets on the statefips variable
-merge m:1 statefips using "Data\County_cohort_trends with population weights.dta"
+merge m:1 statefips using "Data\Merge\County_cohort_trends with population weights.dta"
 
 **Drop _merge variable
 drop _merge
 
 ** Merge State data 
-merge m:1 statefips using "Data\Updated data set with median income.dta"
+merge m:1 statefips using "Data\Merge\Updated data set with median income.dta"
 
 ** Remove extra state added
 keep if _merge == 3
@@ -27,7 +27,7 @@ label variable medianinc "State Median Income"
 
 ** Save finished data set to use for analysis
 
-save "Data\Merged,Weighted,Labeled.dta", replace 
+save "Data\Merge\Merged,Weighted,Labeled.dta", replace 
 
 
 

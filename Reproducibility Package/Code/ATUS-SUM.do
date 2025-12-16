@@ -168,6 +168,6 @@ label variable t069999 "Education, n.e.c.*"
 
 ** Save to your own computer to prepare for merging the ATUS datasets 
 
-save "Data\AtusSUM_2014_.dta", replace
+save "Data\Merge\AtusSUM_2014_.dta", replace
 
 

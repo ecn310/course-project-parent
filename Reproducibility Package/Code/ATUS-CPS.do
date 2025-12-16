@@ -390,9 +390,12 @@ label variable pxnmemp1 "PTNMEMP1: allocation flag"
 label variable pxpdemp2 "PEPDEMP2: allocation flag"
 label variable pxnmemp2 "PTNMEMP2: allocation flag"
 
+** Remove non used variables keep tucaseid tulineno gestfips trthh
+ keep tucaseid tulineno gestfips
+
 ** Save to own computer to prepare for mergeing the 3 ATUS datasets 
 
-save "Data\AtusCPS_2014_.dta", replace 
+save "Data\Merge\AtusCPS_2014_.dta", replace 
 
 
 

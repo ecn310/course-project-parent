@@ -25,7 +25,7 @@ If any of these links are broken or the data structure has changed, please refer
 | perm25_popw    | Born into 25% income rank at age 24  weighted by population                                                   |
 | trthh| Total Time spent providing childcare (minutes) |
 |medianinc| State Median Income |
-|||
-|||
-|||
-|||
+|state_abbrev|State Abbreviations |
+|highmob25||
+|high_inc||
+|highmob75||

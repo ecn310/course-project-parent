@@ -4,7 +4,7 @@ summarize trthh perm25_popw perm75_popw medianinc
 ** Check for accurate sum stats
 summarize perm25_popw, detail
 
-** Create high mobility indicator (above median)
+** Create high mobility indicator 
 gen highmob25 = (perm25_popw > r(p50))
 
 ** Check distribution
@@ -56,6 +56,7 @@ pwcorr trthh perm25_popw if high_inc==0, sig
 pwcorr trthh perm75_popw if high_inc==1, sig
 
 pwcorr trthh perm75_popw if high_inc==0, sig
+
 
 
 

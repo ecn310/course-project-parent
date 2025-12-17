@@ -102,33 +102,33 @@ Our final data set contains 51 total observations, representing state-level aver
 
 Each variable is aggregated to the state level and reflects the average across counties, weighted by population. 
 
-
+\begin{center} 
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
 \begin{tabularx}{\textwidth}{Y c c c c c}
 \small
 VARIABLES & N & mean & SD & Min & Max \\ \hline
-childcare (minutes) & 51 & 182.38 & 37.42 & 90.61 & 318.15 \\
-Rank 25th percentile (rank in percentile) & 51 & 32.39 & 12.15 & 6.98 & 49.827 \\
-Rank 75th percentile (rank in percentile) & 51 & 38.40 & 14.44 & 7.58 & 58.36 \\
+Childcare (minutes) & 51 & 182.38 & 37.42 & 90.61 & 318.15 \\
+Rank 25th percentile (rank in percentile) & 51 & 39.71 & 6.83 & 20.66 & 49.76 \\
+Rank 75th percentile (rank in percentile) & 51 & 47.35 & 8.27& 22.35 & 57.75 \\
 Medianinc (dollars) & 51 & 54131.2 & 9005.30 & 39464 & 74149 \\
 \hline
 \end{tabularx}
-
+\end{center}
 
 \section{Results}
 The analysis we conducted was between our established variables for parental time investments, which records the amount of time a parent spent in their daily diary entry on childcare, and our variables for two intergenerational mobility, which measures the income rank that a resident born into the 25th and 75th percentile of income distribution has at age 24, aggregated to the state level. 
 Our research hypothesis is that parents in U.S. states with higher rates of intergenerational mobility invest more time in their children compared to parents in states with lower rates of intergenerational mobility. Our null hypothesis is that there is no relationship between intergenerational mobility of states and parental time investments. 
 
-In order to test this hypothesis, we created a new binary variable of high mobility, which divided our data into the 26 highest-mobility states versus the 25 lowest mobility states to prepare the data for a t-test. This was performed twice using each mobility measure. 
+In order to test this hypothesis, we created a new binary variable of high mobility, which divided our data into the 25 highest-mobility states versus the 26 lowest mobility states to prepare the data for a t-test. This was performed twice using each mobility measure. 
 
-For the 25th percentile income variable, we performed a two-sample t-test and found that the difference in means between the higher parental investment states and the lower parental investment states was 18.48 minutes per day, and the higher-mobility group had the higher average childcare per day.
+For the 25th percentile income variable, we performed a two-sample t-test and found that the difference in means between the higher parental investment states and the lower parental investment states was 6.21 minutes per day, and the higher-mobility group had the higher average childcare per day.
 
-For the 25th percentile of income measure, our one-sided p-value was 0.071. This is within the significance threshold of .1, which means that there is marginal statistical significance of a relationship between the two variables. Thus, based on this t-test, we find that the data we have shown a marginally significant relationship between parental investment and intergenerational mobility by state, and we have marginal evidence to reject the null hypothesis.
+For the 25th percentile of income measure, our one-sided p-value was 0.0706. This is within the significance threshold of .1, which means that there is marginal statistical significance of a relationship between the two variables. Thus, based on this t-test, we find that the data we have shown a marginally significant relationship between parental investment and intergenerational mobility by state, and we have marginal evidence to reject the null hypothesis.
 
 Additionally, we performed another t-test to examine the relationship between parental time investments and intergenerational mobility for individuals born in the 75th percentile of the income distribution. This test provides insight into how impactful parental time investments may be for wealthier individuals. We followed the same procedure as with the 25th-percentile of income variable: we split the 51 state-level observations at the median, created a new high-mobility variable, and conducted a one-sided t-test based on this new variable.
 
-Our results showed a one-sided p-value of .0484 which is less than the accepted threshold for statistical significance meaning it is statistically significant. This means we have evidence to reject the null hypothesis for the 75th percentile of income variable and can state that there is a real relationship between intergenerational mobility and parental time investments for children born in the 75th percentile of income.
+Our results showed a one-sided p-value of .049 which is less than the accepted threshold for statistical significance meaning it is statistically significant. This means we have evidence to reject the null hypothesis for the 75th percentile of income variable and can state that there is a real relationship between intergenerational mobility and parental time investments for children born in the 75th percentile of income.
 
 \begin{center}
   \includegraphics[height=6cm]{Reproducibility Package/Outputs/25novar.png}

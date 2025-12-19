@@ -36,7 +36,7 @@ summarize perm75_popw, detail
 local med75 = r(p50)
 
 ** Create high mobility indicator (above median)
-gen highmob75 = perm75_popw > `med75'
+gen highmob75 = perm75_popw <  `med75'
 
 ** Create ttest 75th 
 ttest trthh, by(highmob75)

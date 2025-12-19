@@ -1,6 +1,11 @@
 ** Create summary stats table
 summarize trthh perm25_popw perm75_popw medianinc
 
+** Overall correlations
+pwcorr trthh perm25_popw, sig
+pwcorr trthh perm75_popw, sig
+pwcorr trthh medianinc, sig
+
 ** Check for accurate sum stats
 summarize perm25_popw, detail
 
@@ -46,16 +51,14 @@ label define mob 0 "Low mobility" 1 "High mobility"
 label values highmob25 mob
 label values highmob75 mob
 
-
 ** Check correlations
+** For 25th percentile mobility, split by income
+ttest trthh if high_inc==1, by(highmob25)
+ttest trthh if high_inc==0, by(highmob25)
 
-pwcorr trthh perm25_popw if high_inc==1, sig
-
-pwcorr trthh perm25_popw if high_inc==0, sig
-
-pwcorr trthh perm75_popw if high_inc==1, sig
-
-pwcorr trthh perm75_popw if high_inc==0, sig
+** For 75th percentile mobility, split by income  
+ttest trthh if high_inc==1, by(highmob75)
+ttest trthh if high_inc==0, by(highmob75)
 
 
 

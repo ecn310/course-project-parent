@@ -1,0 +1,325 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Desktop\New merger with county populations weights.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}10 Dec 2025, 13:39:36
+
+{com}. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Merged_data for merge.dta"
+
+. clear
+
+. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\merged_data.dta"
+
+. clear
+
+. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Merged_data for merge.dta"
+
+. drop merge
+{err}variable {bf}merge{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. drop_merge
+{err}command {bf}drop_merge{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. drop _merge
+
+. merge m:1 statefips using "C:\Users\oalevesq\OneDrive - Syracuse University\Desktop\County trends with county population weights.dta"
+{res}
+{txt}{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}          69,145{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+
+. merge m:1 statefips using "C:\Users\oalevesq\OneDrive - Syracuse University\ECN\Updated data set with median income(for master).dta"
+{res}{err}{p 0 4 2}
+file {bf:{err}C:\Users\oalevesq\OneDrive - Syracuse University\ECN\Updated data set with median income(for master).dta}
+not found
+{p_end}
+{txt}{search r(601), local:r(601);}
+
+{com}. import delimited "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\ACSDT5Y2014.B19013-Data.csv", varnames(1) clear 
+{res}{txt}(encoding automatically selected: UTF-8)
+{text}(5 vars, 52 obs)
+
+{com}. gen statefips =
+{err}invalid syntax
+{txt}{search r(198), local:r(198);}
+
+{com}. gen statefips = .
+{txt}(52 missing values generated)
+
+{com}. replace statefips = 1  if name == "Alabama"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 2  if name == "Alaska"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 4  if name == "Arizona"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 5  if name == "Arkansas"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 6  if name == "California"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 8  if name == "Colorado"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 9  if name == "Connecticut"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 10 if name == "Delaware"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 11 if name == "District of Columbia"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 12 if name == "Florida"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 13 if name == "Georgia"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 15 if name == "Hawaii"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 16 if name == "Idaho"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 17 if name == "Illinois"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 18 if name == "Indiana"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 19 if name == "Iowa"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 20 if name == "Kansas"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 21 if name == "Kentucky"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 22 if name == "Louisiana"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 23 if name == "Maine"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 24 if name == "Maryland"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 25 if name == "Massachusetts"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 26 if name == "Michigan"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 27 if name == "Minnesota"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 28 if name == "Mississippi"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 29 if name == "Missouri"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 30 if name == "Montana"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 31 if name == "Nebraska"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 32 if name == "Nevada"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 33 if name == "New Hampshire"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 34 if name == "New Jersey"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 35 if name == "New Mexico"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 36 if name == "New York"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 37 if name == "North Carolina"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 38 if name == "North Dakota"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 39 if name == "Ohio"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 40 if name == "Oklahoma"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 41 if name == "Oregon"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 42 if name == "Pennsylvania"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 44 if name == "Rhode Island"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 45 if name == "South Carolina"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 46 if name == "South Dakota"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 47 if name == "Tennessee"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 48 if name == "Texas"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 49 if name == "Utah"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 50 if name == "Vermont"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 51 if name == "Virginia"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 53 if name == "Washington"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 54 if name == "West Virginia"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 55 if name == "Wisconsin"
+{txt}(1 real change made)
+
+{com}. 
+. replace statefips = 56 if name == "Wyoming"
+{txt}(1 real change made)
+
+{com}. drop if name == "Geographic Area Name"
+{txt}(1 observation deleted)
+
+{com}. rename name statename
+{res}
+{com}. rename b19013_001e medianinc
+{res}
+{com}.  rename b19013_001m moe
+{res}
+{com}. save "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\Median income data.dta"
+{txt}{p 0 4 2}
+file {bf}
+C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\Median income data.dta{rm}
+saved
+{p_end}
+
+{com}. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Merged_data for merge.dta"
+
+. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Merged_data for merge.dta"
+
+. drop _merge
+
+. merge m:1 statefips using "C:\Users\oalevesq\OneDrive - Syracuse University\Desktop\County trends with county population weights.dta"
+{res}
+{txt}{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}          69,145{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+
+. merge m:1 using "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\Median income data.dta"
+{res}{err}{it:varlist} must be specified after {bf:merge m:1}
+{p 4 4 2}
+you must specify the key variables
+after {bf:merge m:1}
+{p_end}
+{txt}{search r(198), local:r(198);}
+
+{com}. merge m:1 statefips using "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\Median income data.dta"
+{res}{txt}{p 0 7 2}
+(variable
+{bf:statefips} was {bf:byte}, now {bf:float} to accommodate using data's values)
+{p_end}
+
+{col 5}Result{col 33}Number of obs
+{col 5}{hline 41}
+{col 5}Not matched{col 30}{res}               0
+{txt}{col 5}Matched{col 30}{res}          69,145{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. label variable perm75_popw "Born into 75% rank at 24 age"
+
+. 
+. label variable perm25_popw "Born into 25% rank at 24 age"
+
+. clear
+
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Desktop\New merger with county populations weights.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}10 Dec 2025, 14:00:23
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

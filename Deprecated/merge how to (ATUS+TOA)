@@ -1,0 +1,14 @@
+use "C:\Users\oalevesq\Downloads\merged_data.dta"
+use "C:\Users\oalevesq\Downloads\county_cohort_trends.dta"
+use "C:\Users\oalevesq\Downloads\merged_data.dta"
+use "C:\Users\oalevesq\Downloads\county_cohort_trends.dta"
+use "C:\Users\oalevesq\Downloads\merged_data.dta"
+rename gestfips statefips
+use "C:\Users\oalevesq\Downloads\county_cohort_trends.dta", clear
+rename state_id statefips
+save "C:\Users\oalevesq\Downloads\County_cohort_trends.dta updated.dta"
+use "C:\Users\oalevesq\Downloads\merged_data.dta"
+rename gestfips statefips
+save "C:\Users\oalevesq\Downloads\merged_data.dta", replace
+drop _merge
+merge m:m statefips using "C:\Users\oalevesq\Downloads\County_cohort_trends.dta updated.dta"

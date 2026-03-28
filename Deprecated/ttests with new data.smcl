@@ -1,0 +1,181 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\ttests with new data.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}10 Dec 2025, 14:46:40
+
+{com}. log using "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\ttests with new data.smcl"
+{err}log file already open
+{txt}{search r(604), local:r(604);}
+
+{com}. use "C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\New collapsed data.dta"
+
+. summarize perm25_popw , detail
+
+                     {txt}(mean) perm25_popw
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 20.66364       20.66364
+{txt} 5%    {res} 27.69671       27.59923
+{txt}10%    {res} 30.36432       27.69671       {txt}Obs         {res}         51
+{txt}25%    {res} 35.16327       29.00175       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res} 40.65403                      {txt}Mean          {res}  39.7131
+                        {txt}Largest       Std. dev.     {res} 6.834458
+{txt}75%    {res} 45.80186       47.16687
+{txt}90%    {res}  46.9768       48.46886       {txt}Variance      {res} 46.70981
+{txt}95%    {res} 48.46886       49.59269       {txt}Skewness      {res}-.6061705
+{txt}99%    {res} 49.76939       49.76939       {txt}Kurtosis      {res}  2.61939
+
+{com}. {c -(}com{c )-}. gen highmob25 = (perm25_popw > r(p50))
+{err}program error:  code follows on the same line as open brace
+{txt}{search r(198), local:r(198);}
+
+{com}. gen highmob25 = (perm25_popw > r(p50))
+
+. tab highmob25
+
+  {txt}highmob25 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         26       50.98       50.98
+{txt}          1 {c |}{res}         25       49.02      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. summarize medianinc, detail
+
+                      {txt}(mean) medianinc
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}    39464          39464
+{txt} 5%    {res}    41576          41264
+{txt}10%    {res}    44621          41576       {txt}Obs         {res}         51
+{txt}25%    {res}    47212          43342       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res}    52400                      {txt}Mean          {res}  54131.2
+                        {txt}Largest       Std. dev.     {res} 9005.296
+{txt}75%    {res}    60231          69899
+{txt}90%    {res}    68201          71829       {txt}Variance      {res} 8.11e+07
+{txt}95%    {res}    71829          72062       {txt}Skewness      {res} .5716211
+{txt}99%    {res}    74149          74149       {txt}Kurtosis      {res}  2.38168
+
+{com}. local med = r(p50)
+
+. gen high_inc = medianinc > `med'
+
+. label define inc 0 "Low inc" 1 "High inc"
+
+.  label values high_inc incy
+
+. tab high_inc
+
+   {txt}high_inc {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         26       50.98       50.98
+{txt}          1 {c |}{res}         25       49.02      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. label values highmob25 mob
+
+. summarize perm75_popw, detail
+
+                     {txt}(mean) perm75_popw
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}  22.3563        22.3563
+{txt} 5%    {res} 33.69234        32.3548
+{txt}10%    {res} 35.01066       33.69234       {txt}Obs         {res}         51
+{txt}25%    {res} 40.76239       34.36643       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res} 49.36232                      {txt}Mean          {res} 47.35315
+                        {txt}Largest       Std. dev.     {res} 8.278209
+{txt}75%    {res} 53.52819       57.45798
+{txt}90%    {res} 57.12092       57.46411       {txt}Variance      {res} 68.52874
+{txt}95%    {res} 57.46411       57.55682       {txt}Skewness      {res}-.8085158
+{txt}99%    {res} 57.74521       57.74521       {txt}Kurtosis      {res} 3.038732
+
+{com}. local med75 = r(p50)
+
+. gen high_mob75 = perm75_popw > `med75'
+
+. label values high_mob75 mob
+
+. tabulate high_inc high_mob25
+{err}variable {bf}high_mob25{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. tabulate high_inc highmob25
+
+           {txt}{c |} highmob25
+  high_inc {c |}         0 {c |}     Total
+{hline 11}{c +}{hline 11}{c +}{hline 10}
+         0 {c |}{res}        20 {txt}{c |}{res}        26 
+{txt}         1 {c |}{res}         6 {txt}{c |}{res}        25 
+{txt}{hline 11}{c +}{hline 11}{c +}{hline 10}
+     Total {c |}{res}        26 {txt}{c |}{res}        51 
+
+
+           {txt}{c |} highmob25
+  high_inc {c |}         1 {c |}     Total
+{hline 11}{c +}{hline 11}{c +}{hline 10}
+         0 {c |}{res}         6 {txt}{c |}{res}        26 
+{txt}         1 {c |}{res}        19 {txt}{c |}{res}        25 
+{txt}{hline 11}{c +}{hline 11}{c +}{hline 10}
+     Total {c |}{res}        25 {txt}{c |}{res}        51 
+
+{com}. rename high_mob75 highmob75
+{res}
+{com}. pwcorr trthh perm25_popw if high_inc==1, sig
+
+             {txt}{c |}    trthh perm25~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm25_popw {c |} {res} -0.2859   1.0000 
+             {txt}{c |}{res}   0.1660
+             {txt}{c |}
+
+{com}.  pwcorr trthh perm25_popw if high_inc==0, sig
+
+             {txt}{c |}    trthh perm25~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm25_popw {c |} {res} -0.3476   1.0000 
+             {txt}{c |}{res}   0.0819
+             {txt}{c |}
+
+{com}. pwcorr trthh perm75_popw if high_inc==1, sig
+
+             {txt}{c |}    trthh perm75~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm75_popw {c |} {res} -0.3721   1.0000 
+             {txt}{c |}{res}   0.0670
+             {txt}{c |}
+
+{com}. pwcorr trthh perm75_popw if high_inc==0, sig
+
+             {txt}{c |}    trthh perm75~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm75_popw {c |} {res} -0.3982   1.0000 
+             {txt}{c |}{res}   0.0439
+             {txt}{c |}
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\ACSDT5Y2014.B19013_2025-12-03T153340\ttests with new data.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}10 Dec 2025, 14:53:45
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

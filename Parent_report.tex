@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+
+% set margins and spacing
+\addtolength{\textwidth}{1.3in}
+\addtolength{\oddsidemargin}{-.65in} %left margin
+\addtolength{\evensidemargin}{-.65in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.5in}
+\setlength{\headheight}{0.0in}
+\setlength{\footskip}{.375in}
+\renewcommand{\baselinestretch}{1.0}
+\linespread{1.0}
+
+% load miscellaneous packages
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[american]{babel}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx,amsbsy,amssymb, amsmath, amsthm, MnSymbol,bbding,times, verbatim,bm,pifont,pdfsync,setspace,natbib}
+
+% enable hyperlinks and table of contents
+\usepackage[pdftex,
+bookmarks=true,
+bookmarksnumbered=false,
+pdfview=fitH,
+bookmarksopen=true,hyperfootnotes=false]{hyperref}
+
+% define environments
+\newtheorem{definition}{Definition}
+\newtheorem{fact}{Fact}
+\newtheorem{result}{Result}
+\newtheorem{proposition}{Proposition}
+
+
+
+\title{Intergenerational Mobility and Parental Time Investment: A State-Level Analysis}
+\author{Aisling Gilmartian\thanks{Akgilmar@syr.edu} \and Devon Mitchell\thanks{Djmitche@syr.edu} \and Yvonne Achancho\thanks{Yeachanc@syr.edu} \and Oliver Levesque\thanks{Oalevesq@syr.edu}}
+\date{\vskip-.1in \today}
+\begin{document}
+\maketitle
+
+\vskip.3in
+\begin{center} {\bf Abstract} \end{center}
+
+\begin{quote}
+{\small This study examines the relationship between parental time investments and intergenerational mobility in the United States. Using data from the American Time Use Survey and Opportunity Insights, we assess how mobility correlates with parental time investment across the U.S. states. We find weak evidence of a relationship between these variables. While correlation analysis shows a marginally significant relationship for children born into the 75th percentile, t-test comparisons do not reach statistical significance. These results show that parental time investment are unlikely to influence how state-level mobility shapes economic outcomes across generations. }
+\end{quote}
+
+\bigskip
+\section{Introduction} \label{sec:introduction}
+
+Intergenerational mobility is a real and distinguishable social factor that has been imprinted on many Americans since birth. 'The American Dream' in relation to intergenerational mobility is the belief that people come to this country in search of a better life for not just them, but their kids as well. Parents often strive to ensure that their children's lives are easier than theirs, reinforcing the desire for upward mobility. Parental investments are widely perceived to help positively affect this upward intergenerational mobility. 
+
+In this paper, we investigate whether there is a relationship between the parental time investments of a state and the intergenerational mobility of that state. Specifically, we asked whether parents invest more time in their kids in U.S. states where there is more or less intergenerational mobility? To answer this, we utilize data from The American Time Use Survey (ATUS), which measures how individual Americans who filled out a survey, spend their days and their parental time investment in their children. Opportunity Insights, which  provides state-level intergenerational mobility  data based on the income for people aged 24, born in the 25th and 75th income percentiles. We also included the  US Census Bureau data on median income of each state which we used to test our theory our two variables: rank and income. We will use these data to quantify parental investment and intergenerational mobility variables, which will help us determine their relationship. We hypothesize that parents in U.S. states with higher rates of intergenerational mobility invest more time in their children compared to parents in states with lower rates of intergenerational mobility. 
+
+The theory we have to support our hypothesis is that in areas with higher intergenerational mobility, it is more likely for parents to focus on their parental time investments. This is because parents do not want their children to lose wealth and want to see upward movements in intergenerational mobility. Therefore, parents are incentivized to invest more time in their children than states with less intergenerational mobility. We investigated this by observing the median income of each state compared to time investments and intergenerational mobility of each state to determine if parental time investments vary with the wealth of the state. Income differences across the United States do not directly explain differences in intergenerational mobility. However, our findings did allude to how parents may invest their time differently depending on income. 
+
+We found that there is not a statistically significant relationship between intergenerational mobility and parental investments by state for children born in the 25th percentile of income but a marginally significant relationship for children born in the 75th percentile of income. This indicates that there is a relationship between the two variables we study and may influence the way parents invest their time, especially for higher income parents. 
+
+This paper begins with our literature review where we evaluate similar papers in the field to establish exactly where the research on our topic is missing, which is parental time investments compared to intergenerational mobility, as there is no exact paper in the field that exists in the manner we conducted our research. The next section of the paper is a description of our data and how we acquired, merged, and used it to test our hypothesis. Our results section presents the empirical outcomes, using graphs and t-tests to summarize the data and examine whether intergenerational mobility and parental time investments are correlated at the state level. Finally, our conclusion section discusses the implications of our results in the real world. It also discusses the next steps in the field of research that should be taken. 
+
+\section{Literature Review} \label{'sec:literature'}
+
+There is a literature that addresses how structural factors such as income inequality, parental socioeconomic status, and regional context shape parental time and investments in their children’s development. Schneider et al. (2018) finds that the higher levels of income inequality at even a local level increases financial disparity and parents' ability to invest in their children. This also affects time investments between parents and children because higher income sometimes leads to more freedom and parental participation in the lives of children. This demonstrates that parental time spent with children is influenced by certain factors such as child characteristics rather than being uniform across families. 
+
+Nicoletti \& Tonei (2020) investigates how parents adjust time spent with their children based on the child’s current human capital such as compensating for poor cognitive skills by increasing learning time. This study aligns with Agostinelli et al. (2023), which shows that when children have academically stronger friends, nonauthoritarian parents increase their parental investment time with their children to compensate for their peer skills. On the other hand, authoritarian parents don’t change their parental investment time, but they do tend to control who their children surround themselves with. All of this ties into the Doepke (2019) framework, which analyzes how parenting styles change according to economic conditions. The study explains that authoritative parents often invest more time in soft qualities such as patience and long-term focus when their children excel academically. Authoritarian parents are more dependent on restricting their children’s choices than increasing parental investment time. These sources show that inequality and environment don't just change how much parents invest, but also how they parent their children.
+
+A common theme in these articles is the discussion of early investment in children and how it affects the trajectory of the child’s life. Carroll et al. (2014) adds to existing research about human development and mobility and supports evidence of the importance of early life conditions in shaping life skills, some of which can be propelled by financial investment. A common issue with parental investment centers around budget constraints, which results in a narrative that supports the need for childhood investment to some capacity but takes into account the financial strain that may limit parents' ability to do so. Investment is paramount for the development of skills needed for a child’s success, which can be translated into upward mobility (Carroll et al. 2014).
+
+This is further reinforced by later studies that emphasize the importance of maternal time investment in childhood. Important skill development through educational activities will boost a child's development, with a clear correlation between time spent in the early formative years of a child and the child's subsequent outcomes (Del Bono 2016).
+
+Considering our focus on intergenerational mobility and the variables that may determine a child's outcome, we chose to investigate how household income can determine the outcomes of children in the United States. We focus on parents who come from the 25th percentile and 75th percentile of income to formulate a narrative of intergenerational mobility and parental investment, and how it affects outcomes for their children. By understanding the outcomes, we can draw comparisons between income disparity in relation to child outcomes, which will then lead to the larger topic of rates of intergenerational mobility around the United States. 
+
+ 
+
+ 
+
+\section{Data}
+\label{'sec:data'}
+
+We employ two datasets to test our hypothesis. First, the American Time Use Survey (ATUS) data set gives us the variables we need regarding parental time investments in each of the 50 states and Washington, DC. Second, the Opportunity Insights data set gives us variables about the intergenerational mobility of the same 50 states and Washington, DC. These two data sets help us answer our question about time investments and intergenerational mobility. See the Data Appendix on the final page for accessing the data. 
+
+\subsection{The American Time Use Survey}
+
+The \href{https://www.bls.gov/tus/}{American Time Use Survey} collects data on how individuals spend their time on a given day. This data set was generated by randomly chosen households that had completed eight months of interviews with the Current Population Survey. Then a time diary was given to them in which they recorded how they spent their day, each activity, and how long they spent on each activity. Out of 792 variables available in the raw ATUS data set, we only used one variable in our final analysis: the total time spent providing secondary childcare. We selected this variable for our research because it captures the time parents spend caring for their child while engaging in another activities such as cooking, commuting, or working as opposed to the time they dedicate simply to caring for their child alone. This greatly increases the number of observations in the dataset when compared to just the primary childcare variable. The scope of these data is the United States, and there are 40,903 individual entries from the 50 States and Washington, DC. This survey was conducted annually from 2003 to 2025, but we specifically selected data from 2013-2014 as it aligns with the Opportunity Atlas data. Because the ATUS does not include geographic identifiers below the state level, we aggregated the individual-level data to the state level using the CPS portion of the ATUS, which includes state FIPS code. 
+
+\subsection{The Opportunity Atlas}
+\href{https://www.opportunityatlas.org/}{The Opportunity Atlas} is a collaboration between the U.S. Census Bureau and Opportunity Insights at Harvard University. The data set is generated by taking information from three sources. These sources are the 2000 and 2010 Decennial Census short form, the federal income tax returns from 1989, 1994, 1995, and 1998-2015, the 2000 Decennial Census long form, and the 2005-2015 American Community Surveys.
+
+This data set contains average survey responses at the county level, encompassing counties from every state in the United States. It includes 20 variables, such as county identification codes, children's national income rankings, college attendance rates among children, and state identification markers. The data set comprises 28,242 observations that span 50 states and Washington, DC. 
+
+The data covers 3,224 counties throughout the United States, but for our analysis, we aggregate it to the state level here. To do this, we calculate the population weighted mean of each county within a state which allows us to merge the Opportunity Atlas data with the ATUS data using the shared FIPS code. We selected 2014 as the year to merge both data sets because that was the only year the Opportunity Insights data set had data relevant to our research. From the Opportunity Atlas, we focus on the average income of a 24-year-old born in the 25th and 75th percentiles of the income distribution which we took as our intergenerational mobility variables.
+  
+\subsection{Merged data}
+\label{sec:data}
+
+We compiled the Opportunity Atlas income data from 2014, organized the ATUS data and merged all micro files along with the CPS data which includes the participants' state FIPS (Federal Information Processing Standard) codes. These codes help identify each respondent's state of residence and allowed us to merge the ATUS data with the Opportunity Atlas data, since both datasets include FIPS codes for geographic alignment. This resulted in a combined dataset containing child income at age 24 for individuals born in the 25th and 75th percentiles of the income distribution (how we measure our intergenerational mobility) along with the total time spent providing secondary childcare.
+
+Our final data set contains 51 total observations, representing state-level averages derived from merged data sources: the ATUS data set, the Opportunity Atlas, and the 2014 U.S. Census. These observations include parental time investments measured as the average total minutes per day spent providing secondary childcare; intergenerational mobility, measured as the national income rank at age 25 for children born into the 25th percentile and the 75th percentile of the income distribution; and median income by state which is measured in U.S. dollars.
+
+Each variable is aggregated to the state level and reflects the average across counties, weighted by population. 
+
+\begin{center} 
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{tabularx}{\textwidth}{Y c c c c c}
+\small
+VARIABLES & N & mean & SD & Min & Max \\ \hline
+Childcare (minutes) & 51 & 182.38 & 37.42 & 90.61 & 318.15 \\
+Rank 25th percentile (rank in percentile) & 51 & 39.71 & 6.83 & 20.66 & 49.76 \\
+Rank 75th percentile (rank in percentile) & 51 & 47.35 & 8.27& 22.35 & 57.75 \\
+Medianinc (dollars) & 51 & 54131.2 & 9005.30 & 39464 & 74149 \\
+\hline
+\end{tabularx}
+\end{center}
+
+\section{Results}
+The analysis we conducted was between our established variables for parental time investments, which records the amount of time a parent spent in their daily diary entry on childcare, and our variables for two intergenerational mobility, which measures the income rank that a resident born into the 25th and 75th percentile of income distribution has at age 24, aggregated to the state level. 
+Our research hypothesis is that parents in U.S. states with higher rates of intergenerational mobility invest more time in their children compared to parents in states with lower rates of intergenerational mobility. Our null hypothesis is that there is no relationship between intergenerational mobility of states and parental time investments. 
+
+In order to test this hypothesis, we created a new binary variable of high mobility, which divided our data into the 25 highest-mobility states versus the 26 lowest mobility states to prepare the data for a t-test. This was performed twice using each mobility measure. 
+
+For the 25th percentile income variable, we performed a two-sample t-test and found that the difference in means between the higher-mobility states and the lower-mobility states was 6.21 minutes per day, with the lower-mobility group having the highest average childcare per day , 185.4 versus 179.2 minutes. For the 25th percentile of the income measure, our one-sided p-value was 0.279.
+
+For the 25th percentile of the income measure, our one-sided p-value was 0.279. This is not within the significance threshold of .1, which means that there is no statistical significance of a relationship between the two variables. Thus, based on this t-test, we find that the data we have do not show a significant relationship between parental investment and intergenerational mobility by state, and we fail to reject the null hypothesis.
+
+Additionally, we performed another t-test to examine the relationship between parental time investments and intergenerational mobility for individuals born in the 75th percentile of the income distribution. This test provides insight into how impactful parental time investments may be for wealthier individuals. We followed a similar procedure as with the 25th-percentile of income variable: we split the 51 state-level observations at the median, created a new high-mobility variable but instead of it being the half above the median it was the half below the median, and conducted a one-sided t-test based on this new variable.
+
+Our results showed a one-sided p-value of 0.228 which is greater than the accepted threshold for statistical significance, meaning it is not statistically significant. The lower-mobility group had lower average childcare of 178.5 minutes compared to the higher-mobility group of 186.4 minutes, a difference of 7.9 minutes per day. This means we are not able to reject the null hypothesis for the 75th percentile of income variable and can state that the relationship between intergenerational mobility and parental time investments for children born in the 75th percentile of income cannot be determined using our data.
+
+\begin{center}
+  \includegraphics[height=6cm]{Reproducibility Package/Outputs/25novar.png}
+\end{center}
+
+\begin{center}
+  \includegraphics[height=6cm]{Reproducibility Package/Outputs/75novar.png}
+\end{center}
+
+The graph for these data points is the plot of parental investment against intergenerational mobility, with each point labeled by its corresponding state abbreviation. The horizontal axis displays intergenerational mobility, measured as the income rank at age 24 for individuals born in the 25th percentile of income in the first graph and the 75th percentile in the second graph. The vertical axis represents parental time investments. Both graphs use scatter plots to illustrate these relationships. 
+
+The Pearson correlation coefficient for the first graph is -0.186, which indicates that there is a weak negative correlation between the two variables. The associated p-value is 0.192, which suggests that the relationship is not statistically significant at conventional thresholds.
+The Pearson correlation coefficient for the second graph is -0.278, suggesting a weak negative correlation between the two variables, similar to that of the first graph. This graph has a two-sided p-value of 0.048, which is marginally statistically significant. This provides weak evidence of a relationship between parental time investment and intergenerational mobility for children born in the 75th percentile of income   
+
+
+\begin{center}
+  \includegraphics[height=6cm]{Reproducibility Package/Outputs/StateIncome.png}
+\end{center}
+
+We also created a scatter plot of the average income by state for the year 2014, including all participants in the U.S. Census Bureau data rather than only children's data at the age of 24. This graph shows no real correlation between the two variables, as the Pearson correlation coefficient is 0.112, showing a weak positive correlation. Additionally, the p-value for this correlation is 0.433, which is above the threshold for statistical significance. This shows that the median income of each state does not explain the differences in time investments by state.
+
+Splitting the data set into four groups, first by the top and bottom sides of the median income by state variable and then by the top and bottom halves of each mobility variable instead of just two by income and then mobility results in four groups that we performed t-tests on. For these groups comparing high and low mobility within income groups, the one-sided p-values were 0.052 for high-income states with 25th percentile mobility, 0.448 for low-income states with 25th percentile mobility, 0.186 for high-income states with 75th percentile mobility, and 0.162 for low-income states with 75th percentile mobility. The high-income, 25th percentile group shows the strongest relationship being 0.052, with higher-mobility states showing 32.6 fewer minutes of childcare per day. These results show that the relationship between intergenerational mobility and parental time investment varies by income level and mobility measure. The high-income, 25th percentile group shows the strongest relationship with a p-value of 0.052, though it remains marginally insignificant. None of the subgroups reach conventional levels of statistical significance, meaning that the theory behind our hypothesis is not supported. These results do not support our initial hypothesis that parents in higher-mobility states invest more time in their children. To the extent that any relationship exists, the data suggest the opposite pattern as states with higher mobility tend to have somewhat lower parental time investment, though this relationship is weak if any. 
+
+    \setlength{\pdfpagewidth}{8.5in} \setlength{\pdfpageheight}{11in}
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+We began our research with the question of \textit{Do parents invest more time in their kids in U.S. states where there is more inequality and/or less intergenerational mobility?}  To address this question, we utilized data from The American Time Use Survey to measure parental time investments and data from Opportunity Insights to gather data on intergenerational mobility. We aggregated these data to the state level because the public-use ATUS data is only comprehensible at that level. However, some sources say that ATUS public-use data may allow for aggregation on certain metropolitan areas which could serve as a complementary analysis by providing more accurate insights for specific cities, even though it would not cover the entire U.S. In the future, if more detailed geographic information were provided this would make it easier for more in-depth analysis. We also weighted the data by the population of each state to better reflect the trends of the overall data set. With these data, as well as data from the Census Bureau on the median income of each state, we analyzed how parental time investments differ between high-mobility and low mobility states.
+
+Our results demonstrate that there is no statistically significant relationship between state-level intergenerational mobility and parental time investments for children born in the 25th percentile of income. For the 75th percentile, the correlation analysis shows a marginally significant relationship, though the t-test comparison does not reach statistical significance. The subgroup analysis reveals that the relationship may be strongest among high-income states for children born in the 25th percentile, though this remains marginally insignificant. Based on these results, we cannot conclude that state-level mobility has a clear relationship with parental time investments. The only evidence of a relationship comes from the correlation analysis for the 75th percentile of a p-value of 0.048, but this is not supported by the t-test analysis and represents only weak, marginally significant evidence. For children born in the 25th percentile, we find no evidence of a relationship between state mobility and parental time investments.
+
+From this conclusion, the next steps would be to expand this research to the county level to get more accurate data on intergenerational mobility. Additionally, individual data stating personal reasons why and how parents make the investments in their children would provide qualitative data, bringing on a new perspective on this topic. The implications of our results are that parental investments and intergenerational mobility within a state show weak and inconsistent evidence of a relationship. While some measures suggest a possible correlation, the overall evidence is not strong enough to conclude that states with higher intergenerational mobility systematically differ in parental time investments. This suggests that other factors beyond parental time may be more important in explaining state-level differences in mobility. Future research should test whether these findings hold when examined with more disaggregated data, as the mechanisms linking parental time investment and intergenerational mobility may operate at local rather than state levels. 
+
+\newpage
+\section*{Bibliography}
+\singlespacing
+\setlength\bibsep{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+Agostinelli, F., Doepke, M., Sorrenti, G., \& Zilibotti, F. (2020). It takes a village: The economics of parenting with neighborhood and peer effects (No. w27050). National Bureau of Economic Research.\\
+    
+Carroll, C. D., Slacalek, J., \& Tokuoka, K. (2014). The distribution of wealth and the marginal propensity to consume (No. 1655). European Central Bank Working Paper Series. Retrieved from https://www. ecb. europa. eu.\\
+
+Bono, E. D., Francesconi, M., Kelly, Y., \& Sacker, A. (2016). Early maternal time investment and early child outcomes. The Economic Journal, 126(596), F96-F135.\\
+
+Doepke, M., Sorrenti, G., \& Zilibotti, F. (2019). The economics of parenting. Annual Review of Economics, 11(1), 55-84.\\
+
+Doepke, M., \& Zilibotti, F. (2019). Love, Money, and Parenting: How Economics Explains the Way We Raise Our Kids. Princeton University Press. https://doi.org/10.2307/j.ctvc77fr1\\
+
+Nicoletti, C., \& Tonei, V. (2020). Do parental time investments react to changes in child’s skills and health?. European Economic Review, 127, 103491.\\
+
+Schneider, D., Hastings, O. P., \& LaBriola, J. (2018). Income inequality and class divides in parental investments. American Sociological Review, 83(3), 475-507.\\
+
+\newpage
+\section*{Data Appendix} \label{sec:appendixa}
+\addcontentsline{toc}{section}{Appendix A}
+
+Our reproducibility package can be found on our GitHub repository titled \href{https://github.com/ecn310/course-project-parent?tab=readme-ov-file#master-documentation-file}{course-project-parent}. It is under the folder reproducibility package where our code, data, and outputs can be found and reproduced.
+
+\end{document}

@@ -1,0 +1,533 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\Creating state abbreviation variable.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Dec 2025, 17:03:21
+
+{com}. tab trthh
+
+     {txt}(mean) {c |}
+      trthh {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    38.8191 {c |}{res}          1        1.96        1.96
+{txt}    90.6087 {c |}{res}          1        1.96        3.92
+{txt}   113.6838 {c |}{res}          1        1.96        5.88
+{txt}   128.7442 {c |}{res}          1        1.96        7.84
+{txt}   141.3474 {c |}{res}          1        1.96        9.80
+{txt}   148.7481 {c |}{res}          1        1.96       11.76
+{txt}   154.2173 {c |}{res}          1        1.96       13.73
+{txt}   155.7399 {c |}{res}          1        1.96       15.69
+{txt}   156.3933 {c |}{res}          1        1.96       17.65
+{txt}   156.4562 {c |}{res}          1        1.96       19.61
+{txt}   159.2811 {c |}{res}          1        1.96       21.57
+{txt}   159.6311 {c |}{res}          1        1.96       23.53
+{txt}   161.6145 {c |}{res}          1        1.96       25.49
+{txt}    162.041 {c |}{res}          1        1.96       27.45
+{txt}   169.0266 {c |}{res}          1        1.96       29.41
+{txt}   169.1438 {c |}{res}          1        1.96       31.37
+{txt}   170.0891 {c |}{res}          1        1.96       33.33
+{txt}   170.3957 {c |}{res}          1        1.96       35.29
+{txt}    172.051 {c |}{res}          1        1.96       37.25
+{txt}   172.3836 {c |}{res}          1        1.96       39.22
+{txt}   173.4993 {c |}{res}          1        1.96       41.18
+{txt}   175.1507 {c |}{res}          1        1.96       43.14
+{txt}    175.582 {c |}{res}          1        1.96       45.10
+{txt}   175.9796 {c |}{res}          1        1.96       47.06
+{txt}   180.0962 {c |}{res}          1        1.96       49.02
+{txt}   180.6681 {c |}{res}          1        1.96       50.98
+{txt}   180.9738 {c |}{res}          1        1.96       52.94
+{txt}   181.3804 {c |}{res}          1        1.96       54.90
+{txt}   183.1041 {c |}{res}          1        1.96       56.86
+{txt}   183.7838 {c |}{res}          1        1.96       58.82
+{txt}    184.494 {c |}{res}          1        1.96       60.78
+{txt}   184.6558 {c |}{res}          1        1.96       62.75
+{txt}   185.2491 {c |}{res}          1        1.96       64.71
+{txt}   185.5168 {c |}{res}          1        1.96       66.67
+{txt}   187.9195 {c |}{res}          1        1.96       68.63
+{txt}   188.1418 {c |}{res}          1        1.96       70.59
+{txt}    189.269 {c |}{res}          1        1.96       72.55
+{txt}   193.5648 {c |}{res}          1        1.96       74.51
+{txt}   195.8587 {c |}{res}          1        1.96       76.47
+{txt}   195.8602 {c |}{res}          1        1.96       78.43
+{txt}   198.1694 {c |}{res}          1        1.96       80.39
+{txt}   202.1689 {c |}{res}          1        1.96       82.35
+{txt}   203.5663 {c |}{res}          1        1.96       84.31
+{txt}   205.7194 {c |}{res}          1        1.96       86.27
+{txt}   217.5904 {c |}{res}          1        1.96       88.24
+{txt}   231.9389 {c |}{res}          1        1.96       90.20
+{txt}   233.0912 {c |}{res}          1        1.96       92.16
+{txt}   285.9406 {c |}{res}          1        1.96       94.12
+{txt}   318.1522 {c |}{res}          1        1.96       96.08
+{txt}   387.5286 {c |}{res}          1        1.96       98.04
+{txt}    601.936 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. tab statefips
+
+    {txt}Federal {c |}
+ Processing {c |}
+Information {c |}
+  Standards {c |}
+     (FIPS) {c |}
+ state code {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}          1        1.96        1.96
+{txt}          2 {c |}{res}          1        1.96        3.92
+{txt}          4 {c |}{res}          1        1.96        5.88
+{txt}          5 {c |}{res}          1        1.96        7.84
+{txt}          6 {c |}{res}          1        1.96        9.80
+{txt}          8 {c |}{res}          1        1.96       11.76
+{txt}          9 {c |}{res}          1        1.96       13.73
+{txt}         10 {c |}{res}          1        1.96       15.69
+{txt}         11 {c |}{res}          1        1.96       17.65
+{txt}         12 {c |}{res}          1        1.96       19.61
+{txt}         13 {c |}{res}          1        1.96       21.57
+{txt}         15 {c |}{res}          1        1.96       23.53
+{txt}         16 {c |}{res}          1        1.96       25.49
+{txt}         17 {c |}{res}          1        1.96       27.45
+{txt}         18 {c |}{res}          1        1.96       29.41
+{txt}         19 {c |}{res}          1        1.96       31.37
+{txt}         20 {c |}{res}          1        1.96       33.33
+{txt}         21 {c |}{res}          1        1.96       35.29
+{txt}         22 {c |}{res}          1        1.96       37.25
+{txt}         23 {c |}{res}          1        1.96       39.22
+{txt}         24 {c |}{res}          1        1.96       41.18
+{txt}         25 {c |}{res}          1        1.96       43.14
+{txt}         26 {c |}{res}          1        1.96       45.10
+{txt}         27 {c |}{res}          1        1.96       47.06
+{txt}         28 {c |}{res}          1        1.96       49.02
+{txt}         29 {c |}{res}          1        1.96       50.98
+{txt}         30 {c |}{res}          1        1.96       52.94
+{txt}         31 {c |}{res}          1        1.96       54.90
+{txt}         32 {c |}{res}          1        1.96       56.86
+{txt}         33 {c |}{res}          1        1.96       58.82
+{txt}         34 {c |}{res}          1        1.96       60.78
+{txt}         35 {c |}{res}          1        1.96       62.75
+{txt}         36 {c |}{res}          1        1.96       64.71
+{txt}         37 {c |}{res}          1        1.96       66.67
+{txt}         38 {c |}{res}          1        1.96       68.63
+{txt}         39 {c |}{res}          1        1.96       70.59
+{txt}         40 {c |}{res}          1        1.96       72.55
+{txt}         41 {c |}{res}          1        1.96       74.51
+{txt}         42 {c |}{res}          1        1.96       76.47
+{txt}         44 {c |}{res}          1        1.96       78.43
+{txt}         45 {c |}{res}          1        1.96       80.39
+{txt}         46 {c |}{res}          1        1.96       82.35
+{txt}         47 {c |}{res}          1        1.96       84.31
+{txt}         48 {c |}{res}          1        1.96       86.27
+{txt}         49 {c |}{res}          1        1.96       88.24
+{txt}         50 {c |}{res}          1        1.96       90.20
+{txt}         51 {c |}{res}          1        1.96       92.16
+{txt}         53 {c |}{res}          1        1.96       94.12
+{txt}         54 {c |}{res}          1        1.96       96.08
+{txt}         55 {c |}{res}          1        1.96       98.04
+{txt}         56 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. clear
+
+. use "C:\Users\oalevesq\Downloads\New merged data with 25th and 75th (1).dta"
+
+. tab trthh
+
+     {txt}(mean) {c |}
+      trthh {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+    38.8191 {c |}{res}          1        1.96        1.96
+{txt}    90.6087 {c |}{res}          1        1.96        3.92
+{txt}   113.6838 {c |}{res}          1        1.96        5.88
+{txt}   128.7442 {c |}{res}          1        1.96        7.84
+{txt}   141.3474 {c |}{res}          1        1.96        9.80
+{txt}   148.7481 {c |}{res}          1        1.96       11.76
+{txt}   154.2173 {c |}{res}          1        1.96       13.73
+{txt}   155.7399 {c |}{res}          1        1.96       15.69
+{txt}   156.3933 {c |}{res}          1        1.96       17.65
+{txt}   156.4562 {c |}{res}          1        1.96       19.61
+{txt}   159.2811 {c |}{res}          1        1.96       21.57
+{txt}   159.6311 {c |}{res}          1        1.96       23.53
+{txt}   161.6145 {c |}{res}          1        1.96       25.49
+{txt}    162.041 {c |}{res}          1        1.96       27.45
+{txt}   169.0266 {c |}{res}          1        1.96       29.41
+{txt}   169.1438 {c |}{res}          1        1.96       31.37
+{txt}   170.0891 {c |}{res}          1        1.96       33.33
+{txt}   170.3957 {c |}{res}          1        1.96       35.29
+{txt}    172.051 {c |}{res}          1        1.96       37.25
+{txt}   172.3836 {c |}{res}          1        1.96       39.22
+{txt}   173.4993 {c |}{res}          1        1.96       41.18
+{txt}   175.1507 {c |}{res}          1        1.96       43.14
+{txt}    175.582 {c |}{res}          1        1.96       45.10
+{txt}   175.9796 {c |}{res}          1        1.96       47.06
+{txt}   180.0962 {c |}{res}          1        1.96       49.02
+{txt}   180.6681 {c |}{res}          1        1.96       50.98
+{txt}   180.9738 {c |}{res}          1        1.96       52.94
+{txt}   181.3804 {c |}{res}          1        1.96       54.90
+{txt}   183.1041 {c |}{res}          1        1.96       56.86
+{txt}   183.7838 {c |}{res}          1        1.96       58.82
+{txt}    184.494 {c |}{res}          1        1.96       60.78
+{txt}   184.6558 {c |}{res}          1        1.96       62.75
+{txt}   185.2491 {c |}{res}          1        1.96       64.71
+{txt}   185.5168 {c |}{res}          1        1.96       66.67
+{txt}   187.9195 {c |}{res}          1        1.96       68.63
+{txt}   188.1418 {c |}{res}          1        1.96       70.59
+{txt}    189.269 {c |}{res}          1        1.96       72.55
+{txt}   193.5648 {c |}{res}          1        1.96       74.51
+{txt}   195.8587 {c |}{res}          1        1.96       76.47
+{txt}   195.8602 {c |}{res}          1        1.96       78.43
+{txt}   198.1694 {c |}{res}          1        1.96       80.39
+{txt}   202.1689 {c |}{res}          1        1.96       82.35
+{txt}   203.5663 {c |}{res}          1        1.96       84.31
+{txt}   205.7194 {c |}{res}          1        1.96       86.27
+{txt}   217.5904 {c |}{res}          1        1.96       88.24
+{txt}   231.9389 {c |}{res}          1        1.96       90.20
+{txt}   233.0912 {c |}{res}          1        1.96       92.16
+{txt}   285.9406 {c |}{res}          1        1.96       94.12
+{txt}   318.1522 {c |}{res}          1        1.96       96.08
+{txt}   387.5286 {c |}{res}          1        1.96       98.04
+{txt}    601.936 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. tab statefips
+
+    {txt}Federal {c |}
+ Processing {c |}
+Information {c |}
+  Standards {c |}
+     (FIPS) {c |}
+ state code {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}          1        1.96        1.96
+{txt}          2 {c |}{res}          1        1.96        3.92
+{txt}          4 {c |}{res}          1        1.96        5.88
+{txt}          5 {c |}{res}          1        1.96        7.84
+{txt}          6 {c |}{res}          1        1.96        9.80
+{txt}          8 {c |}{res}          1        1.96       11.76
+{txt}          9 {c |}{res}          1        1.96       13.73
+{txt}         10 {c |}{res}          1        1.96       15.69
+{txt}         11 {c |}{res}          1        1.96       17.65
+{txt}         12 {c |}{res}          1        1.96       19.61
+{txt}         13 {c |}{res}          1        1.96       21.57
+{txt}         15 {c |}{res}          1        1.96       23.53
+{txt}         16 {c |}{res}          1        1.96       25.49
+{txt}         17 {c |}{res}          1        1.96       27.45
+{txt}         18 {c |}{res}          1        1.96       29.41
+{txt}         19 {c |}{res}          1        1.96       31.37
+{txt}         20 {c |}{res}          1        1.96       33.33
+{txt}         21 {c |}{res}          1        1.96       35.29
+{txt}         22 {c |}{res}          1        1.96       37.25
+{txt}         23 {c |}{res}          1        1.96       39.22
+{txt}         24 {c |}{res}          1        1.96       41.18
+{txt}         25 {c |}{res}          1        1.96       43.14
+{txt}         26 {c |}{res}          1        1.96       45.10
+{txt}         27 {c |}{res}          1        1.96       47.06
+{txt}         28 {c |}{res}          1        1.96       49.02
+{txt}         29 {c |}{res}          1        1.96       50.98
+{txt}         30 {c |}{res}          1        1.96       52.94
+{txt}         31 {c |}{res}          1        1.96       54.90
+{txt}         32 {c |}{res}          1        1.96       56.86
+{txt}         33 {c |}{res}          1        1.96       58.82
+{txt}         34 {c |}{res}          1        1.96       60.78
+{txt}         35 {c |}{res}          1        1.96       62.75
+{txt}         36 {c |}{res}          1        1.96       64.71
+{txt}         37 {c |}{res}          1        1.96       66.67
+{txt}         38 {c |}{res}          1        1.96       68.63
+{txt}         39 {c |}{res}          1        1.96       70.59
+{txt}         40 {c |}{res}          1        1.96       72.55
+{txt}         41 {c |}{res}          1        1.96       74.51
+{txt}         42 {c |}{res}          1        1.96       76.47
+{txt}         44 {c |}{res}          1        1.96       78.43
+{txt}         45 {c |}{res}          1        1.96       80.39
+{txt}         46 {c |}{res}          1        1.96       82.35
+{txt}         47 {c |}{res}          1        1.96       84.31
+{txt}         48 {c |}{res}          1        1.96       86.27
+{txt}         49 {c |}{res}          1        1.96       88.24
+{txt}         50 {c |}{res}          1        1.96       90.20
+{txt}         51 {c |}{res}          1        1.96       92.16
+{txt}         53 {c |}{res}          1        1.96       94.12
+{txt}         54 {c |}{res}          1        1.96       96.08
+{txt}         55 {c |}{res}          1        1.96       98.04
+{txt}         56 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. gen state_abbrev = ""
+{txt}(51 missing values generated)
+
+{com}. replace state_abbrev = "AL" if statefips == 1
+{txt}variable {bf}{res}state_abbrev{sf}{txt} was {bf}{res}str1{sf}{txt} now {bf}{res}str2{sf}
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "AK" if statefips == 2
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "AZ" if statefips == 4
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "AR" if statefips == 5
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "CA" if statefips == 6
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "CO" if statefips == 8
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "CT" if statefips == 9
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "DE" if statefips == 10
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "FL" if statefips == 12
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "GA" if statefips == 13
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "HI" if statefips == 15
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "ID" if statefips == 16
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "IL" if statefips == 17
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "IN" if statefips == 18
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "IA" if statefips == 19
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "KS" if statefips == 20
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "KY" if statefips == 21
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "LA" if statefips == 22
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "ME" if statefips == 23
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "MD" if statefips == 24
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "MA" if statefips == 25
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "MI" if statefips == 26
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "MN" if statefips == 27
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "MS" if statefips == 28
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "MO" if statefips == 29
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "MT" if statefips == 30
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "NE" if statefips == 31
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "NV" if statefips == 32
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "NH" if statefips == 33
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "NJ" if statefips == 34
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "NM" if statefips == 35
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "NY" if statefips == 36
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "NC" if statefips == 37
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "ND" if statefips == 38
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "OH" if statefips == 39
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "OK" if statefips == 40
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "OR" if statefips == 41
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "PA" if statefips == 42
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "RI" if statefips == 44
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "SC" if statefips == 45
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "SD" if statefips == 46
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "TN" if statefips == 47
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "TX" if statefips == 48
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "UT" if statefips == 49
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "VT" if statefips == 50
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "VA" if statefips == 51
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "WA" if statefips == 53
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "WV" if statefips == 54
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "WI" if statefips == 55
+{txt}(1 real change made)
+
+{com}. replace state_abbrev = "WY" if statefips == 56
+{txt}(1 real change made)
+
+{com}. codebook statefips
+
+{txt}{hline}
+{res}statefips{right:Federal Processing Information Standards (FIPS) state code}
+{txt}{hline}
+
+{col 19}Type: Numeric ({res}byte{txt})
+
+{col 18}Range: [{res}1{txt},{res}56{txt}]{col 55}Units: {res}1
+{col 10}{txt}Unique values: {res}51{col 51}{txt}Missing .: {res}0{txt}/{res}51
+
+{txt}{col 19}Mean: {res}{ralign 7:28.9608}
+{txt}{col 14}Std. dev.: {res}{ralign 7:15.8328}
+
+{txt}{col 12}Percentiles: {col 25}{ralign 7:10%}{ralign 10:25%}{ralign 10:50%}{ralign 10:75%}{ralign 10:90%}
+{res}{col 25}{ralign 7:8}{ralign 10:      16}{ralign 10:      29}{ralign 10:      42}{ralign 10:      50}
+
+{com}. codebook state_abbrev
+
+{txt}{hline}
+{res}state_abbrev{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}Type: String ({res}str2{txt})
+
+{col 10}Unique values: {res}50{col 51}{txt}Missing "": {res}1{txt}/{res}51
+
+{txt}{col 15}Examples: {res}"FL"
+{col 25}"MA"
+{col 25}"NE"
+{col 25}"RI"
+
+{com}. tab state_abbrev if state_abbrev==""
+{txt}no observations
+
+{com}. tab statefips
+
+    {txt}Federal {c |}
+ Processing {c |}
+Information {c |}
+  Standards {c |}
+     (FIPS) {c |}
+ state code {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          1 {c |}{res}          1        1.96        1.96
+{txt}          2 {c |}{res}          1        1.96        3.92
+{txt}          4 {c |}{res}          1        1.96        5.88
+{txt}          5 {c |}{res}          1        1.96        7.84
+{txt}          6 {c |}{res}          1        1.96        9.80
+{txt}          8 {c |}{res}          1        1.96       11.76
+{txt}          9 {c |}{res}          1        1.96       13.73
+{txt}         10 {c |}{res}          1        1.96       15.69
+{txt}         11 {c |}{res}          1        1.96       17.65
+{txt}         12 {c |}{res}          1        1.96       19.61
+{txt}         13 {c |}{res}          1        1.96       21.57
+{txt}         15 {c |}{res}          1        1.96       23.53
+{txt}         16 {c |}{res}          1        1.96       25.49
+{txt}         17 {c |}{res}          1        1.96       27.45
+{txt}         18 {c |}{res}          1        1.96       29.41
+{txt}         19 {c |}{res}          1        1.96       31.37
+{txt}         20 {c |}{res}          1        1.96       33.33
+{txt}         21 {c |}{res}          1        1.96       35.29
+{txt}         22 {c |}{res}          1        1.96       37.25
+{txt}         23 {c |}{res}          1        1.96       39.22
+{txt}         24 {c |}{res}          1        1.96       41.18
+{txt}         25 {c |}{res}          1        1.96       43.14
+{txt}         26 {c |}{res}          1        1.96       45.10
+{txt}         27 {c |}{res}          1        1.96       47.06
+{txt}         28 {c |}{res}          1        1.96       49.02
+{txt}         29 {c |}{res}          1        1.96       50.98
+{txt}         30 {c |}{res}          1        1.96       52.94
+{txt}         31 {c |}{res}          1        1.96       54.90
+{txt}         32 {c |}{res}          1        1.96       56.86
+{txt}         33 {c |}{res}          1        1.96       58.82
+{txt}         34 {c |}{res}          1        1.96       60.78
+{txt}         35 {c |}{res}          1        1.96       62.75
+{txt}         36 {c |}{res}          1        1.96       64.71
+{txt}         37 {c |}{res}          1        1.96       66.67
+{txt}         38 {c |}{res}          1        1.96       68.63
+{txt}         39 {c |}{res}          1        1.96       70.59
+{txt}         40 {c |}{res}          1        1.96       72.55
+{txt}         41 {c |}{res}          1        1.96       74.51
+{txt}         42 {c |}{res}          1        1.96       76.47
+{txt}         44 {c |}{res}          1        1.96       78.43
+{txt}         45 {c |}{res}          1        1.96       80.39
+{txt}         46 {c |}{res}          1        1.96       82.35
+{txt}         47 {c |}{res}          1        1.96       84.31
+{txt}         48 {c |}{res}          1        1.96       86.27
+{txt}         49 {c |}{res}          1        1.96       88.24
+{txt}         50 {c |}{res}          1        1.96       90.20
+{txt}         51 {c |}{res}          1        1.96       92.16
+{txt}         53 {c |}{res}          1        1.96       94.12
+{txt}         54 {c |}{res}          1        1.96       96.08
+{txt}         55 {c |}{res}          1        1.96       98.04
+{txt}         56 {c |}{res}          1        1.96      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. replace state_abbrev = "DC" if statefips == 11
+{txt}(1 real change made)
+
+{com}. codebook state_abbrev
+
+{txt}{hline}
+{res}state_abbrev{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}Type: String ({res}str2{txt})
+
+{col 10}Unique values: {res}51{col 51}{txt}Missing "": {res}0{txt}/{res}51
+
+{txt}{col 15}Examples: {res}"FL"
+{col 25}"MA"
+{col 25}"NE"
+{col 25}"RI"
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\Downloads\Creating state abbreviation variable.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Dec 2025, 17:05:42
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

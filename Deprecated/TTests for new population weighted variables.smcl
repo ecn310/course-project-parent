@@ -1,0 +1,128 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\TTests for new population weighted variables.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 3 Dec 2025, 01:08:08
+
+{com}. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\New Merged Dataset weighted by population.dta"
+
+. summarize perm25_popw , detail
+
+                         {txt}perm25_popw
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 6.982057       6.982057
+{txt} 5%    {res} 14.88578       13.84678
+{txt}10%    {res} 16.93206       14.88578       {txt}Obs         {res}         51
+{txt}25%    {res} 19.98957       15.82773       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res}  30.6215                      {txt}Mean          {res} 32.38575
+                        {txt}Largest       Std. dev.     {res} 12.14961
+{txt}75%    {res} 43.81808       47.95637
+{txt}90%    {res} 47.59618       48.55906       {txt}Variance      {res} 147.6131
+{txt}95%    {res} 48.55906       48.67244       {txt}Skewness      {res}-.1341453
+{txt}99%    {res} 49.82711       49.82711       {txt}Kurtosis      {res} 1.685604
+
+{com}. gen highmob25 = (perm25_popw > r(p50))
+
+. tab highmob25
+
+  {txt}highmob25 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         26       50.98       50.98
+{txt}          1 {c |}{res}         25       49.02      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. ttest trthh, by(highmob25)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     26{col 22} 189.9666{col 34} 7.563371{col 46} 38.56578{col 58} 174.3896{col 70} 205.5437
+       {txt}1 {c |}{res}{col 12}     25{col 22} 174.4866{col 34} 7.042751{col 46} 35.21376{col 58}  159.951{col 70} 189.0221
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     51{col 22} 182.3783{col 34} 5.239268{col 46} 37.41586{col 58}  171.855{col 70} 192.9017
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 15.48006{col 34} 10.35341{col 58}-5.325903{col 70} 36.28602
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  1.4952
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      49
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.9294         {txt}Pr(|T| > |t|) = {res}0.1413          {txt}Pr(T > t) = {res}0.0706
+
+{com}. summarize perm25_popw , detail
+
+                         {txt}perm25_popw
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 6.982057       6.982057
+{txt} 5%    {res} 14.88578       13.84678
+{txt}10%    {res} 16.93206       14.88578       {txt}Obs         {res}         51
+{txt}25%    {res} 19.98957       15.82773       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res}  30.6215                      {txt}Mean          {res} 32.38575
+                        {txt}Largest       Std. dev.     {res} 12.14961
+{txt}75%    {res} 43.81808       47.95637
+{txt}90%    {res} 47.59618       48.55906       {txt}Variance      {res} 147.6131
+{txt}95%    {res} 48.55906       48.67244       {txt}Skewness      {res}-.1341453
+{txt}99%    {res} 49.82711       49.82711       {txt}Kurtosis      {res} 1.685604
+
+{com}. summarize perm75_popw , detail
+
+                         {txt}perm75_popw
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}  7.57805        7.57805
+{txt} 5%    {res} 15.69383       14.93017
+{txt}10%    {res} 20.20661       15.69383       {txt}Obs         {res}         51
+{txt}25%    {res} 25.80542       18.10487       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res} 39.51595                      {txt}Mean          {res} 38.39709
+                        {txt}Largest       Std. dev.     {res} 14.43553
+{txt}75%    {res} 51.98775       57.80288
+{txt}90%    {res} 56.62508       57.80788       {txt}Variance      {res} 208.3845
+{txt}95%    {res} 57.80788        58.2203       {txt}Skewness      {res}-.2010701
+{txt}99%    {res} 58.35739       58.35739       {txt}Kurtosis      {res} 1.782427
+
+{com}. gen highmob75 = (perm75_popw > r(p50))
+
+. tab highmob75
+
+  {txt}highmob75 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         26       50.98       50.98
+{txt}          1 {c |}{res}         25       49.02      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. ttest trthh, by(highmob75)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     26{col 22} 190.9186{col 34} 7.414292{col 46} 37.80562{col 58} 175.6486{col 70} 206.1886
+       {txt}1 {c |}{res}{col 12}     25{col 22} 173.4965{col 34} 7.117724{col 46} 35.58862{col 58} 158.8062{col 70} 188.1868
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     51{col 22} 182.3783{col 34} 5.239268{col 46} 37.41586{col 58}  171.855{col 70} 192.9017
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 17.42208{col 34} 10.29025{col 58}-3.256945{col 70}  38.1011
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  1.6931
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      49
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.9516         {txt}Pr(|T| > |t|) = {res}0.0968          {txt}Pr(T > t) = {res}0.0484
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\TTests for new population weighted variables.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 3 Dec 2025, 01:09:08
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

@@ -1,0 +1,177 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\How to split into four groups with median income.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 9 Dec 2025, 00:32:22
+
+{com}. use "C:\Users\oalevesq\OneDrive - Syracuse University\Documents\Updated data set with median income.dta"
+
+. destring medianinc, replace
+{txt}medianinc: all characters numeric; {res}replaced {txt}as {res}long
+
+{com}. drop _merge
+
+. summarize medianinc, detail
+
+                         {txt}B19013_001E
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}    39464          39464
+{txt} 5%    {res}    41576          41264
+{txt}10%    {res}    44621          41576       {txt}Obs         {res}         51
+{txt}25%    {res}    47212          43342       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res}    52400                      {txt}Mean          {res}  54131.2
+                        {txt}Largest       Std. dev.     {res} 9005.296
+{txt}75%    {res}    60231          69899
+{txt}90%    {res}    68201          71829       {txt}Variance      {res} 8.11e+07
+{txt}95%    {res}    71829          72062       {txt}Skewness      {res} .5716211
+{txt}99%    {res}    74149          74149       {txt}Kurtosis      {res}  2.38168
+
+{com}. local med = r(p50)
+
+. gen high_inc = medianinc > `med'
+
+. label define inc 0 "Low inc" 1 "High inc"
+
+. label values high_inc incy
+
+. tab high_inc
+
+   {txt}high_inc {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         26       50.98       50.98
+{txt}          1 {c |}{res}         25       49.02      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. tabulate high_inc
+
+   {txt}high_inc {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         26       50.98       50.98
+{txt}          1 {c |}{res}         25       49.02      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         51      100.00
+
+{com}. summarize perm25_popw, detail
+
+                         {txt}perm25_popw
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 6.982057       6.982057
+{txt} 5%    {res} 14.88578       13.84678
+{txt}10%    {res} 16.93206       14.88578       {txt}Obs         {res}         51
+{txt}25%    {res} 19.98957       15.82773       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res}  30.6215                      {txt}Mean          {res} 32.38575
+                        {txt}Largest       Std. dev.     {res} 12.14961
+{txt}75%    {res} 43.81808       47.95637
+{txt}90%    {res} 47.59618       48.55906       {txt}Variance      {res} 147.6131
+{txt}95%    {res} 48.55906       48.67244       {txt}Skewness      {res}-.1341453
+{txt}99%    {res} 49.82711       49.82711       {txt}Kurtosis      {res} 1.685604
+
+{com}. local med25 = r(p50)
+
+. gen high_mob25 = perm25_popw > `med25'
+
+. label define mob 0 "Low mobility" 1 "High mobility"
+
+. label values high_mob25 mob
+
+. summarize perm75_popw, detail
+
+                         {txt}perm75_popw
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}  7.57805        7.57805
+{txt} 5%    {res} 15.69383       14.93017
+{txt}10%    {res} 20.20661       15.69383       {txt}Obs         {res}         51
+{txt}25%    {res} 25.80542       18.10487       {txt}Sum of wgt. {res}         51
+
+{txt}50%    {res} 39.51595                      {txt}Mean          {res} 38.39709
+                        {txt}Largest       Std. dev.     {res} 14.43553
+{txt}75%    {res} 51.98775       57.80288
+{txt}90%    {res} 56.62508       57.80788       {txt}Variance      {res} 208.3845
+{txt}95%    {res} 57.80788        58.2203       {txt}Skewness      {res}-.2010701
+{txt}99%    {res} 58.35739       58.35739       {txt}Kurtosis      {res} 1.782427
+
+{com}. local med75 = r(p50)
+
+. gen high_mob75 = perm75_popw > `med75'
+
+. label values high_mob75 mob
+
+. tabulate high_inc high_mob25
+
+           {txt}{c |}      high_mob25
+  high_inc {c |} Low mobil  High mobi {c |}     Total
+{hline 11}{c +}{hline 22}{c +}{hline 10}
+         0 {c |}{res}        18          8 {txt}{c |}{res}        26 
+{txt}         1 {c |}{res}         7         18 {txt}{c |}{res}        25 
+{txt}{hline 11}{c +}{hline 22}{c +}{hline 10}
+     Total {c |}{res}        25         26 {txt}{c |}{res}        51 
+
+{com}. tabulate high_inc high_mob75
+
+           {txt}{c |}      high_mob75
+  high_inc {c |} Low mobil  High mobi {c |}     Total
+{hline 11}{c +}{hline 22}{c +}{hline 10}
+         0 {c |}{res}        19          7 {txt}{c |}{res}        26 
+{txt}         1 {c |}{res}         7         18 {txt}{c |}{res}        25 
+{txt}{hline 11}{c +}{hline 22}{c +}{hline 10}
+     Total {c |}{res}        26         25 {txt}{c |}{res}        51 
+
+{com}. pwcorr trthh perm25_popw if high_inc==1, sig
+
+             {txt}{c |}    trthh perm25~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm25_popw {c |} {res} -0.2898   1.0000 
+             {txt}{c |}{res}   0.1599
+             {txt}{c |}
+
+{com}. pwcorr trthh perm25_popw if high_inc==0, sig
+
+             {txt}{c |}    trthh perm25~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm25_popw {c |} {res} -0.4856   1.0000 
+             {txt}{c |}{res}   0.0119
+             {txt}{c |}
+
+{com}. pwcorr trthh perm75_popw if high_inc==1, sig
+
+             {txt}{c |}    trthh perm75~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm75_popw {c |} {res} -0.3342   1.0000 
+             {txt}{c |}{res}   0.1026
+             {txt}{c |}
+
+{com}. pwcorr trthh perm75_popw if high_inc==0, sig
+
+             {txt}{c |}    trthh perm75~w
+{hline 13}{c +}{hline 18}
+       trthh {c |} {res}  1.0000 
+             {txt}{c |}
+             {c |}
+ perm75_popw {c |} {res} -0.5057   1.0000 
+             {txt}{c |}{res}   0.0084
+             {txt}{c |}
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\oalevesq\OneDrive - Syracuse University\Documents\How to split into four groups with median income.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 9 Dec 2025, 00:34:37
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
